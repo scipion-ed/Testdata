@@ -1,0 +1,103 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.0
+The following parameters have been modified:
+
+output {
+  experiments = "sv_refined.expt"
+  reflections = "sv_refined.refl"
+  log = "dials.sv_refine.log"
+}
+refinement {
+  parameterisation {
+    scan_varying = True
+    beam {
+      fix = all in_spindle_plane out_spindle_plane *wavelength
+      force_static = False
+    }
+    detector {
+      fix = *all position orientation distance
+    }
+  }
+}
+input {
+  experiments = refined.expt
+  reflections = refined.refl
+}
+
+Configuring refiner
+
+Summary statistics for 461 observations matched to predictions:
+------------------------------------------------------------------------
+|                   | Min     | Q1       | Med      | Q3      | Max    |
+------------------------------------------------------------------------
+| Xc - Xo (mm)      | -0.2897 | -0.01152 | 0.002627 | 0.01561 | 0.1197 |
+| Yc - Yo (mm)      | -0.6086 | -0.07179 | -0.01482 | 0.07015 | 0.1962 |
+| Phic - Phio (deg) | -172.3  | -1.023   | -0.3842  | 0.5676  | 51.09  |
+| X weights         | 2230    | 3846     | 3887     | 3920    | 3967   |
+| Y weights         | 2325    | 3858     | 3897     | 3924    | 3967   |
+| Phi weights       | 96.2    | 97.15    | 97.29    | 97.29   | 97.29  |
+------------------------------------------------------------------------
+
+Detecting centroid outliers using the MCD algorithm
+100 reflections have been flagged as outliers
+
+Summary statistics for 361 observations matched to predictions:
+--------------------------------------------------------------------------
+|                   | Min      | Q1       | Med      | Q3      | Max     |
+--------------------------------------------------------------------------
+| Xc - Xo (mm)      | -0.04732 | -0.01193 | 0.001123 | 0.01288 | 0.04342 |
+| Yc - Yo (mm)      | -0.1468  | -0.07349 | -0.02815 | 0.07622 | 0.1711  |
+| Phic - Phio (deg) | -5.437   | -1.006   | -0.4812  | 0.333   | 4.294   |
+| X weights         | 3495     | 3846     | 3888     | 3918    | 3963    |
+| Y weights         | 3477     | 3860     | 3896     | 3922    | 3967    |
+| Phi weights       | 96.31    | 97.16    | 97.29    | 97.29   | 97.29   |
+--------------------------------------------------------------------------
+
+There are 14 parameters to refine against 361 reflections in 3 dimensions
+Performing refinement of a single Experiment...
+
+Refinement steps:
+------------------------------------------------
+| Step | Nref | RMSD_X   | RMSD_Y   | RMSD_Phi |
+|      |      | (mm)     | (mm)     | (deg)    |
+------------------------------------------------
+| 0    | 361  | 0.01787  | 0.082968 | 1.3106   |
+| 1    | 361  | 0.044071 | 0.028129 | 0.72614  |
+| 2    | 361  | 0.039186 | 0.023628 | 0.39279  |
+| 3    | 361  | 0.026183 | 0.018866 | 0.24242  |
+| 4    | 361  | 0.017155 | 0.016311 | 0.21297  |
+| 5    | 361  | 0.014884 | 0.015455 | 0.20981  |
+| 6    | 361  | 0.014811 | 0.01536  | 0.20901  |
+| 7    | 361  | 0.014837 | 0.015366 | 0.20888  |
+| 8    | 361  | 0.014839 | 0.015367 | 0.20888  |
+| 9    | 361  | 0.014839 | 0.015367 | 0.20888  |
+------------------------------------------------
+RMSD no longer decreasing
+
+RMSDs by experiment:
+--------------------------------------------
+| Exp | Nref | RMSD_X  | RMSD_Y | RMSD_Z   |
+| id  |      | (px)    | (px)   | (images) |
+--------------------------------------------
+| 0   | 361  | 0.26979 | 0.2794 | 0.59475  |
+--------------------------------------------
+Updating predictions for indexed reflections
+
+Final refined crystal model:
+Crystal:
+    Unit cell: (33.5(3), 33.5(3), 22.0(2), 90.00000000000003, 90.0, 119.99999999999999)
+    Space group: P 3
+    U matrix:  {{ 0.4103,  0.1369,  0.9016},
+                {-0.7988, -0.4230,  0.4277},
+                { 0.4399, -0.8957, -0.0642}}
+    B matrix:  {{ 0.0298,  0.0000,  0.0000},
+                { 0.0172,  0.0344,  0.0000},
+                { 0.0000,  0.0000,  0.0455}}
+    A = UB:    {{ 0.0146,  0.0047,  0.0410},
+                {-0.0311, -0.0146,  0.0194},
+                {-0.0023, -0.0308, -0.0029}}
+    A sampled at 168 scan points
+Saving refined experiments to sv_refined.expt
+Saving reflections with updated predictions to sv_refined.refl
+
+Total time taken: 1.28s

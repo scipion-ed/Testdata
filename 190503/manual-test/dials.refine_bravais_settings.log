@@ -1,0 +1,46 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.0
+The following parameters have been modified:
+
+input {
+  experiments = indexed.expt
+  reflections = indexed.refl
+}
+
+Chiral space groups corresponding to each Bravais lattice:
+aP: P1
+mP: P2 P21
+mC: C2
+oC: C2221 C222
+hP: P3 P31 P32 P32 P32 P312 P312 P322 P322 P6 P61 P65 P62 P64 P63 P622 P6122 P6522 P6222 P6422 P6322
+----------------------------------------------------------------------------------------------------------------
+Solution Metric fit  rmsd  min/max cc #spots lattice                                 unit_cell volume      cb_op
+----------------------------------------------------------------------------------------------------------------
+*     12     1.4104 0.023 0.607/0.707    392      hP  33.58  33.58  22.04  90.00  90.00 120.00  21523     -c,b,a
+*     11     1.4056 0.023 0.528/0.700    395      oC  33.50  57.96  22.08  90.00  90.00  90.00  42868 b,-b+2*c,a
+*     10     1.4056 0.024 0.557/0.700    393      oC  32.56  56.79  21.93  90.00  90.00  90.00  40552 c,-2*b+c,a
+*      9     1.4104 0.024 0.519/0.700    393      oC  33.79  58.10  21.95  90.00  90.00  90.00  43087  b-c,b+c,a
+*      8     1.4104 0.023 0.633/0.633    393      mC  57.26  33.29  21.82  90.00  89.65  90.00  41592 b+c,-b+c,a
+*      7     1.4056 0.024 0.700/0.700    393      mP  32.97  21.93  33.18  90.00 120.00  90.00  20773  -c,a,-b+c
+*      6     1.3536 0.023 0.528/0.528    394      mC  33.50  58.25  21.80  90.00  89.42  90.00  42536 b,-b+2*c,a
+*      5     1.0619 0.024 0.557/0.557    393      mC  32.59  56.86  21.94  90.00  90.03  90.00  40655 c,-2*b+c,a
+*      4     0.9221 0.023 0.583/0.583    394      mC  57.06  32.74  21.95  90.00  89.86  90.00  41014  2*b-c,c,a
+*      3     0.5263 0.023 0.699/0.699    394      mC  56.36  32.38  21.63  90.00  91.09  90.00  39459  b-2*c,b,a
+*      2     0.3956 0.023 0.519/0.519    393      mC  33.97  58.43  22.00  90.00  89.86  90.00  43665  b-c,b+c,a
+*      1     0.0000 0.024         -/-    394      aP  24.09  37.49  37.33  60.12  90.92  89.54  29226      a,b,c
+----------------------------------------------------------------------------------------------------------------
+* = recommended solution
+
+Saving summary as bravais_summary.json
+Saving solution 12 as bravais_setting_12.expt
+Saving solution 11 as bravais_setting_11.expt
+Saving solution 10 as bravais_setting_10.expt
+Saving solution 9 as bravais_setting_9.expt
+Saving solution 8 as bravais_setting_8.expt
+Saving solution 7 as bravais_setting_7.expt
+Saving solution 6 as bravais_setting_6.expt
+Saving solution 5 as bravais_setting_5.expt
+Saving solution 4 as bravais_setting_4.expt
+Saving solution 3 as bravais_setting_3.expt
+Saving solution 2 as bravais_setting_2.expt
+Saving solution 1 as bravais_setting_1.expt

@@ -1,0 +1,26 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.1.1-gcdd629a7b-release
+The following parameters have been modified:
+
+input {
+  experiments = <image files>
+}
+geometry {
+  goniometer {
+    axes = -0.6204 -0.7843 0
+  }
+}
+
+
+Applying input geometry in the following order:
+  1. Manual geometry
+
+--------------------------------------------------------------------------------
+  format: <class 'dxtbx.format.FormatSMVTimePix_SU.FormatSMVTimePix_SU_516x516'>
+  num images: 167
+  sequences:
+    still:    0
+    sweep:    1
+  num stills: 0
+--------------------------------------------------------------------------------
+Writing experiments to imported.expt

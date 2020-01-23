@@ -1,0 +1,423 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.0
+The following parameters have been modified:
+
+spotfinder {
+  scan_range = 1 9
+  scan_range = 11 19
+  scan_range = 21 29
+  scan_range = 31 39
+  scan_range = 41 49
+  scan_range = 51 59
+  scan_range = 61 69
+  scan_range = 71 79
+  scan_range = 81 89
+  scan_range = 91 99
+  scan_range = 101 109
+  scan_range = 111 119
+  scan_range = 121 129
+  scan_range = 131 139
+  scan_range = 141 149
+  scan_range = 151 159
+  scan_range = 161 167
+}
+input {
+  experiments = imported.expt
+}
+
+Setting spotfinder.filter.min_spot_size=3
+Configuring spot finder from input parameters
+--------------------------------------------------------------------------------
+Finding strong spots in imageset 0
+--------------------------------------------------------------------------------
+
+
+Finding spots in image 1 to 9...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 770 strong pixels on image 1
+Found 725 strong pixels on image 2
+Found 755 strong pixels on image 3
+Found 662 strong pixels on image 4
+Found 644 strong pixels on image 5
+Found 691 strong pixels on image 6
+Found 666 strong pixels on image 7
+Found 648 strong pixels on image 8
+Found 646 strong pixels on image 9
+
+Extracted 122 spots
+Removed 86 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 35 spot centroids
+Calculated 35 spot intensities
+Filtered 34 of 35 spots by peak-centroid distance
+
+Finding spots in image 11 to 19...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 640 strong pixels on image 11
+Found 648 strong pixels on image 12
+Found 628 strong pixels on image 13
+Found 639 strong pixels on image 14
+Found 673 strong pixels on image 15
+Found 748 strong pixels on image 16
+Found 831 strong pixels on image 17
+Found 750 strong pixels on image 18
+Found 662 strong pixels on image 19
+
+Extracted 122 spots
+Removed 73 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 48 spot centroids
+Calculated 48 spot intensities
+Filtered 48 of 48 spots by peak-centroid distance
+
+Finding spots in image 21 to 29...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 697 strong pixels on image 21
+Found 668 strong pixels on image 22
+Found 657 strong pixels on image 23
+Found 644 strong pixels on image 24
+Found 698 strong pixels on image 25
+Found 692 strong pixels on image 26
+Found 790 strong pixels on image 27
+Found 730 strong pixels on image 28
+Found 708 strong pixels on image 29
+
+Extracted 116 spots
+Removed 78 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 37 spot centroids
+Calculated 37 spot intensities
+Filtered 37 of 37 spots by peak-centroid distance
+
+Finding spots in image 31 to 39...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 668 strong pixels on image 31
+Found 604 strong pixels on image 32
+Found 594 strong pixels on image 33
+Found 608 strong pixels on image 34
+Found 624 strong pixels on image 35
+Found 558 strong pixels on image 36
+Found 607 strong pixels on image 37
+Found 595 strong pixels on image 38
+Found 566 strong pixels on image 39
+
+Extracted 122 spots
+Removed 85 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 36 spot centroids
+Calculated 36 spot intensities
+Filtered 34 of 36 spots by peak-centroid distance
+
+Finding spots in image 41 to 49...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 651 strong pixels on image 41
+Found 551 strong pixels on image 42
+Found 623 strong pixels on image 43
+Found 609 strong pixels on image 44
+Found 634 strong pixels on image 45
+Found 605 strong pixels on image 46
+Found 610 strong pixels on image 47
+Found 579 strong pixels on image 48
+Found 722 strong pixels on image 49
+
+Extracted 106 spots
+Removed 71 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 34 spot centroids
+Calculated 34 spot intensities
+Filtered 33 of 34 spots by peak-centroid distance
+
+Finding spots in image 51 to 59...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 628 strong pixels on image 51
+Found 712 strong pixels on image 52
+Found 723 strong pixels on image 53
+Found 708 strong pixels on image 54
+Found 668 strong pixels on image 55
+Found 680 strong pixels on image 56
+Found 718 strong pixels on image 57
+Found 715 strong pixels on image 58
+Found 696 strong pixels on image 59
+
+Extracted 105 spots
+Removed 67 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 37 spot centroids
+Calculated 37 spot intensities
+Filtered 37 of 37 spots by peak-centroid distance
+
+Finding spots in image 61 to 69...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 654 strong pixels on image 61
+Found 672 strong pixels on image 62
+Found 673 strong pixels on image 63
+Found 707 strong pixels on image 64
+Found 668 strong pixels on image 65
+Found 644 strong pixels on image 66
+Found 642 strong pixels on image 67
+Found 636 strong pixels on image 68
+Found 622 strong pixels on image 69
+
+Extracted 122 spots
+Removed 75 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 46 spot centroids
+Calculated 46 spot intensities
+Filtered 46 of 46 spots by peak-centroid distance
+
+Finding spots in image 71 to 79...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 678 strong pixels on image 71
+Found 670 strong pixels on image 72
+Found 695 strong pixels on image 73
+Found 693 strong pixels on image 74
+Found 710 strong pixels on image 75
+Found 642 strong pixels on image 76
+Found 708 strong pixels on image 77
+Found 699 strong pixels on image 78
+Found 712 strong pixels on image 79
+
+Extracted 118 spots
+Removed 77 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 40 spot centroids
+Calculated 40 spot intensities
+Filtered 39 of 40 spots by peak-centroid distance
+
+Finding spots in image 81 to 89...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 745 strong pixels on image 81
+Found 737 strong pixels on image 82
+Found 714 strong pixels on image 83
+Found 773 strong pixels on image 84
+Found 865 strong pixels on image 85
+Found 770 strong pixels on image 86
+Found 759 strong pixels on image 87
+Found 744 strong pixels on image 88
+Found 744 strong pixels on image 89
+
+Extracted 107 spots
+Removed 66 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 40 spot centroids
+Calculated 40 spot intensities
+Filtered 39 of 40 spots by peak-centroid distance
+
+Finding spots in image 91 to 99...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 746 strong pixels on image 91
+Found 712 strong pixels on image 92
+Found 756 strong pixels on image 93
+Found 728 strong pixels on image 94
+Found 708 strong pixels on image 95
+Found 715 strong pixels on image 96
+Found 678 strong pixels on image 97
+Found 725 strong pixels on image 98
+Found 724 strong pixels on image 99
+
+Extracted 130 spots
+Removed 89 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 40 spot centroids
+Calculated 40 spot intensities
+Filtered 39 of 40 spots by peak-centroid distance
+
+Finding spots in image 101 to 109...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 792 strong pixels on image 101
+Found 892 strong pixels on image 102
+Found 968 strong pixels on image 103
+Found 930 strong pixels on image 104
+Found 886 strong pixels on image 105
+Found 948 strong pixels on image 106
+Found 1057 strong pixels on image 107
+Found 1238 strong pixels on image 108
+Found 1175 strong pixels on image 109
+
+Extracted 131 spots
+Removed 79 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 51 spot centroids
+Calculated 51 spot intensities
+Filtered 50 of 51 spots by peak-centroid distance
+
+Finding spots in image 111 to 119...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 1083 strong pixels on image 111
+Found 995 strong pixels on image 112
+Found 905 strong pixels on image 113
+Found 828 strong pixels on image 114
+Found 748 strong pixels on image 115
+Found 737 strong pixels on image 116
+Found 660 strong pixels on image 117
+Found 643 strong pixels on image 118
+Found 645 strong pixels on image 119
+
+Extracted 122 spots
+Removed 70 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 51 spot centroids
+Calculated 51 spot intensities
+Filtered 45 of 51 spots by peak-centroid distance
+
+Finding spots in image 121 to 129...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 644 strong pixels on image 121
+Found 705 strong pixels on image 122
+Found 766 strong pixels on image 123
+Found 749 strong pixels on image 124
+Found 733 strong pixels on image 125
+Found 702 strong pixels on image 126
+Found 760 strong pixels on image 127
+Found 792 strong pixels on image 128
+Found 814 strong pixels on image 129
+
+Extracted 103 spots
+Removed 71 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 31 spot centroids
+Calculated 31 spot intensities
+Filtered 28 of 31 spots by peak-centroid distance
+
+Finding spots in image 131 to 139...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 804 strong pixels on image 131
+Found 764 strong pixels on image 132
+Found 802 strong pixels on image 133
+Found 758 strong pixels on image 134
+Found 805 strong pixels on image 135
+Found 770 strong pixels on image 136
+Found 791 strong pixels on image 137
+Found 785 strong pixels on image 138
+Found 768 strong pixels on image 139
+
+Extracted 123 spots
+Removed 82 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 40 spot centroids
+Calculated 40 spot intensities
+Filtered 40 of 40 spots by peak-centroid distance
+
+Finding spots in image 141 to 149...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 724 strong pixels on image 141
+Found 736 strong pixels on image 142
+Found 789 strong pixels on image 143
+Found 765 strong pixels on image 144
+Found 723 strong pixels on image 145
+Found 712 strong pixels on image 146
+Found 736 strong pixels on image 147
+Found 713 strong pixels on image 148
+Found 740 strong pixels on image 149
+
+Extracted 106 spots
+Removed 71 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 34 spot centroids
+Calculated 34 spot intensities
+Filtered 34 of 34 spots by peak-centroid distance
+
+Finding spots in image 151 to 159...
+Setting chunksize=9
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 705 strong pixels on image 151
+Found 743 strong pixels on image 152
+Found 766 strong pixels on image 153
+Found 751 strong pixels on image 154
+Found 761 strong pixels on image 155
+Found 765 strong pixels on image 156
+Found 761 strong pixels on image 157
+Found 690 strong pixels on image 158
+Found 599 strong pixels on image 159
+
+Extracted 129 spots
+Removed 92 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 36 spot centroids
+Calculated 36 spot intensities
+Filtered 34 of 36 spots by peak-centroid distance
+
+Finding spots in image 161 to 167...
+Setting chunksize=7
+Extracting strong pixels from images
+ Using multiprocessing with 1 parallel job(s)
+
+Found 484 strong pixels on image 161
+Found 385 strong pixels on image 162
+Found 202 strong pixels on image 163
+Found 61 strong pixels on image 164
+Found 2 strong pixels on image 165
+Found 1 strong pixels on image 166
+Found 7 strong pixels on image 167
+
+Extracted 27 spots
+Removed 17 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 9 spot centroids
+Calculated 9 spot intensities
+Filtered 9 of 9 spots by peak-centroid distance
+
+Histogram of per-image spot count for imageset 0:
+626 spots found on 166 images (max 30 / bin)
+                                      *                     
+                                      *                     
+                                      *                     
+                                      **                    
+     *   *                            **                    
+* *  *   *          * *       *  *    **         *          
+* * **   * *        * ******  ** *    ****     * *   * *    
+* * ****** **  **** ******** ****** * *****  ***** *******  
+**********************************************************  
+*********************************************************** 
+1                         image                          166
+
+--------------------------------------------------------------------------------
+Saved 626 reflections to strong.refl
+Time Taken: 2.617579
