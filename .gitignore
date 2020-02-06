@@ -1,7 +1,5 @@
 imgimport
 testrun*
-<<<<<<< HEAD
-=======
 *ipynb*
->>>>>>> 11fd8d2080d1bb949dbaba3fde7f265d1b6cf39d
 testoutput
+*.expt
