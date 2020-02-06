@@ -1,23 +1,32 @@
 {
     "__id__": "ExperimentList",
-    "experiment": [
+    "beam": [
         {
-            "__id__": "Experiment",
-            "identifier": "",
-            "beam": 0,
-            "detector": 0,
-            "goniometer": 0,
-            "scan": 0,
-            "imageset": 0
+            "transmission": 1.0,
+            "direction": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "polarization_fraction": 0.5,
+            "sigma_divergence": 0.0,
+            "flux": 0.0,
+            "divergence": 0.0,
+            "polarization_normal": [
+                0.0,
+                1.0,
+                0.0
+            ],
+            "wavelength": 0.0251
         }
     ],
     "imageset": [
         {
             "__id__": "ImageSequence",
-            "template": "/mnt/e/Programming/testdata/scipion-ed/190503/experiment_12/SMV/data/#####.img",
+            "template": "/mnt/c/Users/Viktor/Linux_programs/scipion/Testdata/190503/experiment_12/SMV/data/#####.img",
+            "pedestal": "",
             "mask": "",
             "gain": "",
-            "pedestal": "",
             "dx": "",
             "dy": "",
             "params": {
@@ -26,129 +35,31 @@
             }
         }
     ],
-    "beam": [
+    "scaling_model": [],
+    "experiment": [
         {
-            "direction": [
-                0.0,
-                0.0,
-                1.0
-            ],
-            "wavelength": 0.0251,
-            "divergence": 0.0,
-            "sigma_divergence": 0.0,
-            "polarization_normal": [
-                0.0,
-                1.0,
-                0.0
-            ],
-            "polarization_fraction": 0.5,
-            "flux": 0.0,
-            "transmission": 1.0
-        }
-    ],
-    "detector": [
-        {
-            "panels": [
-                {
-                    "name": "Panel",
-                    "type": "SENSOR_PAD",
-                    "fast_axis": [
-                        1.0,
-                        0.0,
-                        0.0
-                    ],
-                    "slow_axis": [
-                        0.0,
-                        -1.0,
-                        0.0
-                    ],
-                    "origin": [
-                        -12.083499999999999,
-                        12.46575,
-                        -532.2773
-                    ],
-                    "raw_image_offset": [
-                        0,
-                        0
-                    ],
-                    "image_size": [
-                        516,
-                        516
-                    ],
-                    "pixel_size": [
-                        0.055,
-                        0.055
-                    ],
-                    "trusted_range": [
-                        -1.0,
-                        65535.0
-                    ],
-                    "thickness": 0.3,
-                    "material": "Si",
-                    "mu": 0.0,
-                    "identifier": "",
-                    "mask": [],
-                    "gain": 1.0,
-                    "pedestal": 0.0,
-                    "px_mm_strategy": {
-                        "type": "SimplePxMmStrategy"
-                    }
-                }
-            ],
-            "hierarchy": {
-                "name": "",
-                "type": "",
-                "fast_axis": [
-                    1.0,
-                    0.0,
-                    0.0
-                ],
-                "slow_axis": [
-                    0.0,
-                    1.0,
-                    0.0
-                ],
-                "origin": [
-                    0.0,
-                    0.0,
-                    0.0
-                ],
-                "raw_image_offset": [
-                    0,
-                    0
-                ],
-                "image_size": [
-                    0,
-                    0
-                ],
-                "pixel_size": [
-                    0.0,
-                    0.0
-                ],
-                "trusted_range": [
-                    0.0,
-                    0.0
-                ],
-                "thickness": 0.0,
-                "material": "",
-                "mu": 0.0,
-                "identifier": "",
-                "mask": [],
-                "gain": 1.0,
-                "pedestal": 0.0,
-                "px_mm_strategy": {
-                    "type": "SimplePxMmStrategy"
-                },
-                "children": [
-                    {
-                        "panel": 0
-                    }
-                ]
-            }
+            "__id__": "Experiment",
+            "beam": 0,
+            "identifier": "",
+            "goniometer": 0,
+            "detector": 0,
+            "imageset": 0,
+            "scan": 0
         }
     ],
     "goniometer": [
         {
+            "setting_rotation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
             "rotation_axis": [
                 -0.6204,
                 -0.7843,
@@ -164,30 +75,117 @@
                 0.0,
                 0.0,
                 1.0
-            ],
-            "setting_rotation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0
             ]
         }
     ],
+    "crystal": [],
+    "detector": [
+        {
+            "panels": [
+                {
+                    "px_mm_strategy": {
+                        "type": "SimplePxMmStrategy"
+                    },
+                    "raw_image_offset": [
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        -12.083499999999999,
+                        12.46575,
+                        -532.2773
+                    ],
+                    "trusted_range": [
+                        -1.0,
+                        65535.0
+                    ],
+                    "identifier": "",
+                    "mask": [],
+                    "gain": 1.0,
+                    "image_size": [
+                        516,
+                        516
+                    ],
+                    "type": "SENSOR_PAD",
+                    "pixel_size": [
+                        0.055,
+                        0.055
+                    ],
+                    "pedestal": 0.0,
+                    "fast_axis": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "slow_axis": [
+                        0.0,
+                        -1.0,
+                        0.0
+                    ],
+                    "name": "Panel",
+                    "material": "Si",
+                    "thickness": 0.3,
+                    "mu": 0.0
+                }
+            ],
+            "hierarchy": {
+                "px_mm_strategy": {
+                    "type": "SimplePxMmStrategy"
+                },
+                "children": [
+                    {
+                        "panel": 0
+                    }
+                ],
+                "raw_image_offset": [
+                    0,
+                    0
+                ],
+                "origin": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "trusted_range": [
+                    0.0,
+                    0.0
+                ],
+                "identifier": "",
+                "mask": [],
+                "gain": 1.0,
+                "image_size": [
+                    0,
+                    0
+                ],
+                "type": "",
+                "pixel_size": [
+                    0.0,
+                    0.0
+                ],
+                "pedestal": 0.0,
+                "fast_axis": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "slow_axis": [
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                "name": "",
+                "material": "",
+                "thickness": 0.0,
+                "mu": 0.0
+            }
+        }
+    ],
+    "profile": [],
     "scan": [
         {
             "image_range": [
                 1,
                 167
-            ],
-            "batch_offset": 0,
-            "oscillation": [
-                -33.9,
-                0.3512
             ],
             "exposure_time": [
                 0.3,
@@ -358,6 +356,12 @@
                 0.3,
                 0.3
             ],
+            "valid_image_ranges": {},
+            "batch_offset": 0,
+            "oscillation": [
+                -33.9,
+                0.3512
+            ],
             "epochs": [
                 0.0,
                 0.0,
@@ -526,11 +530,7 @@
                 0.0,
                 0.0,
                 0.0
-            ],
-            "valid_image_ranges": {}
+            ]
         }
-    ],
-    "crystal": [],
-    "profile": [],
-    "scaling_model": []
+    ]
 }
