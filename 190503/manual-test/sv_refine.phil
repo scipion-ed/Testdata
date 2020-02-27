@@ -1,0 +1,21 @@
+output {
+  experiments = "sv_refined.expt"
+  reflections = "sv_refined.refl"
+  log = "dials.sv_refine.log"
+}
+refinement {
+  parameterisation {
+    scan_varying = True
+    beam {
+      fix = all in_spindle_plane out_spindle_plane *wavelength
+      force_static = False
+    }
+    detector {
+      fix = *all position orientation distance
+    }
+  }
+}
+input {
+  experiments = refined.expt
+  reflections = refined.refl
+}

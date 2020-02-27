@@ -1,0 +1,11 @@
+refinement {
+  parameterisation {
+    detector {
+      fix = all *position orientation distance
+    }
+  }
+}
+input {
+  experiments = imported.expt
+  reflections = strong.refl
+}
