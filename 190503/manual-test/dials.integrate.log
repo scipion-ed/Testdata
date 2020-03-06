@@ -1,5 +1,5 @@
 DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
-DIALS 2.0
+DIALS 2.1.1-gcdd629a7b-release
 The following parameters have been modified:
 
 integration {
@@ -20,7 +20,7 @@ Models for experiment 0
 
 Beam:
     wavelength: 0.0251
-    sample to source direction : {-0.0148742,-0.0188037,0.999713}
+    sample to source direction : {-0.014559,-0.0184052,0.999725}
     divergence: 0
     sigma divergence: 0
     polarization normal: {0,1,0}
@@ -39,10 +39,10 @@ Panel:
   mu: 0
   gain: 1
   pedestal: 0
-  fast_axis: {0.961075,0.00615254,-0.276219}
-  slow_axis: {0.022723,-0.998125,0.0568298}
-  origin: {-4.86205,21.2765,-471.407}
-  distance: 452.317
+  fast_axis: {0.960644,0.00502372,-0.277738}
+  slow_axis: {0.0219951,-0.998073,0.0580239}
+  origin: {-5.0017,21.0949,-471.101}
+  distance: 451.821
   pixel to millimeter strategy: SimplePxMmStrategy
 
 
@@ -52,23 +52,23 @@ Goniometer:
     Setting rotation:{1,0,0,0,1,0,0,0,1}
 
 Scan:
-    image range:   {1,167}
+    image range:   {1,161}
     oscillation:   {-33.9,0.3512}
     exposure time: 0.3
 
 Crystal:
-    Unit cell: (33.5(3), 33.5(3), 22.0(2), 90.00000000000003, 90.0, 120.00000000000001)
+    Unit cell: (33.5(3), 33.5(3), 22.0(2), 90.0, 90.0, 120.00000000000001)
     Space group: P 3
     U matrix:  {{ 0.4103,  0.1369,  0.9016},
                 {-0.7988, -0.4230,  0.4277},
                 { 0.4399, -0.8957, -0.0642}}
     B matrix:  {{ 0.0298,  0.0000,  0.0000},
                 { 0.0172,  0.0344,  0.0000},
-                { 0.0000,  0.0000,  0.0455}}
+                {-0.0000, -0.0000,  0.0455}}
     A = UB:    {{ 0.0146,  0.0047,  0.0410},
                 {-0.0311, -0.0146,  0.0194},
                 {-0.0023, -0.0308, -0.0029}}
-    A sampled at 168 scan points
+    A sampled at 162 scan points
 ================================================================================
 
 Initialising
@@ -76,11 +76,11 @@ Initialising
 Processing reference reflections
  read 626 strong spots
  removing 165 unindexed reflections
- removing 100 reflections marked as bad for refinement
- using 361 indexed reflections
- found 265 junk reflections
- time taken: 0.00174785
- masked neighbouring pixels in 195 shoeboxes
+ removing 103 reflections marked as bad for refinement
+ using 358 indexed reflections
+ found 268 junk reflections
+ time taken: 0.0028913
+ masked neighbouring pixels in 198 shoeboxes
 
 
 ================================================================================
@@ -88,17 +88,17 @@ Processing reference reflections
 Predicting reflections
 
 Prediction type: scan varying model prediction
-Predicted 68323 reflections
+Predicted 65942 reflections
 Matching reference spots with predicted reflections
- 361 observed reflections input
- 68323 reflections predicted
- 361 reflections matched
- 361 reflections accepted
-Using 361 / 361 reflections for sigma calculation
+ 358 observed reflections input
+ 65942 reflections predicted
+ 358 reflections matched
+ 358 reflections accepted
+Using 358 / 358 reflections for sigma calculation
 Calculating E.S.D Beam Divergence.
 Calculating E.S.D Reflecting Range (mosaicity).
- sigma b: 0.010385 degrees
- sigma m: 0.333446 degrees
+ sigma b: 0.010310 degrees
+ sigma m: 0.313347 degrees
 
 ================================================================================
 
@@ -118,195 +118,192 @@ Processing reflections
 
 Modelling reflection profiles
 
- Split 3 reflections overlapping job boundaries
+ Split 5 reflections overlapping job boundaries
 
 Processing reflections in the following blocks of images:
 
- block_size: 28 frames
+ block_size: 26 frames
 
- ----------------------------------------------------------------------------------------------
-  # | Group | Frame From | Frame To |          Angle From |            Angle To | # Reflections
- ----------------------------------------------------------------------------------------------
-  0 |     0 |          0 |       28 |               -33.9 | -24.066399999999994 |            35
-  1 |     0 |         14 |       42 | -28.983199999999997 | -19.149599999999996 |            32
-  2 |     0 |         28 |       56 | -24.066399999999994 | -14.232799999999996 |            30
-  3 |     0 |         42 |       70 | -19.149599999999996 |  -9.315999999999997 |            38
-  4 |     0 |         56 |       84 | -14.232799999999996 |  -4.399199999999998 |            43
-  5 |     0 |         70 |       98 |  -9.315999999999997 |  0.5176000000000069 |            30
-  6 |     0 |         84 |      112 |  -4.399199999999998 |  5.4344000000000054 |            27
-  7 |     0 |         98 |      126 |  0.5176000000000069 |  10.351200000000004 |            63
-  8 |     0 |        112 |      140 |  5.4344000000000054 |  15.268000000000002 |            18
-  9 |     0 |        126 |      154 |  10.351200000000004 |  20.184800000000003 |            29
- 10 |     0 |        140 |      167 |  15.268000000000002 |   24.75040000000001 |            19
- ----------------------------------------------------------------------------------------------
++-----+---------+--------------+------------+--------------+------------+-----------------+
+|   # |   Group |   Frame From |   Frame To |   Angle From |   Angle To |   # Reflections |
+|-----+---------+--------------+------------+--------------+------------+-----------------|
+|   0 |       0 |            0 |         26 |     -33.9    |   -24.7688 |              34 |
+|   1 |       0 |           13 |         39 |     -29.3344 |   -20.2032 |              28 |
+|   2 |       0 |           26 |         52 |     -24.7688 |   -15.6376 |              29 |
+|   3 |       0 |           39 |         65 |     -20.2032 |   -11.072  |              29 |
+|   4 |       0 |           52 |         78 |     -15.6376 |    -6.5064 |              39 |
+|   5 |       0 |           65 |         91 |     -11.072  |    -1.9408 |              38 |
+|   6 |       0 |           78 |        104 |      -6.5064 |     2.6248 |              31 |
+|   7 |       0 |           91 |        117 |      -1.9408 |     7.1904 |              53 |
+|   8 |       0 |          104 |        130 |       2.6248 |    11.756  |              19 |
+|   9 |       0 |          117 |        143 |       7.1904 |    16.3216 |              26 |
+|  10 |       0 |          130 |        156 |      11.756  |    20.8872 |              21 |
+|  11 |       0 |          143 |        161 |      16.3216 |    22.6432 |              16 |
++-----+---------+--------------+------------+--------------+------------+-----------------+
 
  Using multiprocessing with 8 parallel job(s)
 
  Beginning modelling job 0
 
- Frames: 0 -> 28
-
- Number of reflections
-  Partial:     2
-  Full:        33
-  In ice ring: 0
-  Total:       35
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 0  [3 ]: *******
- 1  [3 ]: *******
- 2  [3 ]: *******
- 3  [3 ]: *******
- 4  [4 ]: *********
- 5  [6 ]: **************
- 6  [9 ]: *********************
- 7  [10]: ************************
- 8  [12]: ****************************
- 9  [14]: *********************************
- 10 [15]: ************************************
- 11 [19]: *********************************************
- 12 [21]: **************************************************
- 13 [27]: *****************************************************************
- 14 [29]: **********************************************************************
- 15 [25]: ************************************************************
- 16 [23]: *******************************************************
- 17 [21]: **************************************************
- 18 [20]: ************************************************
- 19 [12]: ****************************
- 20 [8 ]: *******************
- 21 [5 ]: ************
- 22 [4 ]: *********
- 23 [4 ]: *********
- 24 [4 ]: *********
- 25 [2 ]: ****
- 26 [1 ]: **
- 27 [1 ]: **
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.00202948 GB
-
- Modelled     1 /     1 reflection profiles on image 9
- Modelled     2 /     2 reflection profiles on image 11
- Modelled     4 /     5 reflection profiles on image 14
- Modelled     3 /     3 reflection profiles on image 15
- Modelled     3 /     3 reflection profiles on image 16
- Modelled     1 /     1 reflection profiles on image 17
- Modelled     8 /     8 reflection profiles on image 18
- Modelled     4 /     4 reflection profiles on image 19
- Modelled     3 /     3 reflection profiles on image 20
- Modelled     1 /     1 reflection profiles on image 21
- Modelled     2 /     2 reflection profiles on image 24
- Modelled     1 /     1 reflection profiles on image 25
- Modelled     0 /     1 reflection profiles on image 27
- Beginning modelling job 1
-
- Frames: 14 -> 42
+ Frames: 0 -> 26
 
  Number of reflections
   Partial:     3
-  Full:        29
+  Full:        31
   In ice ring: 0
-  Total:       32
+  Total:       34
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 17 [2 ]: *****
- 18 [2 ]: *****
- 19 [5 ]: **************
- 20 [6 ]: ****************
- 21 [9 ]: *************************
- 22 [13]: ************************************
- 23 [19]: *****************************************************
- 24 [21]: **********************************************************
- 25 [22]: *************************************************************
- 26 [22]: *************************************************************
- 27 [22]: *************************************************************
- 28 [23]: ****************************************************************
- 29 [25]: **********************************************************************
- 30 [20]: ********************************************************
- 31 [17]: ***********************************************
- 32 [14]: ***************************************
- 33 [11]: ******************************
- 34 [9 ]: *************************
- 35 [9 ]: *************************
- 36 [8 ]: **********************
- 37 [6 ]: ****************
- 38 [5 ]: **************
- 39 [4 ]: ***********
- 40 [3 ]: ********
- 41 [2 ]: *****
+ 1  [3 ]: *******
+ 2  [4 ]: **********
+ 3  [4 ]: **********
+ 4  [4 ]: **********
+ 5  [4 ]: **********
+ 6  [7 ]: ******************
+ 7  [8 ]: ********************
+ 8  [10]: *************************
+ 9  [13]: *********************************
+ 10 [14]: ************************************
+ 11 [15]: **************************************
+ 12 [17]: ********************************************
+ 13 [21]: ******************************************************
+ 14 [26]: *******************************************************************
+ 15 [27]: **********************************************************************
+ 16 [23]: ***********************************************************
+ 17 [22]: *********************************************************
+ 18 [19]: *************************************************
+ 19 [16]: *****************************************
+ 20 [10]: *************************
+ 21 [5 ]: ************
+ 22 [3 ]: *******
+ 23 [2 ]: *****
+ 24 [2 ]: *****
+ 25 [2 ]: *****
+ 26 [2 ]: *****
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.0017937 GB
+  Required shoebox memory: 0.00171179 GB
 
- Modelled     1 /     1 reflection profiles on image 25
- Modelled     2 /     2 reflection profiles on image 26
- Modelled     1 /     2 reflection profiles on image 27
- Modelled     6 /     6 reflection profiles on image 29
- Modelled     3 /     4 reflection profiles on image 30
- Modelled     3 /     3 reflection profiles on image 31
- Modelled     3 /     3 reflection profiles on image 32
- Modelled     2 /     2 reflection profiles on image 33
- Modelled     1 /     1 reflection profiles on image 35
- Modelled     2 /     2 reflection profiles on image 36
- Modelled     1 /     1 reflection profiles on image 37
- Modelled     1 /     1 reflection profiles on image 38
- Modelled     1 /     1 reflection profiles on image 39
- Modelled     1 /     1 reflection profiles on image 40
- Modelled     1 /     2 reflection profiles on image 41
- Beginning modelling job 2
+ Modelled     1 /     1 reflection profiles on image 8
+ Modelled     1 /     1 reflection profiles on image 9
+ Modelled     2 /     2 reflection profiles on image 11
+ Modelled     0 /     1 reflection profiles on image 13
+ Modelled     5 /     5 reflection profiles on image 14
+ Modelled     2 /     2 reflection profiles on image 15
+ Modelled     3 /     3 reflection profiles on image 16
+ Modelled     3 /     3 reflection profiles on image 17
+ Modelled     6 /     6 reflection profiles on image 18
+ Modelled     5 /     5 reflection profiles on image 19
+ Modelled     2 /     2 reflection profiles on image 20
+ Modelled     1 /     1 reflection profiles on image 21
+ Modelled     1 /     2 reflection profiles on image 25
+ Beginning modelling job 1
 
- Frames: 28 -> 56
+ Frames: 13 -> 39
 
  Number of reflections
-  Partial:     1
-  Full:        29
+  Partial:     3
+  Full:        25
   In ice ring: 0
-  Total:       30
+  Total:       28
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 31 [3 ]: ***********
- 32 [6 ]: **********************
- 33 [7 ]: *************************
- 34 [7 ]: *************************
- 35 [10]: ************************************
- 36 [10]: ************************************
- 37 [13]: ***********************************************
- 38 [15]: *******************************************************
- 39 [16]: **********************************************************
- 40 [19]: **********************************************************************
- 41 [17]: **************************************************************
- 42 [18]: ******************************************************************
- 43 [17]: **************************************************************
- 44 [16]: **********************************************************
- 45 [17]: **************************************************************
- 46 [15]: *******************************************************
- 47 [12]: ********************************************
- 48 [11]: ****************************************
- 49 [11]: ****************************************
- 50 [7 ]: *************************
- 51 [6 ]: **********************
- 52 [3 ]: ***********
- 53 [2 ]: *******
- 54 [1 ]: ***
+ 17 [1 ]: ***
+ 18 [3 ]: *********
+ 19 [3 ]: *********
+ 20 [5 ]: ***************
+ 21 [7 ]: **********************
+ 22 [9 ]: ****************************
+ 23 [12]: **************************************
+ 24 [19]: ************************************************************
+ 25 [22]: **********************************************************************
+ 26 [20]: ***************************************************************
+ 27 [21]: ******************************************************************
+ 28 [21]: ******************************************************************
+ 29 [20]: ***************************************************************
+ 30 [20]: ***************************************************************
+ 31 [15]: ***********************************************
+ 32 [9 ]: ****************************
+ 33 [7 ]: **********************
+ 34 [6 ]: *******************
+ 35 [4 ]: ************
+ 36 [4 ]: ************
+ 37 [2 ]: ******
+ 38 [2 ]: ******
+ 39 [1 ]: ***
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.00125964 GB
+  Required shoebox memory: 0.00120396 GB
 
- Modelled     1 /     1 reflection profiles on image 38
- Modelled     1 /     1 reflection profiles on image 39
- Modelled     5 /     5 reflection profiles on image 40
+ Modelled     3 /     3 reflection profiles on image 24
+ Modelled     0 /     1 reflection profiles on image 25
+ Modelled     2 /     2 reflection profiles on image 26
+ Modelled     1 /     1 reflection profiles on image 27
+ Modelled     1 /     1 reflection profiles on image 28
+ Modelled     5 /     5 reflection profiles on image 29
+ Modelled     5 /     6 reflection profiles on image 30
+ Modelled     2 /     2 reflection profiles on image 31
+ Modelled     1 /     1 reflection profiles on image 32
+ Modelled     2 /     2 reflection profiles on image 33
+ Modelled     2 /     2 reflection profiles on image 35
+ Modelled     1 /     1 reflection profiles on image 37
+ Modelled     0 /     1 reflection profiles on image 38
+ Beginning modelling job 2
+
+ Frames: 26 -> 52
+
+ Number of reflections
+  Partial:     3
+  Full:        26
+  In ice ring: 0
+  Total:       29
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 28 [1 ]: ***
+ 29 [2 ]: *******
+ 30 [3 ]: **********
+ 31 [4 ]: **************
+ 32 [7 ]: ************************
+ 33 [11]: **************************************
+ 34 [12]: ******************************************
+ 35 [12]: ******************************************
+ 36 [14]: *************************************************
+ 37 [15]: ****************************************************
+ 38 [17]: ***********************************************************
+ 39 [19]: ******************************************************************
+ 40 [20]: **********************************************************************
+ 41 [20]: **********************************************************************
+ 42 [16]: ********************************************************
+ 43 [15]: ****************************************************
+ 44 [14]: *************************************************
+ 45 [12]: ******************************************
+ 46 [10]: ***********************************
+ 47 [8 ]: ****************************
+ 48 [5 ]: *****************
+ 49 [4 ]: **************
+ 50 [2 ]: *******
+ 51 [1 ]: ***
+ 52 [1 ]: ***
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.00139123 GB
+
+ Modelled     1 /     1 reflection profiles on image 36
+ Modelled     2 /     3 reflection profiles on image 38
+ Modelled     4 /     4 reflection profiles on image 39
+ Modelled     4 /     5 reflection profiles on image 40
  Modelled     1 /     1 reflection profiles on image 41
  Modelled     1 /     1 reflection profiles on image 42
  Modelled     2 /     2 reflection profiles on image 43
@@ -314,15 +311,123 @@ Processing reflections in the following blocks of images:
  Modelled     2 /     2 reflection profiles on image 45
  Modelled     3 /     3 reflection profiles on image 46
  Modelled     1 /     1 reflection profiles on image 47
- Modelled     3 /     4 reflection profiles on image 49
- Modelled     1 /     1 reflection profiles on image 50
- Modelled     3 /     3 reflection profiles on image 51
- Modelled     1 /     1 reflection profiles on image 52
- Modelled     1 /     1 reflection profiles on image 53
- Modelled     1 /     1 reflection profiles on image 54
+ Modelled     2 /     2 reflection profiles on image 48
+ Modelled     1 /     1 reflection profiles on image 49
+ Modelled     1 /     1 reflection profiles on image 51
  Beginning modelling job 3
 
- Frames: 42 -> 70
+ Frames: 39 -> 65
+
+ Number of reflections
+  Partial:     1
+  Full:        28
+  In ice ring: 0
+  Total:       29
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 42 [1 ]: ***
+ 43 [3 ]: ***********
+ 44 [3 ]: ***********
+ 45 [4 ]: **************
+ 46 [6 ]: **********************
+ 47 [9 ]: *********************************
+ 48 [12]: ********************************************
+ 49 [15]: *******************************************************
+ 50 [16]: **********************************************************
+ 51 [16]: **********************************************************
+ 52 [17]: **************************************************************
+ 53 [19]: **********************************************************************
+ 54 [18]: ******************************************************************
+ 55 [18]: ******************************************************************
+ 56 [17]: **************************************************************
+ 57 [17]: **************************************************************
+ 58 [15]: *******************************************************
+ 59 [11]: ****************************************
+ 60 [10]: ************************************
+ 61 [8 ]: *****************************
+ 62 [4 ]: **************
+ 63 [1 ]: ***
+ 64 [1 ]: ***
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.00115066 GB
+
+ Modelled     1 /     1 reflection profiles on image 49
+ Modelled     2 /     2 reflection profiles on image 50
+ Modelled     2 /     2 reflection profiles on image 51
+ Modelled     1 /     2 reflection profiles on image 52
+ Modelled     2 /     2 reflection profiles on image 53
+ Modelled     3 /     3 reflection profiles on image 54
+ Modelled     2 /     2 reflection profiles on image 56
+ Modelled     4 /     4 reflection profiles on image 57
+ Modelled     1 /     1 reflection profiles on image 58
+ Modelled     2 /     2 reflection profiles on image 59
+ Modelled     4 /     4 reflection profiles on image 60
+ Modelled     3 /     3 reflection profiles on image 61
+ Modelled     1 /     1 reflection profiles on image 63
+ Beginning modelling job 4
+
+ Frames: 52 -> 78
+
+ Number of reflections
+  Partial:     0
+  Full:        39
+  In ice ring: 0
+  Total:       39
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 54 [1 ]: **
+ 55 [2 ]: ****
+ 56 [3 ]: *******
+ 57 [5 ]: ************
+ 58 [7 ]: ****************
+ 59 [9 ]: *********************
+ 60 [14]: *********************************
+ 61 [17]: *****************************************
+ 62 [21]: **************************************************
+ 63 [25]: ************************************************************
+ 64 [29]: **********************************************************************
+ 65 [29]: **********************************************************************
+ 66 [28]: *******************************************************************
+ 67 [25]: ************************************************************
+ 68 [23]: *******************************************************
+ 69 [21]: **************************************************
+ 70 [18]: *******************************************
+ 71 [12]: ****************************
+ 72 [9 ]: *********************
+ 73 [6 ]: **************
+ 74 [6 ]: **************
+ 75 [3 ]: *******
+ 76 [1 ]: **
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.00172624 GB
+
+ Modelled     1 /     1 reflection profiles on image 61
+ Modelled     1 /     1 reflection profiles on image 62
+ Modelled     3 /     3 reflection profiles on image 63
+ Modelled     3 /     3 reflection profiles on image 64
+ Modelled     5 /     5 reflection profiles on image 65
+ Modelled     2 /     2 reflection profiles on image 66
+ Modelled     3 /     3 reflection profiles on image 67
+ Modelled     3 /     3 reflection profiles on image 68
+ Modelled     6 /     6 reflection profiles on image 69
+ Modelled     3 /     3 reflection profiles on image 70
+ Modelled     3 /     3 reflection profiles on image 71
+ Modelled     3 /     3 reflection profiles on image 73
+ Modelled     2 /     2 reflection profiles on image 74
+ Modelled     1 /     1 reflection profiles on image 75
+ Beginning modelling job 5
+
+ Frames: 65 -> 91
 
  Number of reflections
   Partial:     0
@@ -333,375 +438,153 @@ Processing reflections in the following blocks of images:
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 43 [1 ]: **
- 44 [1 ]: **
- 45 [3 ]: ********
- 46 [4 ]: ***********
- 47 [6 ]: ****************
- 48 [9 ]: *************************
- 49 [11]: ******************************
- 50 [13]: ************************************
- 51 [14]: ***************************************
- 52 [18]: **************************************************
- 53 [19]: *****************************************************
- 54 [22]: *************************************************************
- 55 [22]: *************************************************************
- 56 [24]: *******************************************************************
- 57 [24]: *******************************************************************
- 58 [23]: ****************************************************************
- 59 [24]: *******************************************************************
- 60 [25]: **********************************************************************
- 61 [20]: ********************************************************
- 62 [17]: ***********************************************
- 63 [15]: ******************************************
- 64 [12]: *********************************
- 65 [9 ]: *************************
- 66 [4 ]: ***********
- 67 [2 ]: *****
- 68 [1 ]: **
- 69 [1 ]: **
+ 69 [2 ]: *****
+ 70 [6 ]: *****************
+ 71 [14]: ****************************************
+ 72 [19]: *******************************************************
+ 73 [21]: *************************************************************
+ 74 [23]: *******************************************************************
+ 75 [24]: **********************************************************************
+ 76 [23]: *******************************************************************
+ 77 [16]: **********************************************
+ 78 [16]: **********************************************
+ 79 [16]: **********************************************
+ 80 [15]: *******************************************
+ 81 [16]: **********************************************
+ 82 [17]: *************************************************
+ 83 [13]: *************************************
+ 84 [12]: ***********************************
+ 85 [9 ]: **************************
+ 86 [6 ]: *****************
+ 87 [5 ]: **************
+ 88 [2 ]: *****
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.0017538 GB
+  Required shoebox memory: 0.00136766 GB
 
- Modelled     4 /     4 reflection profiles on image 54
- Modelled     2 /     2 reflection profiles on image 56
- Modelled     4 /     4 reflection profiles on image 57
- Modelled     2 /     2 reflection profiles on image 58
- Modelled     1 /     1 reflection profiles on image 59
- Modelled     5 /     5 reflection profiles on image 60
- Modelled     3 /     3 reflection profiles on image 61
- Modelled     2 /     2 reflection profiles on image 62
- Modelled     3 /     3 reflection profiles on image 63
- Modelled     3 /     3 reflection profiles on image 64
- Modelled     5 /     5 reflection profiles on image 65
- Modelled     2 /     2 reflection profiles on image 66
- Modelled     1 /     1 reflection profiles on image 67
- Modelled     1 /     1 reflection profiles on image 69
- Beginning modelling job 4
-
- Frames: 56 -> 84
-
- Number of reflections
-  Partial:     0
-  Full:        43
-  In ice ring: 0
-  Total:       43
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 59 [1 ]: **
- 60 [2 ]: ****
- 61 [5 ]: ***********
- 62 [10]: ***********************
- 63 [14]: ********************************
- 64 [18]: ******************************************
- 65 [19]: ********************************************
- 66 [21]: *************************************************
- 67 [22]: ***************************************************
- 68 [22]: ***************************************************
- 69 [23]: *****************************************************
- 70 [30]: **********************************************************************
- 71 [29]: *******************************************************************
- 72 [28]: *****************************************************************
- 73 [27]: ***************************************************************
- 74 [25]: **********************************************************
- 75 [21]: *************************************************
- 76 [14]: ********************************
- 77 [9 ]: *********************
- 78 [5 ]: ***********
- 79 [4 ]: *********
- 80 [3 ]: *******
- 81 [1 ]: **
- 82 [1 ]: **
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.00181286 GB
-
- Modelled     3 /     3 reflection profiles on image 67
- Modelled     3 /     3 reflection profiles on image 68
- Modelled     2 /     2 reflection profiles on image 69
- Modelled     4 /     4 reflection profiles on image 70
- Modelled     2 /     2 reflection profiles on image 71
- Modelled     2 /     2 reflection profiles on image 72
- Modelled     2 /     2 reflection profiles on image 73
- Modelled     4 /     4 reflection profiles on image 74
- Modelled     7 /     7 reflection profiles on image 75
- Modelled     5 /     5 reflection profiles on image 76
- Modelled     4 /     4 reflection profiles on image 77
+ Modelled     2 /     2 reflection profiles on image 74
+ Modelled     8 /     8 reflection profiles on image 75
+ Modelled     3 /     3 reflection profiles on image 76
+ Modelled     3 /     3 reflection profiles on image 77
  Modelled     1 /     1 reflection profiles on image 78
- Modelled     1 /     1 reflection profiles on image 79
- Modelled     2 /     2 reflection profiles on image 80
- Modelled     1 /     1 reflection profiles on image 82
- Beginning modelling job 5
-
- Frames: 70 -> 98
-
- Number of reflections
-  Partial:     0
-  Full:        30
-  In ice ring: 0
-  Total:       30
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 72 [1 ]: ***
- 73 [2 ]: *******
- 74 [3 ]: ***********
- 75 [4 ]: **************
- 76 [5 ]: ******************
- 77 [8 ]: *****************************
- 78 [11]: ****************************************
- 79 [12]: ********************************************
- 80 [16]: **********************************************************
- 81 [19]: **********************************************************************
- 82 [17]: **************************************************************
- 83 [17]: **************************************************************
- 84 [17]: **************************************************************
- 85 [15]: *******************************************************
- 86 [16]: **********************************************************
- 87 [14]: ***************************************************
- 88 [12]: ********************************************
- 89 [11]: ****************************************
- 90 [10]: ************************************
- 91 [8 ]: *****************************
- 92 [6 ]: **********************
- 93 [3 ]: ***********
- 94 [2 ]: *******
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.00117217 GB
-
+ Modelled     3 /     3 reflection profiles on image 79
  Modelled     1 /     1 reflection profiles on image 80
- Modelled     2 /     2 reflection profiles on image 81
+ Modelled     4 /     4 reflection profiles on image 81
  Modelled     1 /     1 reflection profiles on image 82
  Modelled     3 /     3 reflection profiles on image 83
- Modelled     4 /     4 reflection profiles on image 84
- Modelled     4 /     4 reflection profiles on image 86
- Modelled     3 /     3 reflection profiles on image 87
+ Modelled     3 /     3 reflection profiles on image 84
+ Modelled     1 /     1 reflection profiles on image 85
+ Modelled     3 /     3 reflection profiles on image 86
+ Modelled     2 /     2 reflection profiles on image 87
+ Beginning modelling job 6
+
+ Frames: 78 -> 104
+
+ Number of reflections
+  Partial:     0
+  Full:        31
+  In ice ring: 0
+  Total:       31
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 82  [1 ]: ***
+ 83  [3 ]: *********
+ 84  [4 ]: ************
+ 85  [6 ]: ******************
+ 86  [9 ]: ***************************
+ 87  [9 ]: ***************************
+ 88  [12]: ************************************
+ 89  [14]: ******************************************
+ 90  [16]: ************************************************
+ 91  [18]: ******************************************************
+ 92  [22]: ******************************************************************
+ 93  [23]: *********************************************************************
+ 94  [20]: ************************************************************
+ 95  [19]: *********************************************************
+ 96  [17]: ***************************************************
+ 97  [13]: ***************************************
+ 98  [9 ]: ***************************
+ 99  [4 ]: ************
+ 100 [2 ]: ******
+ 101 [1 ]: ***
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.00126835 GB
+
+ Modelled     1 /     1 reflection profiles on image 87
  Modelled     1 /     1 reflection profiles on image 88
  Modelled     1 /     1 reflection profiles on image 89
  Modelled     2 /     2 reflection profiles on image 90
  Modelled     2 /     2 reflection profiles on image 91
  Modelled     3 /     3 reflection profiles on image 92
- Modelled     1 /     1 reflection profiles on image 93
+ Modelled     2 /     2 reflection profiles on image 93
  Modelled     2 /     2 reflection profiles on image 94
- Beginning modelling job 6
-
- Frames: 84 -> 112
-
- Number of reflections
-  Partial:     0
-  Full:        27
-  In ice ring: 0
-  Total:       27
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 88  [2 ]: ******
- 89  [5 ]: ***************
- 90  [9 ]: ****************************
- 91  [16]: **************************************************
- 92  [19]: ***********************************************************
- 93  [21]: *****************************************************************
- 94  [22]: *********************************************************************
- 95  [22]: *********************************************************************
- 96  [22]: *********************************************************************
- 97  [18]: ********************************************************
- 98  [12]: *************************************
- 99  [10]: *******************************
- 100 [10]: *******************************
- 101 [9 ]: ****************************
- 102 [9 ]: ****************************
- 103 [9 ]: ****************************
- 104 [9 ]: ****************************
- 105 [9 ]: ****************************
- 106 [9 ]: ****************************
- 107 [6 ]: ******************
- 108 [4 ]: ************
- 109 [3 ]: *********
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.00159419 GB
-
- Modelled     1 /     1 reflection profiles on image 94
- Modelled     2 /     2 reflection profiles on image 95
- Modelled     5 /     5 reflection profiles on image 96
- Modelled     6 /     6 reflection profiles on image 97
+ Modelled     4 /     4 reflection profiles on image 95
+ Modelled     4 /     4 reflection profiles on image 96
+ Modelled     5 /     5 reflection profiles on image 97
  Modelled     2 /     2 reflection profiles on image 98
  Modelled     1 /     1 reflection profiles on image 99
  Modelled     1 /     1 reflection profiles on image 100
- Modelled     3 /     3 reflection profiles on image 106
- Modelled     2 /     2 reflection profiles on image 107
- Modelled     1 /     1 reflection profiles on image 108
- Modelled     3 /     3 reflection profiles on image 109
  Beginning modelling job 7
 
- Frames: 98 -> 126
+ Frames: 91 -> 117
 
  Number of reflections
   Partial:     0
-  Full:        63
+  Full:        53
   In ice ring: 0
-  Total:       63
+  Total:       53
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 100 [1 ]: *
- 101 [5 ]: ******
- 102 [8 ]: **********
- 103 [15]: ********************
- 104 [26]: ***********************************
+ 92  [1 ]: *
+ 93  [2 ]: **
+ 94  [3 ]: ****
+ 95  [4 ]: *****
+ 96  [5 ]: ******
+ 97  [7 ]: *********
+ 98  [7 ]: *********
+ 99  [8 ]: ***********
+ 100 [8 ]: ***********
+ 101 [9 ]: ************
+ 102 [12]: ****************
+ 103 [16]: **********************
+ 104 [24]: *********************************
  105 [34]: **********************************************
- 106 [36]: ************************************************
- 107 [45]: ************************************************************
- 108 [48]: ****************************************************************
- 109 [51]: *********************************************************************
- 110 [51]: *********************************************************************
- 111 [46]: **************************************************************
- 112 [34]: **********************************************
- 113 [26]: ***********************************
- 114 [17]: ***********************
- 115 [14]: ******************
- 116 [13]: *****************
- 117 [10]: *************
- 118 [8 ]: **********
- 119 [5 ]: ******
- 120 [4 ]: *****
- 121 [3 ]: ****
+ 106 [42]: *********************************************************
+ 107 [44]: ************************************************************
+ 108 [50]: *********************************************************************
+ 109 [48]: ******************************************************************
+ 110 [45]: **************************************************************
+ 111 [39]: *****************************************************
+ 112 [26]: ***********************************
+ 113 [12]: ****************
+ 114 [6 ]: ********
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.00301921 GB
+  Required shoebox memory: 0.00295717 GB
 
- Modelled     3 /     3 reflection profiles on image 109
- Modelled    11 /    11 reflection profiles on image 110
- Modelled    15 /    15 reflection profiles on image 111
- Modelled     8 /     8 reflection profiles on image 112
- Modelled     9 /     9 reflection profiles on image 113
- Modelled     3 /     3 reflection profiles on image 114
- Modelled     1 /     1 reflection profiles on image 115
- Modelled     3 /     3 reflection profiles on image 116
- Modelled     2 /     2 reflection profiles on image 117
- Modelled     3 /     3 reflection profiles on image 118
- Modelled     1 /     1 reflection profiles on image 119
- Modelled     1 /     1 reflection profiles on image 120
- Modelled     3 /     3 reflection profiles on image 121
+ Modelled     1 /     1 reflection profiles on image 105
+ Modelled     2 /     2 reflection profiles on image 106
+ Modelled     2 /     2 reflection profiles on image 107
+ Modelled     3 /     3 reflection profiles on image 108
+ Modelled     6 /     6 reflection profiles on image 109
+ Modelled    13 /    13 reflection profiles on image 110
+ Modelled    14 /    14 reflection profiles on image 111
+ Modelled     6 /     6 reflection profiles on image 112
+ Modelled     6 /     6 reflection profiles on image 113
  Beginning modelling job 8
 
- Frames: 112 -> 140
-
- Number of reflections
-  Partial:     0
-  Full:        18
-  In ice ring: 0
-  Total:       18
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 118 [1 ]: ****
- 119 [1 ]: ****
- 120 [2 ]: *********
- 121 [4 ]: *******************
- 122 [6 ]: *****************************
- 123 [9 ]: ********************************************
- 124 [11]: ******************************************************
- 125 [13]: ****************************************************************
- 126 [13]: ****************************************************************
- 127 [13]: ****************************************************************
- 128 [14]: *********************************************************************
- 129 [13]: ****************************************************************
- 130 [10]: *************************************************
- 131 [8 ]: ***************************************
- 132 [5 ]: ************************
- 133 [4 ]: *******************
- 134 [3 ]: **************
- 135 [1 ]: ****
- 136 [1 ]: ****
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.000867816 GB
-
- Modelled     1 /     1 reflection profiles on image 124
- Modelled     1 /     1 reflection profiles on image 126
- Modelled     1 /     1 reflection profiles on image 127
- Modelled     2 /     2 reflection profiles on image 128
- Modelled     3 /     3 reflection profiles on image 129
- Modelled     2 /     2 reflection profiles on image 130
- Modelled     3 /     3 reflection profiles on image 131
- Modelled     1 /     1 reflection profiles on image 132
- Modelled     1 /     1 reflection profiles on image 133
- Modelled     2 /     2 reflection profiles on image 134
- Modelled     1 /     1 reflection profiles on image 136
- Beginning modelling job 9
-
- Frames: 126 -> 154
-
- Number of reflections
-  Partial:     0
-  Full:        29
-  In ice ring: 0
-  Total:       29
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 130 [4 ]: *****************
- 131 [7 ]: ******************************
- 132 [8 ]: **********************************
- 133 [11]: ***********************************************
- 134 [13]: ********************************************************
- 135 [16]: *********************************************************************
- 136 [16]: *********************************************************************
- 137 [14]: ************************************************************
- 138 [14]: ************************************************************
- 139 [16]: *********************************************************************
- 140 [16]: *********************************************************************
- 141 [14]: ************************************************************
- 142 [11]: ***********************************************
- 143 [13]: ********************************************************
- 144 [13]: ********************************************************
- 145 [12]: ***************************************************
- 146 [10]: *******************************************
- 147 [6 ]: *************************
- 148 [3 ]: ************
- 149 [2 ]: ********
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.000958608 GB
-
- Modelled     3 /     3 reflection profiles on image 136
- Modelled     3 /     3 reflection profiles on image 137
- Modelled     3 /     3 reflection profiles on image 139
- Modelled     2 /     2 reflection profiles on image 140
- Modelled     5 /     5 reflection profiles on image 141
- Modelled     1 /     1 reflection profiles on image 144
- Modelled     2 /     2 reflection profiles on image 145
- Modelled     4 /     4 reflection profiles on image 146
- Modelled     3 /     3 reflection profiles on image 147
- Modelled     1 /     1 reflection profiles on image 148
- Modelled     2 /     2 reflection profiles on image 149
- Beginning modelling job 10
-
- Frames: 140 -> 167
+ Frames: 104 -> 130
 
  Number of reflections
   Partial:     0
@@ -712,1110 +595,1219 @@ Processing reflections in the following blocks of images:
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 144 [2 ]: *********
- 145 [4 ]: *******************
- 146 [5 ]: ************************
- 147 [7 ]: **********************************
- 148 [9 ]: ********************************************
- 149 [11]: ******************************************************
- 150 [14]: *********************************************************************
- 151 [12]: ***********************************************************
- 152 [11]: ******************************************************
- 153 [13]: ****************************************************************
- 154 [13]: ****************************************************************
- 155 [12]: ***********************************************************
- 156 [10]: *************************************************
- 157 [7 ]: **********************************
- 158 [6 ]: *****************************
- 159 [4 ]: *******************
- 160 [2 ]: *********
- 161 [2 ]: *********
- 162 [2 ]: *********
- 163 [1 ]: ****
+ 109 [4 ]: ****************
+ 110 [6 ]: ************************
+ 111 [10]: ****************************************
+ 112 [14]: ********************************************************
+ 113 [17]: *********************************************************************
+ 114 [17]: *********************************************************************
+ 115 [15]: ************************************************************
+ 116 [12]: ************************************************
+ 117 [10]: ****************************************
+ 118 [7 ]: ****************************
+ 119 [6 ]: ************************
+ 120 [4 ]: ****************
+ 121 [4 ]: ****************
+ 122 [3 ]: ************
+ 123 [2 ]: ********
+ 124 [2 ]: ********
+ 125 [2 ]: ********
+ 126 [1 ]: ****
+ 127 [1 ]: ****
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.000858864 GB
+  Required shoebox memory: 0.000867096 GB
 
+ Modelled     2 /     2 reflection profiles on image 113
+ Modelled     3 /     3 reflection profiles on image 114
+ Modelled     2 /     2 reflection profiles on image 115
+ Modelled     3 /     3 reflection profiles on image 116
+ Modelled     2 /     2 reflection profiles on image 117
+ Modelled     2 /     2 reflection profiles on image 118
+ Modelled     1 /     1 reflection profiles on image 119
+ Modelled     1 /     1 reflection profiles on image 120
+ Modelled     1 /     1 reflection profiles on image 121
+ Modelled     1 /     1 reflection profiles on image 124
+ Modelled     1 /     1 reflection profiles on image 126
+ Beginning modelling job 9
+
+ Frames: 117 -> 143
+
+ Number of reflections
+  Partial:     0
+  Full:        26
+  In ice ring: 0
+  Total:       26
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 122 [2 ]: *********
+ 123 [3 ]: **************
+ 124 [7 ]: **********************************
+ 125 [9 ]: ********************************************
+ 126 [12]: ***********************************************************
+ 127 [12]: ***********************************************************
+ 128 [13]: ****************************************************************
+ 129 [14]: *********************************************************************
+ 130 [11]: ******************************************************
+ 131 [13]: ****************************************************************
+ 132 [14]: *********************************************************************
+ 133 [12]: ***********************************************************
+ 134 [13]: ****************************************************************
+ 135 [12]: ***********************************************************
+ 136 [11]: ******************************************************
+ 137 [11]: ******************************************************
+ 138 [7 ]: **********************************
+ 139 [4 ]: *******************
+ 140 [4 ]: *******************
+ 141 [1 ]: ****
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.000812064 GB
+
+ Modelled     1 /     1 reflection profiles on image 127
+ Modelled     3 /     3 reflection profiles on image 128
+ Modelled     2 /     2 reflection profiles on image 129
+ Modelled     3 /     3 reflection profiles on image 130
+ Modelled     3 /     3 reflection profiles on image 131
+ Modelled     1 /     1 reflection profiles on image 132
+ Modelled     1 /     1 reflection profiles on image 133
+ Modelled     1 /     1 reflection profiles on image 134
+ Modelled     4 /     4 reflection profiles on image 136
+ Modelled     3 /     3 reflection profiles on image 137
+ Modelled     3 /     3 reflection profiles on image 139
+ Modelled     1 /     1 reflection profiles on image 140
+ Beginning modelling job 10
+
+ Frames: 130 -> 156
+
+ Number of reflections
+  Partial:     0
+  Full:        21
+  In ice ring: 0
+  Total:       21
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 134 [1 ]: ****
+ 135 [2 ]: *********
+ 136 [6 ]: ***************************
+ 137 [6 ]: ***************************
+ 138 [7 ]: ********************************
+ 139 [10]: **********************************************
+ 140 [11]: **************************************************
+ 141 [15]: *********************************************************************
+ 142 [13]: ***********************************************************
+ 143 [11]: **************************************************
+ 144 [13]: ***********************************************************
+ 145 [14]: ****************************************************************
+ 146 [14]: ****************************************************************
+ 147 [11]: **************************************************
+ 148 [8 ]: ************************************
+ 149 [5 ]: ***********************
+ 150 [4 ]: ******************
+ 151 [2 ]: *********
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.000828624 GB
+
+ Modelled     2 /     2 reflection profiles on image 140
+ Modelled     4 /     4 reflection profiles on image 141
+ Modelled     1 /     1 reflection profiles on image 143
+ Modelled     3 /     3 reflection profiles on image 145
+ Modelled     3 /     3 reflection profiles on image 146
+ Modelled     3 /     3 reflection profiles on image 147
+ Modelled     1 /     1 reflection profiles on image 148
+ Modelled     2 /     2 reflection profiles on image 149
  Modelled     2 /     2 reflection profiles on image 150
- Modelled     2 /     2 reflection profiles on image 151
+ Beginning modelling job 11
+
+ Frames: 143 -> 161
+
+ Number of reflections
+  Partial:     1
+  Full:        15
+  In ice ring: 0
+  Total:       16
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 146 [2 ]: ***********
+ 147 [2 ]: ***********
+ 148 [5 ]: ****************************
+ 149 [6 ]: **********************************
+ 150 [9 ]: ***************************************************
+ 151 [12]: *********************************************************************
+ 152 [11]: ***************************************************************
+ 153 [11]: ***************************************************************
+ 154 [12]: *********************************************************************
+ 155 [12]: *********************************************************************
+ 156 [11]: ***************************************************************
+ 157 [9 ]: ***************************************************
+ 158 [5 ]: ****************************
+ 159 [5 ]: ****************************
+ 160 [3 ]: *****************
+ 161 [1 ]: *****
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.000712296 GB
+
+ Modelled     1 /     1 reflection profiles on image 150
+ Modelled     1 /     1 reflection profiles on image 151
  Modelled     1 /     1 reflection profiles on image 152
  Modelled     1 /     1 reflection profiles on image 154
  Modelled     3 /     3 reflection profiles on image 155
- Modelled     3 /     3 reflection profiles on image 156
- Modelled     1 /     1 reflection profiles on image 157
+ Modelled     4 /     4 reflection profiles on image 156
  Modelled     2 /     2 reflection profiles on image 158
  Modelled     2 /     2 reflection profiles on image 159
- Modelled     1 /     1 reflection profiles on image 162
- Modelled     1 /     1 reflection profiles on image 163
+ Modelled     0 /     1 reflection profiles on image 160
 
  Summary of profile model
- -----------------------------------------------------------------
- ID | Profile | Created | X (px) | Y (px) | Z (im) | # reflections
- -----------------------------------------------------------------
- 0  | 0       | True    | 86.00  | 86.00  | 6.96   | 49
- 0  | 1       | True    | 258.00 | 86.00  | 6.96   | 49
- 0  | 2       | True    | 430.00 | 86.00  | 6.96   | 43
- 0  | 3       | True    | 86.00  | 258.00 | 6.96   | 49
- 0  | 4       | True    | 258.00 | 258.00 | 6.96   | 49
- 0  | 5       | True    | 430.00 | 258.00 | 6.96   | 43
- 0  | 6       | True    | 86.00  | 430.00 | 6.96   | 45
- 0  | 7       | True    | 258.00 | 430.00 | 6.96   | 45
- 0  | 8       | True    | 430.00 | 430.00 | 6.96   | 40
- 0  | 9       | True    | 86.00  | 86.00  | 20.88  | 71
- 0  | 10      | True    | 258.00 | 86.00  | 20.88  | 71
- 0  | 11      | True    | 430.00 | 86.00  | 20.88  | 63
- 0  | 12      | True    | 86.00  | 258.00 | 20.88  | 71
- 0  | 13      | True    | 258.00 | 258.00 | 20.88  | 71
- 0  | 14      | True    | 430.00 | 258.00 | 20.88  | 63
- 0  | 15      | True    | 86.00  | 430.00 | 20.88  | 64
- 0  | 16      | True    | 258.00 | 430.00 | 20.88  | 64
- 0  | 17      | True    | 430.00 | 430.00 | 20.88  | 57
- 0  | 18      | True    | 86.00  | 86.00  | 34.79  | 85
- 0  | 19      | True    | 258.00 | 86.00  | 34.79  | 85
- 0  | 20      | True    | 430.00 | 86.00  | 34.79  | 77
- 0  | 21      | True    | 86.00  | 258.00 | 34.79  | 85
- 0  | 22      | True    | 258.00 | 258.00 | 34.79  | 85
- 0  | 23      | True    | 430.00 | 258.00 | 34.79  | 77
- 0  | 24      | True    | 86.00  | 430.00 | 34.79  | 72
- 0  | 25      | True    | 258.00 | 430.00 | 34.79  | 72
- 0  | 26      | True    | 430.00 | 430.00 | 34.79  | 65
- 0  | 27      | True    | 86.00  | 86.00  | 48.71  | 82
- 0  | 28      | True    | 258.00 | 86.00  | 48.71  | 82
- 0  | 29      | True    | 430.00 | 86.00  | 48.71  | 76
- 0  | 30      | True    | 86.00  | 258.00 | 48.71  | 82
- 0  | 31      | True    | 258.00 | 258.00 | 48.71  | 82
- 0  | 32      | True    | 430.00 | 258.00 | 48.71  | 76
- 0  | 33      | True    | 86.00  | 430.00 | 48.71  | 67
- 0  | 34      | True    | 258.00 | 430.00 | 48.71  | 67
- 0  | 35      | True    | 430.00 | 430.00 | 48.71  | 61
- 0  | 36      | True    | 86.00  | 86.00  | 62.62  | 92
- 0  | 37      | True    | 258.00 | 86.00  | 62.62  | 92
- 0  | 38      | True    | 430.00 | 86.00  | 62.62  | 82
- 0  | 39      | True    | 86.00  | 258.00 | 62.62  | 92
- 0  | 40      | True    | 258.00 | 258.00 | 62.62  | 92
- 0  | 41      | True    | 430.00 | 258.00 | 62.62  | 82
- 0  | 42      | True    | 86.00  | 430.00 | 62.62  | 75
- 0  | 43      | True    | 258.00 | 430.00 | 62.62  | 75
- 0  | 44      | True    | 430.00 | 430.00 | 62.62  | 66
- 0  | 45      | True    | 86.00  | 86.00  | 76.54  | 99
- 0  | 46      | True    | 258.00 | 86.00  | 76.54  | 99
- 0  | 47      | True    | 430.00 | 86.00  | 76.54  | 86
- 0  | 48      | True    | 86.00  | 258.00 | 76.54  | 99
- 0  | 49      | True    | 258.00 | 258.00 | 76.54  | 99
- 0  | 50      | True    | 430.00 | 258.00 | 76.54  | 86
- 0  | 51      | True    | 86.00  | 430.00 | 76.54  | 80
- 0  | 52      | True    | 258.00 | 430.00 | 76.54  | 80
- 0  | 53      | True    | 430.00 | 430.00 | 76.54  | 69
- 0  | 54      | True    | 86.00  | 86.00  | 90.46  | 103
- 0  | 55      | True    | 258.00 | 86.00  | 90.46  | 103
- 0  | 56      | True    | 430.00 | 86.00  | 90.46  | 92
- 0  | 57      | True    | 86.00  | 258.00 | 90.46  | 103
- 0  | 58      | True    | 258.00 | 258.00 | 90.46  | 103
- 0  | 59      | True    | 430.00 | 258.00 | 90.46  | 92
- 0  | 60      | True    | 86.00  | 430.00 | 90.46  | 77
- 0  | 61      | True    | 258.00 | 430.00 | 90.46  | 77
- 0  | 62      | True    | 430.00 | 430.00 | 90.46  | 68
- 0  | 63      | True    | 86.00  | 86.00  | 104.38 | 88
- 0  | 64      | True    | 258.00 | 86.00  | 104.38 | 88
- 0  | 65      | True    | 430.00 | 86.00  | 104.38 | 82
- 0  | 66      | True    | 86.00  | 258.00 | 104.38 | 88
- 0  | 67      | True    | 258.00 | 258.00 | 104.38 | 88
- 0  | 68      | True    | 430.00 | 258.00 | 104.38 | 82
- 0  | 69      | True    | 86.00  | 430.00 | 104.38 | 64
- 0  | 70      | True    | 258.00 | 430.00 | 104.38 | 64
- 0  | 71      | True    | 430.00 | 430.00 | 104.38 | 59
- 0  | 72      | True    | 86.00  | 86.00  | 118.29 | 80
- 0  | 73      | True    | 258.00 | 86.00  | 118.29 | 80
- 0  | 74      | True    | 430.00 | 86.00  | 118.29 | 76
- 0  | 75      | True    | 86.00  | 258.00 | 118.29 | 80
- 0  | 76      | True    | 258.00 | 258.00 | 118.29 | 80
- 0  | 77      | True    | 430.00 | 258.00 | 118.29 | 76
- 0  | 78      | True    | 86.00  | 430.00 | 118.29 | 59
- 0  | 79      | True    | 258.00 | 430.00 | 118.29 | 59
- 0  | 80      | True    | 430.00 | 430.00 | 118.29 | 56
- 0  | 81      | True    | 86.00  | 86.00  | 132.21 | 64
- 0  | 82      | True    | 258.00 | 86.00  | 132.21 | 64
- 0  | 83      | True    | 430.00 | 86.00  | 132.21 | 56
- 0  | 84      | True    | 86.00  | 258.00 | 132.21 | 64
- 0  | 85      | True    | 258.00 | 258.00 | 132.21 | 64
- 0  | 86      | True    | 430.00 | 258.00 | 132.21 | 56
- 0  | 87      | True    | 86.00  | 430.00 | 132.21 | 54
- 0  | 88      | True    | 258.00 | 430.00 | 132.21 | 54
- 0  | 89      | True    | 430.00 | 430.00 | 132.21 | 47
- 0  | 90      | True    | 86.00  | 86.00  | 146.12 | 56
- 0  | 91      | True    | 258.00 | 86.00  | 146.12 | 56
- 0  | 92      | True    | 430.00 | 86.00  | 146.12 | 48
- 0  | 93      | True    | 86.00  | 258.00 | 146.12 | 56
- 0  | 94      | True    | 258.00 | 258.00 | 146.12 | 56
- 0  | 95      | True    | 430.00 | 258.00 | 146.12 | 48
- 0  | 96      | True    | 86.00  | 430.00 | 146.12 | 49
- 0  | 97      | True    | 258.00 | 430.00 | 146.12 | 49
- 0  | 98      | True    | 430.00 | 430.00 | 146.12 | 42
- 0  | 99      | True    | 86.00  | 86.00  | 160.04 | 31
- 0  | 100     | True    | 258.00 | 86.00  | 160.04 | 31
- 0  | 101     | True    | 430.00 | 86.00  | 160.04 | 26
- 0  | 102     | True    | 86.00  | 258.00 | 160.04 | 31
- 0  | 103     | True    | 258.00 | 258.00 | 160.04 | 31
- 0  | 104     | True    | 430.00 | 258.00 | 160.04 | 26
- 0  | 105     | True    | 86.00  | 430.00 | 160.04 | 29
- 0  | 106     | True    | 258.00 | 430.00 | 160.04 | 29
- 0  | 107     | True    | 430.00 | 430.00 | 160.04 | 24
- -----------------------------------------------------------------
++------+-----------+-----------+----------+----------+----------+-----------------+
+|   ID |   Profile | Created   |   X (px) |   Y (px) |   Z (im) |   # reflections |
+|------+-----------+-----------+----------+----------+----------+-----------------|
+|    0 |         0 | True      |       86 |       86 |     6.71 |              43 |
+|    0 |         1 | True      |      258 |       86 |     6.71 |              43 |
+|    0 |         2 | True      |      430 |       86 |     6.71 |              37 |
+|    0 |         3 | True      |       86 |      258 |     6.71 |              43 |
+|    0 |         4 | True      |      258 |      258 |     6.71 |              43 |
+|    0 |         5 | True      |      430 |      258 |     6.71 |              37 |
+|    0 |         6 | True      |       86 |      430 |     6.71 |              39 |
+|    0 |         7 | True      |      258 |      430 |     6.71 |              39 |
+|    0 |         8 | True      |      430 |      430 |     6.71 |              34 |
+|    0 |         9 | True      |       86 |       86 |    20.12 |              68 |
+|    0 |        10 | True      |      258 |       86 |    20.12 |              68 |
+|    0 |        11 | True      |      430 |       86 |    20.12 |              61 |
+|    0 |        12 | True      |       86 |      258 |    20.12 |              68 |
+|    0 |        13 | True      |      258 |      258 |    20.12 |              68 |
+|    0 |        14 | True      |      430 |      258 |    20.12 |              61 |
+|    0 |        15 | True      |       86 |      430 |    20.12 |              61 |
+|    0 |        16 | True      |      258 |      430 |    20.12 |              61 |
+|    0 |        17 | True      |      430 |      430 |    20.12 |              55 |
+|    0 |        18 | True      |       86 |       86 |    33.54 |              80 |
+|    0 |        19 | True      |      258 |       86 |    33.54 |              80 |
+|    0 |        20 | True      |      430 |       86 |    33.54 |              72 |
+|    0 |        21 | True      |       86 |      258 |    33.54 |              80 |
+|    0 |        22 | True      |      258 |      258 |    33.54 |              80 |
+|    0 |        23 | True      |      430 |      258 |    33.54 |              72 |
+|    0 |        24 | True      |       86 |      430 |    33.54 |              67 |
+|    0 |        25 | True      |      258 |      430 |    33.54 |              67 |
+|    0 |        26 | True      |      430 |      430 |    33.54 |              60 |
+|    0 |        27 | True      |       86 |       86 |    46.96 |              82 |
+|    0 |        28 | True      |      258 |       86 |    46.96 |              82 |
+|    0 |        29 | True      |      430 |       86 |    46.96 |              75 |
+|    0 |        30 | True      |       86 |      258 |    46.96 |              82 |
+|    0 |        31 | True      |      258 |      258 |    46.96 |              82 |
+|    0 |        32 | True      |      430 |      258 |    46.96 |              75 |
+|    0 |        33 | True      |       86 |      430 |    46.96 |              68 |
+|    0 |        34 | True      |      258 |      430 |    46.96 |              68 |
+|    0 |        35 | True      |      430 |      430 |    46.96 |              61 |
+|    0 |        36 | True      |       86 |       86 |    60.38 |              92 |
+|    0 |        37 | True      |      258 |       86 |    60.38 |              92 |
+|    0 |        38 | True      |      430 |       86 |    60.38 |              81 |
+|    0 |        39 | True      |       86 |      258 |    60.38 |              92 |
+|    0 |        40 | True      |      258 |      258 |    60.38 |              92 |
+|    0 |        41 | True      |      430 |      258 |    60.38 |              81 |
+|    0 |        42 | True      |       86 |      430 |    60.38 |              77 |
+|    0 |        43 | True      |      258 |      430 |    60.38 |              77 |
+|    0 |        44 | True      |      430 |      430 |    60.38 |              66 |
+|    0 |        45 | True      |       86 |       86 |    73.79 |              94 |
+|    0 |        46 | True      |      258 |       86 |    73.79 |              94 |
+|    0 |        47 | True      |      430 |       86 |    73.79 |              82 |
+|    0 |        48 | True      |       86 |      258 |    73.79 |              94 |
+|    0 |        49 | True      |      258 |      258 |    73.79 |              94 |
+|    0 |        50 | True      |      430 |      258 |    73.79 |              82 |
+|    0 |        51 | True      |       86 |      430 |    73.79 |              76 |
+|    0 |        52 | True      |      258 |      430 |    73.79 |              76 |
+|    0 |        53 | True      |      430 |      430 |    73.79 |              66 |
+|    0 |        54 | True      |       86 |       86 |    87.21 |              87 |
+|    0 |        55 | True      |      258 |       86 |    87.21 |              87 |
+|    0 |        56 | True      |      430 |       86 |    87.21 |              76 |
+|    0 |        57 | True      |       86 |      258 |    87.21 |              87 |
+|    0 |        58 | True      |      258 |      258 |    87.21 |              87 |
+|    0 |        59 | True      |      430 |      258 |    87.21 |              76 |
+|    0 |        60 | True      |       86 |      430 |    87.21 |              68 |
+|    0 |        61 | True      |      258 |      430 |    87.21 |              68 |
+|    0 |        62 | True      |      430 |      430 |    87.21 |              59 |
+|    0 |        63 | True      |       86 |       86 |   100.62 |              86 |
+|    0 |        64 | True      |      258 |       86 |   100.62 |              86 |
+|    0 |        65 | True      |      430 |       86 |   100.62 |              79 |
+|    0 |        66 | True      |       86 |      258 |   100.62 |              86 |
+|    0 |        67 | True      |      258 |      258 |   100.62 |              86 |
+|    0 |        68 | True      |      430 |      258 |   100.62 |              79 |
+|    0 |        69 | True      |       86 |      430 |   100.62 |              63 |
+|    0 |        70 | True      |      258 |      430 |   100.62 |              63 |
+|    0 |        71 | True      |      430 |      430 |   100.62 |              58 |
+|    0 |        72 | True      |       86 |       86 |   114.04 |              77 |
+|    0 |        73 | True      |      258 |       86 |   114.04 |              77 |
+|    0 |        74 | True      |      430 |       86 |   114.04 |              73 |
+|    0 |        75 | True      |       86 |      258 |   114.04 |              77 |
+|    0 |        76 | True      |      258 |      258 |   114.04 |              77 |
+|    0 |        77 | True      |      430 |      258 |   114.04 |              73 |
+|    0 |        78 | True      |       86 |      430 |   114.04 |              57 |
+|    0 |        79 | True      |      258 |      430 |   114.04 |              57 |
+|    0 |        80 | True      |      430 |      430 |   114.04 |              53 |
+|    0 |        81 | True      |       86 |       86 |   127.46 |              75 |
+|    0 |        82 | True      |      258 |       86 |   127.46 |              75 |
+|    0 |        83 | True      |      430 |       86 |   127.46 |              69 |
+|    0 |        84 | True      |       86 |      258 |   127.46 |              75 |
+|    0 |        85 | True      |      258 |      258 |   127.46 |              75 |
+|    0 |        86 | True      |      430 |      258 |   127.46 |              69 |
+|    0 |        87 | True      |       86 |      430 |   127.46 |              58 |
+|    0 |        88 | True      |      258 |      430 |   127.46 |              58 |
+|    0 |        89 | True      |      430 |      430 |   127.46 |              53 |
+|    0 |        90 | True      |       86 |       86 |   140.88 |              56 |
+|    0 |        91 | True      |      258 |       86 |   140.88 |              56 |
+|    0 |        92 | True      |      430 |       86 |   140.88 |              49 |
+|    0 |        93 | True      |       86 |      258 |   140.88 |              56 |
+|    0 |        94 | True      |      258 |      258 |   140.88 |              56 |
+|    0 |        95 | True      |      430 |      258 |   140.88 |              49 |
+|    0 |        96 | True      |       86 |      430 |   140.88 |              46 |
+|    0 |        97 | True      |      258 |      430 |   140.88 |              46 |
+|    0 |        98 | True      |      430 |      430 |   140.88 |              40 |
+|    0 |        99 | True      |       86 |       86 |   154.29 |              38 |
+|    0 |       100 | True      |      258 |       86 |   154.29 |              38 |
+|    0 |       101 | True      |      430 |       86 |   154.29 |              32 |
+|    0 |       102 | True      |       86 |      258 |   154.29 |              38 |
+|    0 |       103 | True      |      258 |      258 |   154.29 |              38 |
+|    0 |       104 | True      |      430 |      258 |   154.29 |              32 |
+|    0 |       105 | True      |       86 |      430 |   154.29 |              34 |
+|    0 |       106 | True      |      258 |      430 |   154.29 |              34 |
+|    0 |       107 | True      |      430 |      430 |   154.29 |              29 |
++------+-----------+-----------+----------+----------+----------+-----------------+
 
 
 Timing information for reference profile formation
- --------------------------------
-         Read time | 2.24 seconds
-  Pre-process time | 0.00 seconds
-      Process time | 0.70 seconds
- Post-process time | 0.00 seconds
-        Total time | 3.14 seconds
- --------------------------------
++-------------------+--------------+
+| Read time         | 1.96 seconds |
+| Extract time      | 0.02 seconds |
+| Pre-process time  | 0.00 seconds |
+| Process time      | 0.81 seconds |
+| Post-process time | 0.00 seconds |
+| Total time        | 2.90 seconds |
++-------------------+--------------+
 
 ================================================================================
 
 Integrating reflections
 
- Split 3770 reflections overlapping job boundaries
+ Split 3484 reflections overlapping job boundaries
 
 Processing reflections in the following blocks of images:
 
- block_size: 40 frames
+ block_size: 38 frames
 
- ---------------------------------------------------------------------------------------------
- # | Group | Frame From | Frame To |          Angle From |            Angle To | # Reflections
- ---------------------------------------------------------------------------------------------
- 0 |     0 |          0 |       38 |               -33.9 | -20.554399999999998 |         12685
- 1 |     0 |         19 |       57 | -27.227199999999996 | -13.881599999999995 |          7991
- 2 |     0 |         38 |       76 | -20.554399999999998 |  -7.208799999999997 |          7992
- 3 |     0 |         57 |       95 | -13.881599999999995 | -0.5359999999999959 |          8008
- 4 |     0 |         76 |      114 |  -7.208799999999997 |   6.136800000000005 |          7987
- 5 |     0 |         95 |      133 | -0.5359999999999959 |  12.809600000000007 |          8054
- 6 |     0 |        114 |      152 |   6.136800000000005 |  19.482400000000002 |          7239
- 7 |     0 |        133 |      167 |  12.809600000000007 |   24.75040000000001 |         11531
- ---------------------------------------------------------------------------------------------
++-----+---------+--------------+------------+--------------+------------+-----------------+
+|   # |   Group |   Frame From |   Frame To |   Angle From |   Angle To |   # Reflections |
+|-----+---------+--------------+------------+--------------+------------+-----------------|
+|   0 |       0 |            0 |         36 |     -33.9    |   -21.2568 |           12046 |
+|   1 |       0 |           18 |         54 |     -27.5784 |   -14.9352 |            7547 |
+|   2 |       0 |           36 |         72 |     -21.2568 |    -8.6136 |            7578 |
+|   3 |       0 |           54 |         90 |     -14.9352 |    -2.292  |            7578 |
+|   4 |       0 |           72 |        108 |      -8.6136 |     4.0296 |            7553 |
+|   5 |       0 |           90 |        126 |      -2.292  |    10.3512 |            7667 |
+|   6 |       0 |          108 |        144 |       4.0296 |    16.6728 |            7012 |
+|   7 |       0 |          126 |        161 |      10.3512 |    22.6432 |           11891 |
++-----+---------+--------------+------------+--------------+------------+-----------------+
 
  Using multiprocessing with 8 parallel job(s)
 
  Beginning integration job 0
 
- Frames: 0 -> 38
+ Frames: 0 -> 36
 
  Number of reflections
-  Partial:     2998
-  Full:        9687
+  Partial:     2868
+  Full:        9178
   In ice ring: 0
-  Integrate:   12685
-  Total:       12685
+  Integrate:   12046
+  Total:       12046
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 0  [3270]: ***********************************************************
- 1  [3382]: *************************************************************
- 2  [3471]: ***************************************************************
- 3  [3552]: ****************************************************************
- 4  [3566]: ****************************************************************
- 5  [3584]: *****************************************************************
- 6  [3606]: *****************************************************************
- 7  [3634]: ******************************************************************
- 8  [3649]: ******************************************************************
- 9  [3661]: ******************************************************************
- 10 [3682]: ******************************************************************
- 11 [3686]: *******************************************************************
- 12 [3706]: *******************************************************************
- 13 [3705]: *******************************************************************
- 14 [3713]: *******************************************************************
- 15 [3718]: *******************************************************************
- 16 [3722]: *******************************************************************
- 17 [3738]: *******************************************************************
- 18 [3741]: ********************************************************************
- 19 [3740]: *******************************************************************
- 20 [3694]: *******************************************************************
- 21 [3673]: ******************************************************************
- 22 [3639]: ******************************************************************
- 23 [3583]: *****************************************************************
- 24 [3504]: ***************************************************************
- 25 [3333]: ************************************************************
- 26 [2936]: *****************************************************
- 27 [2555]: **********************************************
- 28 [2152]: ***************************************
- 29 [1760]: *******************************
- 30 [1369]: ************************
- 31 [959 ]: *****************
- 32 [607 ]: ***********
- 33 [507 ]: *********
- 34 [435 ]: *******
- 35 [377 ]: ******
- 36 [344 ]: ******
- 37 [313 ]: *****
+ 1  [3166]: ************************************************************
+ 2  [3232]: **************************************************************
+ 3  [3321]: ***************************************************************
+ 4  [3368]: ****************************************************************
+ 5  [3396]: *****************************************************************
+ 6  [3409]: *****************************************************************
+ 7  [3437]: ******************************************************************
+ 8  [3443]: ******************************************************************
+ 9  [3463]: ******************************************************************
+ 10 [3482]: ******************************************************************
+ 11 [3486]: *******************************************************************
+ 12 [3503]: *******************************************************************
+ 13 [3505]: *******************************************************************
+ 14 [3512]: *******************************************************************
+ 15 [3519]: *******************************************************************
+ 16 [3517]: *******************************************************************
+ 17 [3537]: ********************************************************************
+ 18 [3524]: *******************************************************************
+ 19 [3522]: *******************************************************************
+ 20 [3487]: *******************************************************************
+ 21 [3459]: ******************************************************************
+ 22 [3412]: *****************************************************************
+ 23 [3358]: ****************************************************************
+ 24 [3277]: ***************************************************************
+ 25 [2993]: *********************************************************
+ 26 [2606]: **************************************************
+ 27 [2214]: ******************************************
+ 28 [1817]: **********************************
+ 29 [1423]: ***************************
+ 30 [1023]: *******************
+ 31 [626 ]: ************
+ 32 [484 ]: *********
+ 33 [409 ]: *******
+ 34 [357 ]: ******
+ 35 [318 ]: ******
+ 36 [284 ]: *****
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.383566 GB
+  Required shoebox memory: 0.337123 GB
 
- Integrated   260 (sum) +     0 (prf) /  272 reflections on image 0
- Integrated   299 (sum) +     0 (prf) /  316 reflections on image 1
- Integrated   299 (sum) +    14 (prf) /  314 reflections on image 2
- Integrated   354 (sum) +   219 (prf) /  378 reflections on image 3
- Integrated   346 (sum) +   268 (prf) /  373 reflections on image 4
- Integrated   358 (sum) +   297 (prf) /  374 reflections on image 5
- Integrated   347 (sum) +   289 (prf) /  359 reflections on image 6
- Integrated   361 (sum) +   311 (prf) /  375 reflections on image 7
- Integrated   357 (sum) +   316 (prf) /  381 reflections on image 8
- Integrated   362 (sum) +   329 (prf) /  378 reflections on image 9
- Integrated   363 (sum) +   329 (prf) /  386 reflections on image 10
- Integrated   359 (sum) +   328 (prf) /  387 reflections on image 11
- Integrated   355 (sum) +   322 (prf) /  379 reflections on image 12
- Integrated   376 (sum) +   333 (prf) /  396 reflections on image 13
- Integrated   372 (sum) +   340 (prf) /  386 reflections on image 14
- Integrated   360 (sum) +   335 (prf) /  390 reflections on image 15
- Integrated   370 (sum) +   338 (prf) /  386 reflections on image 16
- Integrated   371 (sum) +   336 (prf) /  387 reflections on image 17
- Integrated   363 (sum) +   332 (prf) /  383 reflections on image 18
- Integrated   379 (sum) +   350 (prf) /  405 reflections on image 19
- Integrated   370 (sum) +   328 (prf) /  392 reflections on image 20
- Integrated   365 (sum) +   333 (prf) /  390 reflections on image 21
- Integrated   374 (sum) +   346 (prf) /  394 reflections on image 22
- Integrated   370 (sum) +   337 (prf) /  387 reflections on image 23
- Integrated   371 (sum) +   340 (prf) /  384 reflections on image 24
- Integrated   381 (sum) +   341 (prf) /  397 reflections on image 25
- Integrated   363 (sum) +   334 (prf) /  381 reflections on image 26
- Integrated   372 (sum) +   341 (prf) /  403 reflections on image 27
- Integrated   366 (sum) +   333 (prf) /  392 reflections on image 28
- Integrated   363 (sum) +   337 (prf) /  391 reflections on image 29
- Integrated   389 (sum) +   353 (prf) /  410 reflections on image 30
- Integrated   336 (sum) +   303 (prf) /  352 reflections on image 31
- Integrated    97 (sum) +    96 (prf) /  100 reflections on image 32
- Integrated    66 (sum) +    60 (prf) /   72 reflections on image 33
- Integrated    52 (sum) +    47 (prf) /   58 reflections on image 34
- Integrated    30 (sum) +    30 (prf) /   33 reflections on image 35
- Integrated    30 (sum) +    27 (prf) /   31 reflections on image 36
- Integrated   295 (sum) +   259 (prf) /  313 reflections on image 37
+ Integrated   318 (sum) +     0 (prf) /  334 reflections on image 0
+ Integrated   293 (sum) +     0 (prf) /  307 reflections on image 1
+ Integrated   317 (sum) +    37 (prf) /  337 reflections on image 2
+ Integrated   351 (sum) +   239 (prf) /  374 reflections on image 3
+ Integrated   354 (sum) +   283 (prf) /  377 reflections on image 4
+ Integrated   346 (sum) +   286 (prf) /  363 reflections on image 5
+ Integrated   361 (sum) +   307 (prf) /  376 reflections on image 6
+ Integrated   371 (sum) +   319 (prf) /  382 reflections on image 7
+ Integrated   345 (sum) +   314 (prf) /  370 reflections on image 8
+ Integrated   371 (sum) +   333 (prf) /  388 reflections on image 9
+ Integrated   360 (sum) +   329 (prf) /  384 reflections on image 10
+ Integrated   357 (sum) +   329 (prf) /  386 reflections on image 11
+ Integrated   371 (sum) +   332 (prf) /  389 reflections on image 12
+ Integrated   373 (sum) +   330 (prf) /  393 reflections on image 13
+ Integrated   369 (sum) +   343 (prf) /  391 reflections on image 14
+ Integrated   357 (sum) +   332 (prf) /  381 reflections on image 15
+ Integrated   372 (sum) +   338 (prf) /  389 reflections on image 16
+ Integrated   372 (sum) +   342 (prf) /  388 reflections on image 17
+ Integrated   370 (sum) +   336 (prf) /  393 reflections on image 18
+ Integrated   379 (sum) +   345 (prf) /  402 reflections on image 19
+ Integrated   372 (sum) +   337 (prf) /  391 reflections on image 20
+ Integrated   369 (sum) +   339 (prf) /  393 reflections on image 21
+ Integrated   358 (sum) +   329 (prf) /  378 reflections on image 22
+ Integrated   371 (sum) +   343 (prf) /  387 reflections on image 23
+ Integrated   373 (sum) +   334 (prf) /  387 reflections on image 24
+ Integrated   377 (sum) +   343 (prf) /  392 reflections on image 25
+ Integrated   378 (sum) +   348 (prf) /  397 reflections on image 26
+ Integrated   364 (sum) +   331 (prf) /  394 reflections on image 27
+ Integrated   375 (sum) +   345 (prf) /  400 reflections on image 28
+ Integrated   367 (sum) +   332 (prf) /  397 reflections on image 29
+ Integrated   137 (sum) +   125 (prf) /  142 reflections on image 30
+ Integrated    72 (sum) +    65 (prf) /   75 reflections on image 31
+ Integrated    48 (sum) +    43 (prf) /   52 reflections on image 32
+ Integrated    36 (sum) +    35 (prf) /   39 reflections on image 33
+ Integrated    31 (sum) +    30 (prf) /   34 reflections on image 34
+ Integrated   269 (sum) +   235 (prf) /  284 reflections on image 35
  Beginning integration job 1
 
- Frames: 19 -> 57
+ Frames: 18 -> 54
+
+ Number of reflections
+  Partial:     634
+  Full:        6913
+  In ice ring: 0
+  Integrate:   7547
+  Total:       7547
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 19 [22  ]: 
+ 20 [50  ]: 
+ 21 [79  ]: *
+ 22 [131 ]: **
+ 23 [191 ]: ***
+ 24 [291 ]: *****
+ 25 [580 ]: ***********
+ 26 [968 ]: ******************
+ 27 [1360]: *************************
+ 28 [1752]: *********************************
+ 29 [2147]: *****************************************
+ 30 [2535]: ************************************************
+ 31 [2943]: ********************************************************
+ 32 [3072]: **********************************************************
+ 33 [3156]: ************************************************************
+ 34 [3219]: *************************************************************
+ 35 [3265]: **************************************************************
+ 36 [3280]: **************************************************************
+ 37 [3558]: ********************************************************************
+ 38 [3535]: *******************************************************************
+ 39 [3515]: *******************************************************************
+ 40 [3445]: *****************************************************************
+ 41 [3395]: ****************************************************************
+ 42 [3299]: ***************************************************************
+ 43 [2994]: *********************************************************
+ 44 [2615]: *************************************************
+ 45 [2206]: ******************************************
+ 46 [1822]: **********************************
+ 47 [1438]: ***************************
+ 48 [1033]: *******************
+ 49 [632 ]: ************
+ 50 [487 ]: *********
+ 51 [431 ]: ********
+ 52 [377 ]: *******
+ 53 [329 ]: ******
+ 54 [303 ]: *****
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.288224 GB
+
+ Integrated   247 (sum) +   223 (prf) /  261 reflections on image 30
+ Integrated   294 (sum) +   277 (prf) /  308 reflections on image 31
+ Integrated   326 (sum) +   292 (prf) /  342 reflections on image 32
+ Integrated   328 (sum) +   306 (prf) /  344 reflections on image 33
+ Integrated   353 (sum) +   318 (prf) /  375 reflections on image 34
+ Integrated   514 (sum) +   386 (prf) /  553 reflections on image 35
+ Integrated   372 (sum) +   333 (prf) /  388 reflections on image 36
+ Integrated   377 (sum) +   333 (prf) /  397 reflections on image 37
+ Integrated   382 (sum) +   336 (prf) /  408 reflections on image 38
+ Integrated   364 (sum) +   318 (prf) /  386 reflections on image 39
+ Integrated   377 (sum) +   347 (prf) /  390 reflections on image 40
+ Integrated   380 (sum) +   341 (prf) /  401 reflections on image 41
+ Integrated   358 (sum) +   321 (prf) /  379 reflections on image 42
+ Integrated   381 (sum) +   350 (prf) /  409 reflections on image 43
+ Integrated   366 (sum) +   331 (prf) /  384 reflections on image 44
+ Integrated   365 (sum) +   330 (prf) /  384 reflections on image 45
+ Integrated   381 (sum) +   349 (prf) /  405 reflections on image 46
+ Integrated   382 (sum) +   348 (prf) /  401 reflections on image 47
+ Integrated   139 (sum) +   131 (prf) /  145 reflections on image 48
+ Integrated    55 (sum) +    50 (prf) /   56 reflections on image 49
+ Integrated    50 (sum) +    41 (prf) /   54 reflections on image 50
+ Integrated    46 (sum) +    42 (prf) /   48 reflections on image 51
+ Integrated    25 (sum) +    23 (prf) /   26 reflections on image 52
+ Integrated   283 (sum) +   228 (prf) /  303 reflections on image 53
+ Beginning integration job 2
+
+ Frames: 36 -> 72
+
+ Number of reflections
+  Partial:     638
+  Full:        6940
+  In ice ring: 0
+  Integrate:   7578
+  Total:       7578
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 37 [15  ]: 
+ 38 [48  ]: 
+ 39 [76  ]: *
+ 40 [114 ]: **
+ 41 [183 ]: ***
+ 42 [292 ]: *****
+ 43 [585 ]: ***********
+ 44 [986 ]: ******************
+ 45 [1366]: **************************
+ 46 [1766]: *********************************
+ 47 [2163]: *****************************************
+ 48 [2569]: ************************************************
+ 49 [2943]: ********************************************************
+ 50 [3081]: **********************************************************
+ 51 [3154]: ************************************************************
+ 52 [3208]: *************************************************************
+ 53 [3245]: *************************************************************
+ 54 [3289]: **************************************************************
+ 55 [3571]: ********************************************************************
+ 56 [3551]: *******************************************************************
+ 57 [3509]: ******************************************************************
+ 58 [3453]: *****************************************************************
+ 59 [3399]: ****************************************************************
+ 60 [3304]: **************************************************************
+ 61 [3019]: *********************************************************
+ 62 [2629]: **************************************************
+ 63 [2228]: ******************************************
+ 64 [1832]: **********************************
+ 65 [1431]: ***************************
+ 66 [1037]: *******************
+ 67 [648 ]: ************
+ 68 [511 ]: *********
+ 69 [424 ]: ********
+ 70 [372 ]: *******
+ 71 [329 ]: ******
+ 72 [303 ]: *****
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.289477 GB
+
+ Integrated   253 (sum) +   231 (prf) /  266 reflections on image 48
+ Integrated   296 (sum) +   270 (prf) /  314 reflections on image 49
+ Integrated   325 (sum) +   299 (prf) /  347 reflections on image 50
+ Integrated   340 (sum) +   310 (prf) /  356 reflections on image 51
+ Integrated   336 (sum) +   301 (prf) /  356 reflections on image 52
+ Integrated   527 (sum) +   408 (prf) /  554 reflections on image 53
+ Integrated   363 (sum) +   313 (prf) /  386 reflections on image 54
+ Integrated   386 (sum) +   338 (prf) /  405 reflections on image 55
+ Integrated   363 (sum) +   320 (prf) /  391 reflections on image 56
+ Integrated   388 (sum) +   342 (prf) /  405 reflections on image 57
+ Integrated   363 (sum) +   320 (prf) /  388 reflections on image 58
+ Integrated   371 (sum) +   332 (prf) /  391 reflections on image 59
+ Integrated   372 (sum) +   342 (prf) /  390 reflections on image 60
+ Integrated   385 (sum) +   346 (prf) /  401 reflections on image 61
+ Integrated   372 (sum) +   345 (prf) /  396 reflections on image 62
+ Integrated   379 (sum) +   345 (prf) /  401 reflections on image 63
+ Integrated   369 (sum) +   336 (prf) /  394 reflections on image 64
+ Integrated   367 (sum) +   336 (prf) /  389 reflections on image 65
+ Integrated   134 (sum) +   123 (prf) /  137 reflections on image 66
+ Integrated    82 (sum) +    73 (prf) /   87 reflections on image 67
+ Integrated    51 (sum) +    48 (prf) /   52 reflections on image 68
+ Integrated    38 (sum) +    33 (prf) /   43 reflections on image 69
+ Integrated    24 (sum) +    24 (prf) /   26 reflections on image 70
+ Integrated   285 (sum) +   239 (prf) /  303 reflections on image 71
+ Beginning integration job 3
+
+ Frames: 54 -> 90
+
+ Number of reflections
+  Partial:     659
+  Full:        6919
+  In ice ring: 0
+  Integrate:   7578
+  Total:       7578
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 55 [18  ]: 
+ 56 [37  ]: 
+ 57 [76  ]: *
+ 58 [123 ]: **
+ 59 [192 ]: ***
+ 60 [265 ]: *****
+ 61 [560 ]: **********
+ 62 [963 ]: ******************
+ 63 [1371]: **************************
+ 64 [1763]: *********************************
+ 65 [2148]: ****************************************
+ 66 [2546]: ************************************************
+ 67 [2941]: ********************************************************
+ 68 [3110]: ***********************************************************
+ 69 [3154]: ************************************************************
+ 70 [3221]: *************************************************************
+ 71 [3266]: **************************************************************
+ 72 [3293]: **************************************************************
+ 73 [3567]: ********************************************************************
+ 74 [3544]: *******************************************************************
+ 75 [3504]: ******************************************************************
+ 76 [3473]: ******************************************************************
+ 77 [3406]: ****************************************************************
+ 78 [3286]: **************************************************************
+ 79 [3020]: *********************************************************
+ 80 [2623]: **************************************************
+ 81 [2225]: ******************************************
+ 82 [1837]: ***********************************
+ 83 [1439]: ***************************
+ 84 [1021]: *******************
+ 85 [639 ]: ************
+ 86 [504 ]: *********
+ 87 [426 ]: ********
+ 88 [374 ]: *******
+ 89 [334 ]: ******
+ 90 [304 ]: *****
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.288138 GB
+
+ Integrated   239 (sum) +   217 (prf) /  249 reflections on image 66
+ Integrated   303 (sum) +   280 (prf) /  322 reflections on image 67
+ Integrated   321 (sum) +   294 (prf) /  336 reflections on image 68
+ Integrated   331 (sum) +   301 (prf) /  350 reflections on image 69
+ Integrated   349 (sum) +   322 (prf) /  371 reflections on image 70
+ Integrated   532 (sum) +   401 (prf) /  561 reflections on image 71
+ Integrated   375 (sum) +   328 (prf) /  391 reflections on image 72
+ Integrated   375 (sum) +   332 (prf) /  404 reflections on image 73
+ Integrated   371 (sum) +   322 (prf) /  388 reflections on image 74
+ Integrated   374 (sum) +   339 (prf) /  400 reflections on image 75
+ Integrated   390 (sum) +   346 (prf) /  408 reflections on image 76
+ Integrated   358 (sum) +   319 (prf) /  378 reflections on image 77
+ Integrated   376 (sum) +   344 (prf) /  397 reflections on image 78
+ Integrated   378 (sum) +   342 (prf) /  398 reflections on image 79
+ Integrated   371 (sum) +   337 (prf) /  388 reflections on image 80
+ Integrated   376 (sum) +   349 (prf) /  398 reflections on image 81
+ Integrated   398 (sum) +   364 (prf) /  418 reflections on image 82
+ Integrated   360 (sum) +   329 (prf) /  382 reflections on image 83
+ Integrated   127 (sum) +   116 (prf) /  135 reflections on image 84
+ Integrated    77 (sum) +    69 (prf) /   78 reflections on image 85
+ Integrated    47 (sum) +    43 (prf) /   52 reflections on image 86
+ Integrated    38 (sum) +    35 (prf) /   40 reflections on image 87
+ Integrated    28 (sum) +    24 (prf) /   30 reflections on image 88
+ Integrated   285 (sum) +   241 (prf) /  304 reflections on image 89
+ Beginning integration job 4
+
+ Frames: 72 -> 108
+
+ Number of reflections
+  Partial:     664
+  Full:        6889
+  In ice ring: 0
+  Integrate:   7553
+  Total:       7553
+
+ The following histogram shows the number of reflections predicted
+ to have all or part of their intensity on each frame.
+
+ 73  [6   ]: 
+ 74  [55  ]: *
+ 75  [80  ]: *
+ 76  [128 ]: **
+ 77  [179 ]: ***
+ 78  [279 ]: *****
+ 79  [570 ]: **********
+ 80  [956 ]: *****************
+ 81  [1355]: *************************
+ 82  [1755]: *********************************
+ 83  [2154]: ****************************************
+ 84  [2527]: ***********************************************
+ 85  [2941]: *******************************************************
+ 86  [3067]: *********************************************************
+ 87  [3162]: ***********************************************************
+ 88  [3221]: ************************************************************
+ 89  [3249]: *************************************************************
+ 90  [3276]: *************************************************************
+ 91  [3563]: *******************************************************************
+ 92  [3534]: ******************************************************************
+ 93  [3493]: *****************************************************************
+ 94  [3459]: *****************************************************************
+ 95  [3381]: ***************************************************************
+ 96  [3273]: *************************************************************
+ 97  [2989]: ********************************************************
+ 98  [2608]: *************************************************
+ 99  [2203]: *****************************************
+ 100 [1819]: **********************************
+ 101 [1427]: **************************
+ 102 [1037]: *******************
+ 103 [623 ]: ***********
+ 104 [496 ]: *********
+ 105 [432 ]: ********
+ 106 [381 ]: *******
+ 107 [355 ]: ******
+ 108 [336 ]: ******
+
+ Memory usage:
+  Total system memory: 17.0968 GB
+  Limit shoebox memory: 1.60283 GB
+  Required shoebox memory: 0.288203 GB
+
+ Integrated   240 (sum) +   218 (prf) /  252 reflections on image 84
+ Integrated   289 (sum) +   264 (prf) /  307 reflections on image 85
+ Integrated   323 (sum) +   293 (prf) /  337 reflections on image 86
+ Integrated   350 (sum) +   322 (prf) /  369 reflections on image 87
+ Integrated   347 (sum) +   315 (prf) /  362 reflections on image 88
+ Integrated   530 (sum) +   417 (prf) /  562 reflections on image 89
+ Integrated   366 (sum) +   318 (prf) /  392 reflections on image 90
+ Integrated   385 (sum) +   331 (prf) /  405 reflections on image 91
+ Integrated   365 (sum) +   319 (prf) /  386 reflections on image 92
+ Integrated   379 (sum) +   336 (prf) /  401 reflections on image 93
+ Integrated   373 (sum) +   332 (prf) /  394 reflections on image 94
+ Integrated   374 (sum) +   337 (prf) /  397 reflections on image 95
+ Integrated   362 (sum) +   335 (prf) /  381 reflections on image 96
+ Integrated   383 (sum) +   351 (prf) /  405 reflections on image 97
+ Integrated   369 (sum) +   337 (prf) /  384 reflections on image 98
+ Integrated   371 (sum) +   336 (prf) /  392 reflections on image 99
+ Integrated   375 (sum) +   340 (prf) /  390 reflections on image 100
+ Integrated   386 (sum) +   355 (prf) /  414 reflections on image 101
+ Integrated   115 (sum) +   106 (prf) /  127 reflections on image 102
+ Integrated    62 (sum) +    58 (prf) /   64 reflections on image 103
+ Integrated    49 (sum) +    47 (prf) /   51 reflections on image 104
+ Integrated    25 (sum) +    24 (prf) /   26 reflections on image 105
+ Integrated    18 (sum) +    18 (prf) /   19 reflections on image 106
+ Integrated   319 (sum) +   269 (prf) /  336 reflections on image 107
+ Beginning integration job 5
+
+ Frames: 90 -> 126
 
  Number of reflections
   Partial:     691
-  Full:        7300
+  Full:        6976
   In ice ring: 0
-  Integrate:   7991
-  Total:       7991
+  Integrate:   7667
+  Total:       7667
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 19 [14  ]: 
- 20 [45  ]: 
- 21 [77  ]: *
- 22 [115 ]: **
- 23 [171 ]: ***
- 24 [262 ]: ****
- 25 [429 ]: *******
- 26 [823 ]: **************
- 27 [1221]: **********************
- 28 [1615]: *****************************
- 29 [2017]: ************************************
- 30 [2409]: *******************************************
- 31 [2805]: **************************************************
- 32 [3169]: *********************************************************
- 33 [3274]: ***********************************************************
- 34 [3342]: ************************************************************
- 35 [3375]: ************************************************************
- 36 [3433]: **************************************************************
- 37 [3473]: **************************************************************
- 38 [3765]: ********************************************************************
- 39 [3734]: *******************************************************************
- 40 [3709]: ******************************************************************
- 41 [3658]: ******************************************************************
- 42 [3605]: *****************************************************************
- 43 [3518]: ***************************************************************
- 44 [3342]: ************************************************************
- 45 [2952]: *****************************************************
- 46 [2570]: **********************************************
- 47 [2183]: ***************************************
- 48 [1765]: *******************************
- 49 [1369]: ************************
- 50 [976 ]: *****************
- 51 [635 ]: ***********
- 52 [509 ]: *********
- 53 [442 ]: *******
- 54 [396 ]: *******
- 55 [356 ]: ******
- 56 [325 ]: *****
+ 91  [10  ]: 
+ 92  [44  ]: 
+ 93  [74  ]: *
+ 94  [120 ]: **
+ 95  [191 ]: ***
+ 96  [286 ]: *****
+ 97  [580 ]: **********
+ 98  [994 ]: ******************
+ 99  [1354]: *************************
+ 100 [1734]: ********************************
+ 101 [2141]: ****************************************
+ 102 [2575]: ************************************************
+ 103 [2962]: *******************************************************
+ 104 [3003]: ********************************************************
+ 105 [3104]: **********************************************************
+ 106 [3203]: ************************************************************
+ 107 [3191]: ***********************************************************
+ 108 [3165]: ***********************************************************
+ 109 [3537]: ******************************************************************
+ 110 [3544]: ******************************************************************
+ 111 [3568]: *******************************************************************
+ 112 [3482]: *****************************************************************
+ 113 [3388]: ***************************************************************
+ 114 [3311]: **************************************************************
+ 115 [2943]: *******************************************************
+ 116 [2470]: **********************************************
+ 117 [2091]: ***************************************
+ 118 [1723]: ********************************
+ 119 [1435]: **************************
+ 120 [1154]: *********************
+ 121 [615 ]: ***********
+ 122 [450 ]: ********
+ 123 [379 ]: *******
+ 124 [319 ]: *****
+ 125 [281 ]: *****
+ 126 [259 ]: ****
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.325803 GB
+  Required shoebox memory: 0.276661 GB
 
- Integrated    37 (sum) +    36 (prf) /   39 reflections on image 31
- Integrated   281 (sum) +   244 (prf) /  291 reflections on image 32
- Integrated   300 (sum) +   279 (prf) /  316 reflections on image 33
- Integrated   336 (sum) +   306 (prf) /  359 reflections on image 34
- Integrated   317 (sum) +   294 (prf) /  341 reflections on image 35
- Integrated   343 (sum) +   311 (prf) /  358 reflections on image 36
- Integrated   532 (sum) +   401 (prf) /  568 reflections on image 37
- Integrated   376 (sum) +   328 (prf) /  398 reflections on image 38
- Integrated   372 (sum) +   324 (prf) /  395 reflections on image 39
- Integrated   382 (sum) +   334 (prf) /  398 reflections on image 40
- Integrated   371 (sum) +   329 (prf) /  390 reflections on image 41
- Integrated   378 (sum) +   333 (prf) /  398 reflections on image 42
- Integrated   371 (sum) +   343 (prf) /  398 reflections on image 43
- Integrated   371 (sum) +   332 (prf) /  390 reflections on image 44
- Integrated   361 (sum) +   321 (prf) /  382 reflections on image 45
- Integrated   369 (sum) +   341 (prf) /  387 reflections on image 46
- Integrated   394 (sum) +   360 (prf) /  418 reflections on image 47
- Integrated   375 (sum) +   342 (prf) /  396 reflections on image 48
- Integrated   374 (sum) +   341 (prf) /  393 reflections on image 49
- Integrated   321 (sum) +   292 (prf) /  341 reflections on image 50
- Integrated   120 (sum) +   111 (prf) /  126 reflections on image 51
- Integrated    64 (sum) +    59 (prf) /   67 reflections on image 52
- Integrated    44 (sum) +    36 (prf) /   46 reflections on image 53
- Integrated    38 (sum) +    33 (prf) /   40 reflections on image 54
- Integrated    27 (sum) +    24 (prf) /   31 reflections on image 55
- Integrated   303 (sum) +   241 (prf) /  325 reflections on image 56
- Beginning integration job 2
-
- Frames: 38 -> 76
-
- Number of reflections
-  Partial:     688
-  Full:        7304
-  In ice ring: 0
-  Integrate:   7992
-  Total:       7992
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 38 [14  ]: 
- 39 [44  ]: 
- 40 [79  ]: *
- 41 [126 ]: **
- 42 [180 ]: ***
- 43 [268 ]: ****
- 44 [429 ]: *******
- 45 [825 ]: **************
- 46 [1222]: **********************
- 47 [1621]: *****************************
- 48 [2012]: ************************************
- 49 [2413]: *******************************************
- 50 [2805]: **************************************************
- 51 [3155]: ********************************************************
- 52 [3280]: ***********************************************************
- 53 [3348]: ************************************************************
- 54 [3403]: *************************************************************
- 55 [3426]: *************************************************************
- 56 [3479]: **************************************************************
- 57 [3777]: ********************************************************************
- 58 [3758]: *******************************************************************
- 59 [3713]: ******************************************************************
- 60 [3671]: ******************************************************************
- 61 [3618]: *****************************************************************
- 62 [3534]: ***************************************************************
- 63 [3348]: ************************************************************
- 64 [2954]: *****************************************************
- 65 [2563]: **********************************************
- 66 [2159]: **************************************
- 67 [1794]: ********************************
- 68 [1379]: ************************
- 69 [996 ]: *****************
- 70 [632 ]: ***********
- 71 [509 ]: *********
- 72 [446 ]: ********
- 73 [392 ]: *******
- 74 [356 ]: ******
- 75 [333 ]: *****
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.328542 GB
-
- Integrated    36 (sum) +    33 (prf) /   37 reflections on image 50
- Integrated   265 (sum) +   240 (prf) /  282 reflections on image 51
- Integrated   306 (sum) +   281 (prf) /  323 reflections on image 52
- Integrated   329 (sum) +   302 (prf) /  345 reflections on image 53
- Integrated   335 (sum) +   309 (prf) /  355 reflections on image 54
- Integrated   343 (sum) +   313 (prf) /  358 reflections on image 55
- Integrated   532 (sum) +   403 (prf) /  568 reflections on image 56
- Integrated   380 (sum) +   327 (prf) /  397 reflections on image 57
- Integrated   374 (sum) +   318 (prf) /  398 reflections on image 58
- Integrated   366 (sum) +   320 (prf) /  390 reflections on image 59
- Integrated   382 (sum) +   346 (prf) /  400 reflections on image 60
- Integrated   373 (sum) +   327 (prf) /  387 reflections on image 61
- Integrated   378 (sum) +   341 (prf) /  404 reflections on image 62
- Integrated   375 (sum) +   346 (prf) /  394 reflections on image 63
- Integrated   369 (sum) +   335 (prf) /  391 reflections on image 64
- Integrated   379 (sum) +   343 (prf) /  404 reflections on image 65
- Integrated   352 (sum) +   312 (prf) /  365 reflections on image 66
- Integrated   391 (sum) +   360 (prf) /  415 reflections on image 67
- Integrated   365 (sum) +   338 (prf) /  383 reflections on image 68
- Integrated   345 (sum) +   309 (prf) /  364 reflections on image 69
- Integrated   115 (sum) +   105 (prf) /  123 reflections on image 70
- Integrated    61 (sum) +    57 (prf) /   63 reflections on image 71
- Integrated    52 (sum) +    49 (prf) /   54 reflections on image 72
- Integrated    35 (sum) +    28 (prf) /   36 reflections on image 73
- Integrated    19 (sum) +    18 (prf) /   23 reflections on image 74
- Integrated   314 (sum) +   266 (prf) /  333 reflections on image 75
- Beginning integration job 3
-
- Frames: 57 -> 95
-
- Number of reflections
-  Partial:     699
-  Full:        7309
-  In ice ring: 0
-  Integrate:   8008
-  Total:       8008
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 57 [11  ]: 
- 58 [37  ]: 
- 59 [75  ]: *
- 60 [118 ]: **
- 61 [177 ]: ***
- 62 [258 ]: ****
- 63 [433 ]: *******
- 64 [836 ]: ***************
- 65 [1221]: *********************
- 66 [1618]: *****************************
- 67 [2026]: ************************************
- 68 [2411]: *******************************************
- 69 [2810]: **************************************************
- 70 [3176]: *********************************************************
- 71 [3270]: **********************************************************
- 72 [3353]: ************************************************************
- 73 [3396]: *************************************************************
- 74 [3441]: *************************************************************
- 75 [3457]: **************************************************************
- 76 [3775]: ********************************************************************
- 77 [3746]: *******************************************************************
- 78 [3727]: *******************************************************************
- 79 [3665]: ******************************************************************
- 80 [3591]: ****************************************************************
- 81 [3516]: ***************************************************************
- 82 [3357]: ************************************************************
- 83 [2960]: *****************************************************
- 84 [2544]: *********************************************
- 85 [2169]: ***************************************
- 86 [1775]: *******************************
- 87 [1385]: ************************
- 88 [983 ]: *****************
- 89 [625 ]: ***********
- 90 [507 ]: *********
- 91 [438 ]: *******
- 92 [389 ]: *******
- 93 [350 ]: ******
- 94 [328 ]: *****
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.326737 GB
-
- Integrated    35 (sum) +    30 (prf) /   35 reflections on image 69
- Integrated   270 (sum) +   247 (prf) /  289 reflections on image 70
- Integrated   305 (sum) +   279 (prf) /  323 reflections on image 71
- Integrated   330 (sum) +   302 (prf) /  347 reflections on image 72
- Integrated   329 (sum) +   304 (prf) /  350 reflections on image 73
- Integrated   352 (sum) +   320 (prf) /  372 reflections on image 74
- Integrated   536 (sum) +   407 (prf) /  568 reflections on image 75
- Integrated   379 (sum) +   327 (prf) /  398 reflections on image 76
- Integrated   370 (sum) +   318 (prf) /  390 reflections on image 77
- Integrated   372 (sum) +   338 (prf) /  397 reflections on image 78
- Integrated   389 (sum) +   338 (prf) /  407 reflections on image 79
- Integrated   361 (sum) +   324 (prf) /  381 reflections on image 80
- Integrated   371 (sum) +   338 (prf) /  394 reflections on image 81
- Integrated   377 (sum) +   335 (prf) /  397 reflections on image 82
- Integrated   395 (sum) +   359 (prf) /  416 reflections on image 83
- Integrated   359 (sum) +   327 (prf) /  375 reflections on image 84
- Integrated   369 (sum) +   332 (prf) /  394 reflections on image 85
- Integrated   373 (sum) +   338 (prf) /  390 reflections on image 86
- Integrated   382 (sum) +   348 (prf) /  402 reflections on image 87
- Integrated   341 (sum) +   311 (prf) /  358 reflections on image 88
- Integrated   111 (sum) +   105 (prf) /  118 reflections on image 89
- Integrated    64 (sum) +    58 (prf) /   69 reflections on image 90
- Integrated    43 (sum) +    37 (prf) /   49 reflections on image 91
- Integrated    38 (sum) +    34 (prf) /   39 reflections on image 92
- Integrated    20 (sum) +    19 (prf) /   22 reflections on image 93
- Integrated   310 (sum) +   256 (prf) /  328 reflections on image 94
- Beginning integration job 4
-
- Frames: 76 -> 114
-
- Number of reflections
-  Partial:     636
-  Full:        7351
-  In ice ring: 0
-  Integrate:   7987
-  Total:       7987
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 76  [19  ]: 
- 77  [42  ]: 
- 78  [73  ]: *
- 79  [123 ]: **
- 80  [174 ]: ***
- 81  [265 ]: ****
- 82  [438 ]: *******
- 83  [808 ]: **************
- 84  [1201]: *********************
- 85  [1611]: ****************************
- 86  [2006]: ***********************************
- 87  [2399]: ******************************************
- 88  [2788]: *************************************************
- 89  [3163]: ********************************************************
- 90  [3273]: **********************************************************
- 91  [3327]: ***********************************************************
- 92  [3376]: ************************************************************
- 93  [3429]: *************************************************************
- 94  [3444]: *************************************************************
- 95  [3747]: ******************************************************************
- 96  [3755]: *******************************************************************
- 97  [3737]: ******************************************************************
- 98  [3662]: *****************************************************************
- 99  [3588]: ****************************************************************
- 100 [3521]: **************************************************************
- 101 [3395]: ************************************************************
- 102 [2988]: *****************************************************
- 103 [2569]: *********************************************
- 104 [2195]: ***************************************
- 105 [1848]: ********************************
- 106 [1474]: **************************
- 107 [1059]: ******************
- 108 [694 ]: ************
- 109 [574 ]: **********
- 110 [501 ]: ********
- 111 [434 ]: *******
- 112 [381 ]: ******
- 113 [331 ]: *****
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.331154 GB
-
- Integrated    30 (sum) +    26 (prf) /   31 reflections on image 88
- Integrated   264 (sum) +   240 (prf) /  278 reflections on image 89
- Integrated   318 (sum) +   289 (prf) /  337 reflections on image 90
- Integrated   331 (sum) +   300 (prf) /  347 reflections on image 91
- Integrated   330 (sum) +   300 (prf) /  351 reflections on image 92
- Integrated   345 (sum) +   317 (prf) /  366 reflections on image 93
- Integrated   507 (sum) +   399 (prf) /  539 reflections on image 94
- Integrated   363 (sum) +   308 (prf) /  383 reflections on image 95
- Integrated   374 (sum) +   330 (prf) /  397 reflections on image 96
- Integrated   376 (sum) +   330 (prf) /  394 reflections on image 97
- Integrated   380 (sum) +   336 (prf) /  399 reflections on image 98
- Integrated   373 (sum) +   332 (prf) /  391 reflections on image 99
- Integrated   361 (sum) +   331 (prf) /  379 reflections on image 100
- Integrated   383 (sum) +   347 (prf) /  407 reflections on image 101
- Integrated   391 (sum) +   351 (prf) /  419 reflections on image 102
- Integrated   339 (sum) +   302 (prf) /  374 reflections on image 103
- Integrated   332 (sum) +   310 (prf) /  347 reflections on image 104
- Integrated   360 (sum) +   337 (prf) /  374 reflections on image 105
- Integrated   401 (sum) +   371 (prf) /  415 reflections on image 106
- Integrated   342 (sum) +   310 (prf) /  365 reflections on image 107
- Integrated   112 (sum) +   104 (prf) /  120 reflections on image 108
- Integrated    71 (sum) +    69 (prf) /   73 reflections on image 109
- Integrated    66 (sum) +    62 (prf) /   67 reflections on image 110
- Integrated    50 (sum) +    48 (prf) /   53 reflections on image 111
- Integrated    49 (sum) +    43 (prf) /   50 reflections on image 112
- Integrated   305 (sum) +   239 (prf) /  331 reflections on image 113
- Beginning integration job 5
-
- Frames: 95 -> 133
-
- Number of reflections
-  Partial:     794
-  Full:        7260
-  In ice ring: 0
-  Integrate:   8054
-  Total:       8054
-
- The following histogram shows the number of reflections predicted
- to have all or part of their intensity on each frame.
-
- 95  [10  ]: 
- 96  [28  ]: 
- 97  [58  ]: *
- 98  [99  ]: *
- 99  [153 ]: **
- 100 [240 ]: ****
- 101 [428 ]: *******
- 102 [792 ]: *************
- 103 [1127]: *******************
- 104 [1539]: ***************************
- 105 [1910]: *********************************
- 106 [2250]: ***************************************
- 107 [2646]: **********************************************
- 108 [3089]: ******************************************************
- 109 [3283]: *********************************************************
- 110 [3415]: ***********************************************************
- 111 [3467]: ************************************************************
- 112 [3510]: *************************************************************
- 113 [3585]: **************************************************************
- 114 [3814]: *******************************************************************
- 115 [3596]: ***************************************************************
- 116 [3545]: **************************************************************
- 117 [3580]: **************************************************************
- 118 [3583]: **************************************************************
- 119 [3617]: ***************************************************************
- 120 [3344]: **********************************************************
- 121 [2922]: ***************************************************
- 122 [2579]: *********************************************
- 123 [2200]: **************************************
- 124 [1775]: *******************************
- 125 [1408]: ************************
- 126 [1013]: *****************
- 127 [638 ]: ***********
- 128 [529 ]: *********
- 129 [459 ]: ********
- 130 [405 ]: *******
- 131 [370 ]: ******
- 132 [347 ]: ******
-
- Memory usage:
-  Total system memory: 17.0968 GB
-  Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.318374 GB
-
- Integrated    32 (sum) +    26 (prf) /   35 reflections on image 107
- Integrated   233 (sum) +   205 (prf) /  250 reflections on image 108
- Integrated   289 (sum) +   269 (prf) /  302 reflections on image 109
- Integrated   357 (sum) +   328 (prf) /  372 reflections on image 110
- Integrated   324 (sum) +   293 (prf) /  355 reflections on image 111
- Integrated   340 (sum) +   325 (prf) /  350 reflections on image 112
- Integrated   662 (sum) +   503 (prf) /  694 reflections on image 113
- Integrated   458 (sum) +   347 (prf) /  502 reflections on image 114
- Integrated   385 (sum) +   336 (prf) /  399 reflections on image 115
- Integrated   359 (sum) +   319 (prf) /  374 reflections on image 116
- Integrated   288 (sum) +   242 (prf) /  306 reflections on image 117
- Integrated   228 (sum) +   194 (prf) /  245 reflections on image 118
- Integrated   497 (sum) +   443 (prf) /  526 reflections on image 119
- Integrated   400 (sum) +   367 (prf) /  422 reflections on image 120
- Integrated   326 (sum) +   296 (prf) /  343 reflections on image 121
- Integrated   356 (sum) +   308 (prf) /  379 reflections on image 122
- Integrated   405 (sum) +   371 (prf) /  425 reflections on image 123
- Integrated   348 (sum) +   322 (prf) /  367 reflections on image 124
- Integrated   368 (sum) +   333 (prf) /  395 reflections on image 125
- Integrated   358 (sum) +   325 (prf) /  375 reflections on image 126
- Integrated   102 (sum) +    94 (prf) /  109 reflections on image 127
- Integrated    67 (sum) +    62 (prf) /   70 reflections on image 128
- Integrated    51 (sum) +    46 (prf) /   54 reflections on image 129
- Integrated    33 (sum) +    28 (prf) /   35 reflections on image 130
- Integrated    23 (sum) +    21 (prf) /   23 reflections on image 131
- Integrated   325 (sum) +   276 (prf) /  347 reflections on image 132
+ Integrated   271 (sum) +   245 (prf) /  286 reflections on image 102
+ Integrated   265 (sum) +   235 (prf) /  292 reflections on image 103
+ Integrated   283 (sum) +   266 (prf) /  297 reflections on image 104
+ Integrated   335 (sum) +   313 (prf) /  349 reflections on image 105
+ Integrated   395 (sum) +   361 (prf) /  410 reflections on image 106
+ Integrated   529 (sum) +   355 (prf) /  575 reflections on image 107
+ Integrated   350 (sum) +   296 (prf) /  367 reflections on image 108
+ Integrated   353 (sum) +   316 (prf) /  370 reflections on image 109
+ Integrated   428 (sum) +   375 (prf) /  449 reflections on image 110
+ Integrated   386 (sum) +   331 (prf) /  416 reflections on image 111
+ Integrated   396 (sum) +   365 (prf) /  407 reflections on image 112
+ Integrated   472 (sum) +   431 (prf) /  506 reflections on image 113
+ Integrated   441 (sum) +   366 (prf) /  473 reflections on image 114
+ Integrated   366 (sum) +   338 (prf) /  379 reflections on image 115
+ Integrated   355 (sum) +   333 (prf) /  368 reflections on image 116
+ Integrated   269 (sum) +   236 (prf) /  288 reflections on image 117
+ Integrated   259 (sum) +   221 (prf) /  281 reflections on image 118
+ Integrated   513 (sum) +   473 (prf) /  539 reflections on image 119
+ Integrated   158 (sum) +   146 (prf) /  165 reflections on image 120
+ Integrated    67 (sum) +    60 (prf) /   71 reflections on image 121
+ Integrated    58 (sum) +    52 (prf) /   60 reflections on image 122
+ Integrated    35 (sum) +    33 (prf) /   38 reflections on image 123
+ Integrated    21 (sum) +    18 (prf) /   22 reflections on image 124
+ Integrated   235 (sum) +   182 (prf) /  259 reflections on image 125
  Beginning integration job 6
 
- Frames: 114 -> 152
+ Frames: 108 -> 144
 
  Number of reflections
-  Partial:     359
-  Full:        6880
+  Partial:     307
+  Full:        6705
   In ice ring: 0
-  Integrate:   7239
-  Total:       7239
+  Integrate:   7012
+  Total:       7012
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 114 [20  ]: 
- 115 [42  ]: 
- 116 [67  ]: *
- 117 [99  ]: *
- 118 [163 ]: ***
- 119 [254 ]: ****
- 120 [409 ]: *******
- 121 [815 ]: ***************
- 122 [1181]: ***********************
- 123 [1580]: ******************************
- 124 [1962]: **************************************
- 125 [2354]: *********************************************
- 126 [2755]: *****************************************************
- 127 [3111]: ************************************************************
- 128 [3234]: ***************************************************************
- 129 [3303]: ****************************************************************
- 130 [3352]: *****************************************************************
- 131 [3402]: ******************************************************************
- 132 [3421]: ******************************************************************
- 133 [3429]: *******************************************************************
- 134 [3399]: ******************************************************************
- 135 [3348]: *****************************************************************
- 136 [3281]: ****************************************************************
- 137 [3223]: **************************************************************
- 138 [3037]: ***********************************************************
- 139 [2656]: ***************************************************
- 140 [2257]: ********************************************
- 141 [1862]: ************************************
- 142 [1468]: ****************************
- 143 [1082]: *********************
- 144 [680 ]: *************
- 145 [328 ]: ******
- 146 [214 ]: ****
- 147 [144 ]: **
- 148 [96  ]: *
- 149 [66  ]: *
- 150 [31  ]: 
- 151 [20  ]: 
+ 109 [24  ]: 
+ 110 [62  ]: *
+ 111 [117 ]: **
+ 112 [186 ]: ***
+ 113 [276 ]: *****
+ 114 [368 ]: *******
+ 115 [641 ]: *************
+ 116 [976 ]: *******************
+ 117 [1305]: **************************
+ 118 [1755]: ***********************************
+ 119 [2145]: *******************************************
+ 120 [2516]: ***************************************************
+ 121 [2919]: ***********************************************************
+ 122 [3069]: **************************************************************
+ 123 [3204]: *****************************************************************
+ 124 [3251]: ******************************************************************
+ 125 [3268]: ******************************************************************
+ 126 [3289]: *******************************************************************
+ 127 [3269]: ******************************************************************
+ 128 [3224]: *****************************************************************
+ 129 [3204]: *****************************************************************
+ 130 [3138]: ***************************************************************
+ 131 [3062]: **************************************************************
+ 132 [2937]: ***********************************************************
+ 133 [2534]: ***************************************************
+ 134 [2137]: *******************************************
+ 135 [1761]: ***********************************
+ 136 [1361]: ***************************
+ 137 [980 ]: *******************
+ 138 [580 ]: ***********
+ 139 [292 ]: *****
+ 140 [193 ]: ***
+ 141 [130 ]: **
+ 142 [79  ]: *
+ 143 [49  ]: 
+ 144 [17  ]: 
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.268175 GB
+  Required shoebox memory: 0.250118 GB
 
- Integrated    35 (sum) +    31 (prf) /   37 reflections on image 126
- Integrated   263 (sum) +   245 (prf) /  274 reflections on image 127
- Integrated   299 (sum) +   268 (prf) /  319 reflections on image 128
- Integrated   330 (sum) +   299 (prf) /  344 reflections on image 129
- Integrated   325 (sum) +   303 (prf) /  343 reflections on image 130
- Integrated   347 (sum) +   318 (prf) /  373 reflections on image 131
- Integrated   518 (sum) +   390 (prf) /  542 reflections on image 132
- Integrated   372 (sum) +   315 (prf) /  393 reflections on image 133
- Integrated   381 (sum) +   329 (prf) /  402 reflections on image 134
- Integrated   370 (sum) +   331 (prf) /  393 reflections on image 135
- Integrated   353 (sum) +   311 (prf) /  369 reflections on image 136
- Integrated   387 (sum) +   350 (prf) /  413 reflections on image 137
- Integrated   365 (sum) +   334 (prf) /  381 reflections on image 138
- Integrated   375 (sum) +   339 (prf) /  399 reflections on image 139
- Integrated   368 (sum) +   339 (prf) /  395 reflections on image 140
- Integrated   378 (sum) +   345 (prf) /  394 reflections on image 141
- Integrated   362 (sum) +   331 (prf) /  386 reflections on image 142
- Integrated   382 (sum) +   344 (prf) /  402 reflections on image 143
- Integrated   332 (sum) +   305 (prf) /  352 reflections on image 144
- Integrated   107 (sum) +   101 (prf) /  114 reflections on image 145
- Integrated    66 (sum) +    59 (prf) /   70 reflections on image 146
- Integrated    47 (sum) +    40 (prf) /   48 reflections on image 147
- Integrated    28 (sum) +    27 (prf) /   30 reflections on image 148
- Integrated    33 (sum) +    29 (prf) /   35 reflections on image 149
- Integrated    10 (sum) +    10 (prf) /   11 reflections on image 150
- Integrated    17 (sum) +    15 (prf) /   20 reflections on image 151
+ Integrated   230 (sum) +   214 (prf) /  242 reflections on image 120
+ Integrated   243 (sum) +   226 (prf) /  258 reflections on image 121
+ Integrated   319 (sum) +   278 (prf) /  343 reflections on image 122
+ Integrated   363 (sum) +   337 (prf) /  377 reflections on image 123
+ Integrated   337 (sum) +   314 (prf) /  353 reflections on image 124
+ Integrated   506 (sum) +   402 (prf) /  539 reflections on image 125
+ Integrated   386 (sum) +   343 (prf) /  405 reflections on image 126
+ Integrated   369 (sum) +   333 (prf) /  385 reflections on image 127
+ Integrated   378 (sum) +   330 (prf) /  403 reflections on image 128
+ Integrated   367 (sum) +   331 (prf) /  386 reflections on image 129
+ Integrated   363 (sum) +   333 (prf) /  384 reflections on image 130
+ Integrated   383 (sum) +   344 (prf) /  403 reflections on image 131
+ Integrated   378 (sum) +   339 (prf) /  397 reflections on image 132
+ Integrated   354 (sum) +   324 (prf) /  376 reflections on image 133
+ Integrated   380 (sum) +   349 (prf) /  400 reflections on image 134
+ Integrated   358 (sum) +   331 (prf) /  381 reflections on image 135
+ Integrated   382 (sum) +   344 (prf) /  400 reflections on image 136
+ Integrated   271 (sum) +   251 (prf) /  288 reflections on image 137
+ Integrated    96 (sum) +    91 (prf) /   99 reflections on image 138
+ Integrated    56 (sum) +    51 (prf) /   63 reflections on image 139
+ Integrated    50 (sum) +    46 (prf) /   51 reflections on image 140
+ Integrated    28 (sum) +    24 (prf) /   30 reflections on image 141
+ Integrated    29 (sum) +    27 (prf) /   32 reflections on image 142
+ Integrated    17 (sum) +    14 (prf) /   17 reflections on image 143
  Beginning integration job 7
 
- Frames: 133 -> 167
+ Frames: 126 -> 161
 
  Number of reflections
-  Partial:     3284
-  Full:        8247
+  Partial:     3138
+  Full:        8753
   In ice ring: 0
-  Integrate:   11531
-  Total:       11531
+  Integrate:   11891
+  Total:       11891
 
  The following histogram shows the number of reflections predicted
  to have all or part of their intensity on each frame.
 
- 133 [328 ]: *****
- 134 [365 ]: ******
- 135 [405 ]: *******
- 136 [468 ]: ********
- 137 [548 ]: *********
- 138 [719 ]: ************
- 139 [1110]: *******************
- 140 [1503]: ***************************
- 141 [1895]: **********************************
- 142 [2294]: *****************************************
- 143 [2674]: ************************************************
- 144 [3076]: *******************************************************
- 145 [3421]: *************************************************************
- 146 [3531]: ***************************************************************
- 147 [3591]: ****************************************************************
- 148 [3645]: *****************************************************************
- 149 [3670]: *****************************************************************
- 150 [3691]: ******************************************************************
- 151 [3716]: ******************************************************************
- 152 [3725]: ******************************************************************
- 153 [3726]: *******************************************************************
- 154 [3696]: ******************************************************************
- 155 [3693]: ******************************************************************
- 156 [3673]: ******************************************************************
- 157 [3675]: ******************************************************************
- 158 [3659]: *****************************************************************
- 159 [3624]: *****************************************************************
- 160 [3620]: *****************************************************************
- 161 [3603]: ****************************************************************
- 162 [3564]: ****************************************************************
- 163 [3530]: ***************************************************************
- 164 [3479]: **************************************************************
- 165 [3405]: *************************************************************
- 166 [3283]: ***********************************************************
+ 127 [292 ]: *****
+ 128 [322 ]: ******
+ 129 [364 ]: ******
+ 130 [410 ]: *******
+ 131 [494 ]: *********
+ 132 [629 ]: ***********
+ 133 [1010]: *******************
+ 134 [1407]: **************************
+ 135 [1805]: **********************************
+ 136 [2194]: *****************************************
+ 137 [2579]: ************************************************
+ 138 [2977]: ********************************************************
+ 139 [3263]: *************************************************************
+ 140 [3356]: ***************************************************************
+ 141 [3429]: *****************************************************************
+ 142 [3457]: *****************************************************************
+ 143 [3498]: ******************************************************************
+ 144 [3517]: ******************************************************************
+ 145 [3533]: *******************************************************************
+ 146 [3524]: ******************************************************************
+ 147 [3527]: ******************************************************************
+ 148 [3514]: ******************************************************************
+ 149 [3504]: ******************************************************************
+ 150 [3516]: ******************************************************************
+ 151 [3503]: ******************************************************************
+ 152 [3473]: *****************************************************************
+ 153 [3462]: *****************************************************************
+ 154 [3466]: *****************************************************************
+ 155 [3434]: *****************************************************************
+ 156 [3426]: ****************************************************************
+ 157 [3379]: ****************************************************************
+ 158 [3375]: ****************************************************************
+ 159 [3282]: **************************************************************
+ 160 [3222]: *************************************************************
+ 161 [3163]: ***********************************************************
 
  Memory usage:
   Total system memory: 17.0968 GB
   Limit shoebox memory: 1.60283 GB
-  Required shoebox memory: 0.342411 GB
+  Required shoebox memory: 0.308235 GB
 
- Integrated    33 (sum) +    31 (prf) /   36 reflections on image 144
- Integrated   270 (sum) +   245 (prf) /  281 reflections on image 145
- Integrated   304 (sum) +   281 (prf) /  324 reflections on image 146
- Integrated   324 (sum) +   295 (prf) /  343 reflections on image 147
- Integrated   335 (sum) +   307 (prf) /  353 reflections on image 148
- Integrated   355 (sum) +   324 (prf) /  372 reflections on image 149
- Integrated   343 (sum) +   314 (prf) /  363 reflections on image 150
- Integrated   640 (sum) +   561 (prf) /  675 reflections on image 151
- Integrated   366 (sum) +   316 (prf) /  385 reflections on image 152
- Integrated   377 (sum) +   336 (prf) /  399 reflections on image 153
- Integrated   373 (sum) +   318 (prf) /  396 reflections on image 154
- Integrated   387 (sum) +   343 (prf) /  406 reflections on image 155
- Integrated   363 (sum) +   323 (prf) /  388 reflections on image 156
- Integrated   361 (sum) +   328 (prf) /  385 reflections on image 157
- Integrated   394 (sum) +   354 (prf) /  412 reflections on image 158
- Integrated   357 (sum) +   326 (prf) /  376 reflections on image 159
- Integrated   377 (sum) +   335 (prf) /  393 reflections on image 160
- Integrated   370 (sum) +   340 (prf) /  391 reflections on image 161
- Integrated   367 (sum) +   339 (prf) /  389 reflections on image 162
- Integrated   372 (sum) +   335 (prf) /  394 reflections on image 163
- Integrated   368 (sum) +   338 (prf) /  393 reflections on image 164
- Integrated   378 (sum) +   342 (prf) /  394 reflections on image 165
- Integrated  3103 (sum) +  1745 (prf) / 3283 reflections on image 166
+ Integrated    99 (sum) +    90 (prf) /  106 reflections on image 137
+ Integrated   282 (sum) +   256 (prf) /  294 reflections on image 138
+ Integrated   310 (sum) +   281 (prf) /  328 reflections on image 139
+ Integrated   327 (sum) +   302 (prf) /  350 reflections on image 140
+ Integrated   338 (sum) +   310 (prf) /  355 reflections on image 141
+ Integrated   349 (sum) +   324 (prf) /  370 reflections on image 142
+ Integrated   601 (sum) +   527 (prf) /  636 reflections on image 143
+ Integrated   375 (sum) +   326 (prf) /  395 reflections on image 144
+ Integrated   363 (sum) +   322 (prf) /  385 reflections on image 145
+ Integrated   381 (sum) +   333 (prf) /  403 reflections on image 146
+ Integrated   376 (sum) +   332 (prf) /  392 reflections on image 147
+ Integrated   360 (sum) +   324 (prf) /  384 reflections on image 148
+ Integrated   378 (sum) +   343 (prf) /  398 reflections on image 149
+ Integrated   381 (sum) +   347 (prf) /  406 reflections on image 150
+ Integrated   369 (sum) +   330 (prf) /  383 reflections on image 151
+ Integrated   366 (sum) +   334 (prf) /  383 reflections on image 152
+ Integrated   381 (sum) +   346 (prf) /  406 reflections on image 153
+ Integrated   375 (sum) +   342 (prf) /  392 reflections on image 154
+ Integrated   373 (sum) +   344 (prf) /  397 reflections on image 155
+ Integrated   356 (sum) +   323 (prf) /  375 reflections on image 156
+ Integrated   396 (sum) +   358 (prf) /  420 reflections on image 157
+ Integrated   377 (sum) +   351 (prf) /  395 reflections on image 158
+ Integrated   356 (sum) +   324 (prf) /  375 reflections on image 159
+ Integrated  2990 (sum) +  1698 (prf) / 3163 reflections on image 160
 
  Summary vs image number
- ---------------------------------------------------------------------------------------------------------
- ID | Image | # full | # part | # over | # ice | # sum | # prf | Ibg  | I/sigI | I/sigI | CC prf | RMSD XY
-    |       |        |        |        |       |       |       |      |  (sum) |  (prf) |        |
- ---------------------------------------------------------------------------------------------------------
- 0  | 0     | 0      | 1594   | 0      | 0     | 1481  | 294   | 1.78 | 0.56   | 1.25   | 0.64   | 0.78
- 0  | 1     | 0      | 405    | 0      | 0     | 389   | 354   | 1.46 | 0.50   | 0.08   | 0.67   | 0.66
- 0  | 2     | 52     | 340    | 0      | 0     | 363   | 334   | 1.67 | 0.77   | 0.24   | 0.67   | 0.63
- 0  | 3     | 274    | 138    | 0      | 0     | 396   | 362   | 1.69 | 0.70   | 0.34   | 0.69   | 0.54
- 0  | 4     | 326    | 70     | 0      | 0     | 370   | 335   | 1.57 | 0.70   | 0.55   | 0.67   | 0.59
- 0  | 5     | 339    | 61     | 0      | 0     | 361   | 337   | 1.64 | 1.08   | 0.91   | 0.68   | 0.53
- 0  | 6     | 361    | 49     | 0      | 0     | 381   | 357   | 1.55 | 1.15   | 1.60   | 0.67   | 0.48
- 0  | 7     | 357    | 32     | 0      | 0     | 367   | 337   | 1.42 | 0.95   | 0.86   | 0.66   | 0.48
- 0  | 8     | 374    | 34     | 0      | 0     | 379   | 342   | 1.55 | 1.25   | 0.04   | 0.68   | 0.46
- 0  | 9     | 376    | 19     | 0      | 0     | 375   | 337   | 1.49 | 1.32   | -1.14  | 0.69   | 0.45
- 0  | 10    | 368    | 21     | 0      | 0     | 374   | 334   | 1.39 | 1.29   | 0.20   | 0.69   | 0.43
- 0  | 11    | 373    | 23     | 0      | 0     | 374   | 340   | 1.47 | 1.17   | 1.29   | 0.70   | 0.42
- 0  | 12    | 396    | 11     | 0      | 0     | 378   | 352   | 1.50 | 1.20   | 1.23   | 0.69   | 0.43
- 0  | 13    | 382    | 17     | 0      | 0     | 379   | 346   | 1.51 | 1.00   | 0.80   | 0.74   | 0.43
- 0  | 14    | 374    | 15     | 0      | 0     | 375   | 336   | 1.49 | 1.06   | 0.74   | 0.75   | 0.40
- 0  | 15    | 394    | 14     | 0      | 0     | 380   | 346   | 1.71 | 1.74   | 1.63   | 0.74   | 0.40
- 0  | 16    | 397    | 20     | 0      | 0     | 382   | 342   | 1.57 | 1.84   | 2.13   | 0.71   | 0.40
- 0  | 17    | 380    | 17     | 0      | 0     | 368   | 334   | 1.34 | 1.46   | 1.24   | 0.70   | 0.39
- 0  | 18    | 393    | 15     | 0      | 0     | 379   | 340   | 1.29 | 1.37   | -0.22  | 0.71   | 0.39
- 0  | 19    | 389    | 10     | 0      | 0     | 376   | 345   | 1.35 | 1.27   | -1.48  | 0.73   | 0.38
- 0  | 20    | 390    | 14     | 0      | 0     | 386   | 345   | 1.31 | 1.28   | -0.11  | 0.71   | 0.39
- 0  | 21    | 386    | 25     | 0      | 0     | 389   | 357   | 1.42 | 1.22   | 1.09   | 0.71   | 0.40
- 0  | 22    | 381    | 20     | 0      | 0     | 380   | 342   | 1.27 | 1.25   | 0.99   | 0.71   | 0.42
- 0  | 23    | 392    | 21     | 0      | 0     | 392   | 346   | 1.56 | 1.13   | 0.93   | 0.76   | 0.39
- 0  | 24    | 382    | 20     | 0      | 0     | 375   | 340   | 1.46 | 1.25   | 0.86   | 0.75   | 0.39
- 0  | 25    | 384    | 32     | 0      | 0     | 381   | 342   | 1.37 | 1.17   | 1.24   | 0.75   | 0.40
- 0  | 26    | 385    | 38     | 0      | 0     | 393   | 348   | 1.52 | 1.62   | 2.15   | 0.72   | 0.42
- 0  | 27    | 387    | 37     | 0      | 0     | 397   | 350   | 1.58 | 2.00   | 2.34   | 0.71   | 0.41
- 0  | 28    | 357    | 50     | 0      | 0     | 384   | 343   | 1.25 | 1.34   | 0.67   | 0.71   | 0.41
- 0  | 29    | 379    | 26     | 0      | 0     | 392   | 342   | 1.38 | 1.16   | -0.96  | 0.72   | 0.39
- 0  | 30    | 386    | 38     | 0      | 0     | 395   | 361   | 1.30 | 1.42   | 0.45   | 0.71   | 0.40
- 0  | 31    | 381    | 49     | 0      | 0     | 390   | 349   | 1.33 | 1.51   | 1.28   | 0.72   | 0.37
- 0  | 32    | 388    | 28     | 0      | 0     | 385   | 360   | 1.34 | 1.02   | 1.24   | 0.71   | 0.39
- 0  | 33    | 378    | 30     | 0      | 0     | 381   | 338   | 1.48 | 1.13   | 1.01   | 0.76   | 0.37
- 0  | 34    | 383    | 18     | 0      | 0     | 372   | 346   | 1.46 | 1.30   | 1.02   | 0.76   | 0.37
- 0  | 35    | 390    | 29     | 0      | 0     | 387   | 347   | 1.51 | 1.14   | 0.63   | 0.76   | 0.38
- 0  | 36    | 394    | 21     | 0      | 0     | 394   | 357   | 1.47 | 1.39   | 1.69   | 0.72   | 0.39
- 0  | 37    | 382    | 13     | 0      | 0     | 368   | 336   | 1.26 | 1.24   | 0.94   | 0.71   | 0.38
- 0  | 38    | 387    | 18     | 0      | 0     | 392   | 358   | 1.38 | 1.31   | -0.02  | 0.72   | 0.38
- 0  | 39    | 382    | 41     | 0      | 0     | 388   | 345   | 1.33 | 1.34   | -0.97  | 0.73   | 0.38
- 0  | 40    | 401    | 19     | 0      | 0     | 389   | 353   | 1.54 | 1.52   | 0.46   | 0.72   | 0.39
- 0  | 41    | 391    | 26     | 0      | 0     | 399   | 353   | 1.36 | 1.13   | 0.58   | 0.71   | 0.38
- 0  | 42    | 379    | 3      | 0      | 0     | 364   | 332   | 1.43 | 1.16   | 1.07   | 0.71   | 0.40
- 0  | 43    | 392    | 32     | 0      | 0     | 400   | 356   | 1.73 | 1.61   | 1.18   | 0.75   | 0.38
- 0  | 44    | 379    | 33     | 0      | 0     | 393   | 355   | 1.48 | 1.23   | 1.17   | 0.76   | 0.41
- 0  | 45    | 374    | 58     | 0      | 0     | 395   | 359   | 1.59 | 1.07   | 0.83   | 0.75   | 0.44
- 0  | 46    | 382    | 81     | 0      | 0     | 429   | 370   | 1.55 | 1.00   | 1.24   | 0.71   | 0.40
- 0  | 47    | 376    | 73     | 0      | 0     | 416   | 364   | 1.38 | 1.04   | 0.73   | 0.70   | 0.44
- 0  | 48    | 383    | 43     | 0      | 0     | 404   | 356   | 1.51 | 1.26   | 0.35   | 0.70   | 0.44
- 0  | 49    | 375    | 35     | 0      | 0     | 387   | 349   | 1.62 | 1.07   | -1.30  | 0.72   | 0.46
- 0  | 50    | 386    | 58     | 0      | 0     | 412   | 364   | 1.50 | 1.09   | 0.88   | 0.70   | 0.45
- 0  | 51    | 391    | 59     | 0      | 0     | 420   | 370   | 1.59 | 1.55   | 2.09   | 0.71   | 0.44
- 0  | 52    | 369    | 15     | 0      | 0     | 365   | 335   | 1.59 | 0.80   | 1.06   | 0.70   | 0.45
- 0  | 53    | 402    | 42     | 0      | 0     | 400   | 352   | 1.69 | 1.06   | 1.18   | 0.74   | 0.45
- 0  | 54    | 379    | 29     | 0      | 0     | 380   | 346   | 1.61 | 1.08   | 0.76   | 0.75   | 0.44
- 0  | 55    | 394    | 17     | 0      | 0     | 379   | 341   | 1.64 | 1.23   | 0.94   | 0.73   | 0.43
- 0  | 56    | 394    | 20     | 0      | 0     | 388   | 345   | 1.50 | 1.31   | 1.16   | 0.71   | 0.42
- 0  | 57    | 380    | 24     | 0      | 0     | 390   | 349   | 1.58 | 1.19   | 1.03   | 0.71   | 0.43
- 0  | 58    | 399    | 42     | 0      | 0     | 395   | 350   | 1.50 | 1.09   | 0.12   | 0.71   | 0.41
- 0  | 59    | 380    | 33     | 0      | 0     | 381   | 337   | 1.52 | 0.87   | -1.13  | 0.72   | 0.41
- 0  | 60    | 395    | 45     | 0      | 0     | 402   | 365   | 1.66 | 1.40   | 0.31   | 0.73   | 0.39
- 0  | 61    | 384    | 28     | 0      | 0     | 386   | 337   | 1.37 | 1.31   | 0.73   | 0.71   | 0.41
- 0  | 62    | 380    | 16     | 0      | 0     | 379   | 345   | 1.82 | 2.13   | 2.23   | 0.72   | 0.41
- 0  | 63    | 368    | 39     | 0      | 0     | 389   | 344   | 1.60 | 0.74   | 0.74   | 0.75   | 0.40
- 0  | 64    | 409    | 83     | 0      | 0     | 455   | 406   | 1.56 | 1.48   | 1.98   | 0.77   | 0.39
- 0  | 65    | 360    | 53     | 0      | 0     | 392   | 343   | 1.63 | 1.08   | 1.00   | 0.76   | 0.40
- 0  | 66    | 380    | 77     | 0      | 0     | 431   | 361   | 1.49 | 1.21   | 1.01   | 0.73   | 0.40
- 0  | 67    | 374    | 60     | 0      | 0     | 396   | 351   | 1.55 | 1.20   | 0.94   | 0.72   | 0.40
- 0  | 68    | 383    | 58     | 0      | 0     | 405   | 362   | 1.62 | 1.03   | -0.05  | 0.72   | 0.40
- 0  | 69    | 391    | 64     | 0      | 0     | 419   | 371   | 1.48 | 0.95   | -1.29  | 0.73   | 0.41
- 0  | 70    | 377    | 24     | 0      | 0     | 377   | 345   | 1.51 | 1.21   | 0.08   | 0.72   | 0.39
- 0  | 71    | 390    | 41     | 0      | 0     | 403   | 362   | 1.63 | 1.22   | 0.81   | 0.73   | 0.41
- 0  | 72    | 385    | 28     | 0      | 0     | 381   | 345   | 1.50 | 1.25   | 1.44   | 0.71   | 0.41
- 0  | 73    | 371    | 27     | 0      | 0     | 380   | 331   | 1.69 | 1.24   | 0.86   | 0.74   | 0.42
- 0  | 74    | 394    | 32     | 0      | 0     | 403   | 361   | 1.67 | 1.10   | 0.95   | 0.76   | 0.41
- 0  | 75    | 411    | 16     | 0      | 0     | 399   | 356   | 1.71 | 0.92   | 0.76   | 0.75   | 0.43
- 0  | 76    | 384    | 24     | 0      | 0     | 381   | 343   | 1.48 | 1.20   | 1.18   | 0.70   | 0.42
- 0  | 77    | 380    | 34     | 0      | 0     | 388   | 345   | 1.52 | 0.86   | 0.83   | 0.71   | 0.42
- 0  | 78    | 391    | 28     | 0      | 0     | 397   | 358   | 1.61 | 1.01   | 0.41   | 0.71   | 0.44
- 0  | 79    | 391    | 37     | 0      | 0     | 408   | 362   | 1.78 | 0.91   | -1.00  | 0.72   | 0.45
- 0  | 80    | 405    | 36     | 0      | 0     | 418   | 375   | 1.65 | 0.94   | 0.24   | 0.71   | 0.46
- 0  | 81    | 368    | 46     | 0      | 0     | 390   | 345   | 1.58 | 0.91   | 0.72   | 0.70   | 0.44
- 0  | 82    | 383    | 59     | 0      | 0     | 404   | 355   | 1.67 | 1.04   | 0.72   | 0.71   | 0.46
- 0  | 83    | 382    | 60     | 0      | 0     | 427   | 363   | 1.79 | 0.97   | 1.35   | 0.75   | 0.46
- 0  | 84    | 355    | 68     | 0      | 0     | 406   | 349   | 2.11 | 1.66   | 3.92   | 0.75   | 0.48
- 0  | 85    | 395    | 75     | 0      | 0     | 447   | 377   | 2.15 | 1.38   | 3.52   | 0.75   | 0.44
- 0  | 86    | 365    | 83     | 0      | 0     | 419   | 355   | 1.86 | 1.68   | 3.01   | 0.72   | 0.47
- 0  | 87    | 373    | 45     | 0      | 0     | 393   | 346   | 2.03 | 1.81   | 3.02   | 0.71   | 0.43
- 0  | 88    | 403    | 47     | 0      | 0     | 423   | 376   | 1.80 | 0.89   | -0.39  | 0.71   | 0.45
- 0  | 89    | 368    | 43     | 0      | 0     | 384   | 332   | 1.71 | 1.08   | -1.32  | 0.73   | 0.43
- 0  | 90    | 392    | 43     | 0      | 0     | 419   | 382   | 1.79 | 1.02   | 0.52   | 0.72   | 0.43
- 0  | 91    | 381    | 34     | 0      | 0     | 390   | 345   | 1.60 | 0.94   | 1.12   | 0.71   | 0.43
- 0  | 92    | 398    | 32     | 0      | 0     | 399   | 354   | 1.65 | 0.95   | 1.23   | 0.71   | 0.42
- 0  | 93    | 382    | 37     | 0      | 0     | 394   | 354   | 1.80 | 1.05   | 0.84   | 0.75   | 0.43
- 0  | 94    | 389    | 24     | 0      | 0     | 393   | 347   | 1.83 | 0.98   | 0.57   | 0.76   | 0.44
- 0  | 95    | 397    | 35     | 0      | 0     | 406   | 364   | 1.83 | 1.05   | 1.11   | 0.75   | 0.44
- 0  | 96    | 390    | 46     | 0      | 0     | 399   | 346   | 1.71 | 0.84   | 1.42   | 0.73   | 0.42
- 0  | 97    | 363    | 29     | 0      | 0     | 375   | 334   | 1.72 | 0.88   | 0.99   | 0.72   | 0.45
- 0  | 98    | 384    | 36     | 0      | 0     | 399   | 367   | 1.82 | 0.86   | 0.37   | 0.72   | 0.42
- 0  | 99    | 404    | 34     | 0      | 0     | 415   | 374   | 1.56 | 1.05   | -1.00  | 0.72   | 0.41
- 0  | 100   | 377    | 56     | 0      | 0     | 398   | 341   | 1.72 | 1.27   | -0.03  | 0.73   | 0.43
- 0  | 101   | 359    | 50     | 0      | 0     | 387   | 350   | 1.71 | 1.05   | 0.54   | 0.73   | 0.42
- 0  | 102   | 386    | 50     | 0      | 0     | 417   | 361   | 1.78 | 1.10   | 1.41   | 0.73   | 0.40
- 0  | 103   | 421    | 51     | 0      | 0     | 441   | 382   | 1.94 | 1.09   | 0.36   | 0.78   | 0.41
- 0  | 104   | 423    | 48     | 0      | 0     | 446   | 386   | 1.81 | 0.84   | 1.00   | 0.78   | 0.40
- 0  | 105   | 386    | 18     | 0      | 0     | 368   | 315   | 2.04 | 0.91   | 1.24   | 0.77   | 0.43
- 0  | 106   | 336    | 44     | 0      | 0     | 367   | 337   | 1.93 | 1.32   | 3.11   | 0.74   | 0.37
- 0  | 107   | 392    | 21     | 0      | 0     | 393   | 361   | 1.61 | 1.30   | 1.66   | 0.70   | 0.39
- 0  | 108   | 392    | 9      | 0      | 0     | 364   | 327   | 2.99 | 6.48   | 4.69   | 0.74   | 0.40
- 0  | 109   | 347    | 13     | 0      | 0     | 346   | 323   | 2.10 | 1.10   | -1.27  | 0.75   | 0.41
- 0  | 110   | 384    | 14     | 0      | 0     | 381   | 352   | 2.25 | 1.08   | -0.11  | 0.72   | 0.41
- 0  | 111   | 434    | 15     | 0      | 0     | 412   | 353   | 2.26 | 1.29   | 1.52   | 0.74   | 0.39
- 0  | 112   | 355    | 14     | 0      | 0     | 355   | 328   | 2.19 | 1.17   | 1.58   | 0.76   | 0.34
- 0  | 113   | 344    | 12     | 0      | 0     | 347   | 324   | 2.50 | 1.56   | 1.24   | 0.76   | 0.39
- 0  | 114   | 314    | 4      | 0      | 0     | 300   | 271   | 2.15 | 1.33   | 0.85   | 0.76   | 0.41
- 0  | 115   | 375    | 22     | 0      | 0     | 351   | 304   | 2.00 | 1.00   | 1.14   | 0.80   | 0.39
- 0  | 116   | 505    | 22     | 0      | 0     | 494   | 441   | 1.57 | 1.43   | 1.48   | 0.74   | 0.37
- 0  | 117   | 436    | 6      | 0      | 0     | 423   | 388   | 1.62 | 1.17   | 0.89   | 0.73   | 0.36
- 0  | 118   | 338    | 20     | 0      | 0     | 332   | 300   | 1.85 | 1.15   | 0.17   | 0.78   | 0.34
- 0  | 119   | 368    | 42     | 0      | 0     | 364   | 314   | 1.95 | 1.13   | -1.85  | 0.78   | 0.38
- 0  | 120   | 429    | 47     | 0      | 0     | 456   | 405   | 1.91 | 2.19   | 0.27   | 0.71   | 0.38
- 0  | 121   | 371    | 56     | 0      | 0     | 405   | 367   | 1.89 | 1.24   | 0.64   | 0.76   | 0.37
- 0  | 122   | 362    | 67     | 0      | 0     | 400   | 343   | 1.83 | 1.27   | 1.39   | 0.77   | 0.39
- 0  | 123   | 388    | 89     | 0      | 0     | 455   | 382   | 1.81 | 0.91   | 0.63   | 0.77   | 0.40
- 0  | 124   | 358    | 57     | 0      | 0     | 397   | 357   | 1.91 | 1.06   | 1.23   | 0.79   | 0.36
- 0  | 125   | 375    | 52     | 0      | 0     | 401   | 360   | 1.87 | 1.00   | 0.78   | 0.79   | 0.39
- 0  | 126   | 388    | 44     | 0      | 0     | 410   | 366   | 1.82 | 1.10   | 1.57   | 0.73   | 0.41
- 0  | 127   | 373    | 45     | 0      | 0     | 398   | 359   | 1.80 | 1.07   | 1.42   | 0.74   | 0.39
- 0  | 128   | 385    | 21     | 0      | 0     | 384   | 344   | 1.83 | 1.05   | 0.24   | 0.74   | 0.39
- 0  | 129   | 392    | 26     | 0      | 0     | 399   | 353   | 1.77 | 0.90   | -1.79  | 0.75   | 0.42
- 0  | 130   | 381    | 68     | 0      | 0     | 428   | 381   | 1.76 | 1.16   | 0.41   | 0.76   | 0.38
- 0  | 131   | 375    | 28     | 0      | 0     | 382   | 337   | 1.78 | 1.61   | 1.70   | 0.73   | 0.39
- 0  | 132   | 404    | 42     | 0      | 0     | 415   | 377   | 1.82 | 1.20   | 1.31   | 0.75   | 0.39
- 0  | 133   | 382    | 27     | 0      | 0     | 383   | 335   | 2.09 | 1.53   | 1.38   | 0.78   | 0.39
- 0  | 134   | 394    | 31     | 0      | 0     | 405   | 358   | 1.91 | 1.06   | 1.05   | 0.78   | 0.39
- 0  | 135   | 375    | 38     | 0      | 0     | 381   | 345   | 2.03 | 0.89   | 0.82   | 0.78   | 0.38
- 0  | 136   | 394    | 33     | 0      | 0     | 404   | 360   | 1.88 | 1.04   | 1.40   | 0.75   | 0.38
- 0  | 137   | 379    | 37     | 0      | 0     | 390   | 345   | 1.89 | 1.10   | 1.69   | 0.74   | 0.39
- 0  | 138   | 382    | 48     | 0      | 0     | 405   | 361   | 1.83 | 1.05   | 0.96   | 0.74   | 0.37
- 0  | 139   | 386    | 30     | 0      | 0     | 385   | 349   | 1.94 | 0.94   | -1.55  | 0.76   | 0.38
- 0  | 140   | 375    | 46     | 0      | 0     | 397   | 350   | 1.91 | 0.94   | -0.50  | 0.75   | 0.39
- 0  | 141   | 379    | 86     | 0      | 0     | 440   | 368   | 1.78 | 1.54   | 1.29   | 0.74   | 0.38
- 0  | 142   | 370    | 44     | 0      | 0     | 396   | 342   | 1.83 | 0.89   | 0.75   | 0.74   | 0.41
- 0  | 143   | 386    | 62     | 0      | 0     | 424   | 370   | 2.12 | 1.14   | 1.49   | 0.79   | 0.39
- 0  | 144   | 379    | 49     | 0      | 0     | 405   | 356   | 2.02 | 1.07   | 1.59   | 0.79   | 0.41
- 0  | 145   | 390    | 40     | 0      | 0     | 406   | 356   | 1.89 | 0.99   | 0.87   | 0.78   | 0.39
- 0  | 146   | 363    | 50     | 0      | 0     | 392   | 339   | 1.81 | 1.31   | 0.76   | 0.75   | 0.38
- 0  | 147   | 382    | 30     | 0      | 0     | 375   | 341   | 2.00 | 1.08   | 0.87   | 0.74   | 0.39
- 0  | 148   | 398    | 30     | 0      | 0     | 397   | 361   | 2.21 | 1.22   | 0.34   | 0.75   | 0.39
- 0  | 149   | 374    | 28     | 0      | 0     | 380   | 337   | 1.78 | 1.43   | -1.03  | 0.74   | 0.38
- 0  | 150   | 391    | 30     | 0      | 0     | 395   | 353   | 2.21 | 1.08   | 0.57   | 0.74   | 0.38
- 0  | 151   | 393    | 6      | 0      | 0     | 379   | 344   | 2.05 | 1.11   | 0.96   | 0.74   | 0.36
- 0  | 152   | 378    | 15     | 0      | 0     | 373   | 339   | 2.48 | 1.03   | 1.50   | 0.75   | 0.37
- 0  | 153   | 388    | 24     | 0      | 0     | 393   | 349   | 2.42 | 1.27   | 1.20   | 0.78   | 0.40
- 0  | 154   | 368    | 37     | 0      | 0     | 373   | 336   | 2.58 | 1.75   | 1.72   | 0.79   | 0.36
- 0  | 155   | 397    | 30     | 0      | 0     | 394   | 354   | 2.15 | 1.40   | 1.97   | 0.76   | 0.36
- 0  | 156   | 377    | 29     | 0      | 0     | 377   | 343   | 1.86 | 1.77   | 2.67   | 0.70   | 0.37
- 0  | 157   | 356    | 18     | 0      | 0     | 358   | 321   | 1.72 | 2.69   | 3.98   | 0.66   | 0.37
- 0  | 158   | 390    | 27     | 0      | 0     | 397   | 357   | 1.37 | 3.24   | 2.51   | 0.61   | 0.37
- 0  | 159   | 359    | 44     | 0      | 0     | 370   | 342   | 1.27 | 4.90   | 1.62   | 0.56   | 0.39
- 0  | 160   | 356    | 42     | 0      | 0     | 375   | 337   | 0.84 | 4.92   | 1.99   | 0.51   | 0.42
- 0  | 161   | 338    | 64     | 0      | 0     | 382   | 341   | 0.54 | 4.51   | 1.23   | 0.48   | 0.46
- 0  | 162   | 326    | 81     | 0      | 0     | 372   | 337   | 0.44 | 2.99   | 0.86   | 0.47   | 0.58
- 0  | 163   | 264    | 119    | 0      | 0     | 361   | 332   | 0.44 | 2.52   | 0.34   | 0.48   | 0.57
- 0  | 164   | 56     | 368    | 0      | 0     | 395   | 358   | 0.34 | 2.05   | 0.34   | 0.46   | 0.72
- 0  | 165   | 0      | 387    | 0      | 0     | 358   | 325   | 0.37 | 1.52   | 1.21   | 0.48   | 0.76
- 0  | 166   | 0      | 382    | 0      | 0     | 357   | 322   | 0.36 | 1.30   | 1.31   | 0.46   | 0.95
- ---------------------------------------------------------------------------------------------------------
++------+---------+----------+----------+----------+---------+---------+---------+-------+----------+----------+----------+-----------+
+|   ID |   Image |   # full |   # part |   # over |   # ice |   # sum |   # prf |   Ibg |   I/sigI |   I/sigI |   CC prf |   RMSD XY |
+|      |         |          |          |          |         |         |         |       |    (sum) |    (prf) |          |           |
+|------+---------+----------+----------+----------+---------+---------+---------+-------+----------+----------+----------+-----------|
+|    0 |       0 |        0 |     1589 |        0 |       0 |    1483 |     294 |  1.77 |     0.56 |     1.3  |     0.63 |      0.78 |
+|    0 |       1 |        0 |      405 |        0 |       0 |     390 |     358 |  1.49 |     0.51 |     0.16 |     0.67 |      0.66 |
+|    0 |       2 |       93 |      301 |        0 |       0 |     364 |     334 |  1.63 |     0.73 |     0.23 |     0.66 |      0.63 |
+|    0 |       3 |      292 |      119 |        0 |       0 |     397 |     363 |  1.73 |     0.71 |     0.37 |     0.69 |      0.54 |
+|    0 |       4 |      330 |       61 |        0 |       0 |     363 |     331 |  1.58 |     0.69 |     0.49 |     0.67 |      0.59 |
+|    0 |       5 |      353 |       54 |        0 |       0 |     369 |     344 |  1.63 |     1    |     0.88 |     0.68 |      0.54 |
+|    0 |       6 |      358 |       45 |        0 |       0 |     373 |     348 |  1.54 |     1.15 |     1.42 |     0.67 |      0.49 |
+|    0 |       7 |      360 |       29 |        0 |       0 |     367 |     338 |  1.41 |     0.92 |     0.92 |     0.65 |      0.5  |
+|    0 |       8 |      378 |       32 |        0 |       0 |     381 |     344 |  1.53 |     1.23 |     0    |     0.68 |      0.45 |
+|    0 |       9 |      380 |       16 |        0 |       0 |     376 |     337 |  1.49 |     1.3  |    -1.1  |     0.68 |      0.46 |
+|    0 |      10 |      372 |       20 |        0 |       0 |     378 |     339 |  1.4  |     1.24 |     0.2  |     0.68 |      0.44 |
+|    0 |      11 |      369 |       21 |        0 |       0 |     367 |     334 |  1.45 |     1.19 |     1.35 |     0.7  |      0.44 |
+|    0 |      12 |      396 |       12 |        0 |       0 |     379 |     353 |  1.49 |     1.17 |     1.24 |     0.69 |      0.43 |
+|    0 |      13 |      387 |       15 |        0 |       0 |     382 |     350 |  1.49 |     0.95 |     0.77 |     0.74 |      0.43 |
+|    0 |      14 |      374 |       13 |        0 |       0 |     373 |     334 |  1.51 |     1.08 |     0.83 |     0.74 |      0.4  |
+|    0 |      15 |      402 |       11 |        0 |       0 |     387 |     353 |  1.75 |     1.62 |     1.53 |     0.74 |      0.41 |
+|    0 |      16 |      391 |       20 |        0 |       0 |     378 |     338 |  1.6  |     1.81 |     2.16 |     0.71 |      0.4  |
+|    0 |      17 |      387 |       16 |        0 |       0 |     373 |     337 |  1.32 |     1.48 |     1.33 |     0.7  |      0.39 |
+|    0 |      18 |      390 |       16 |        0 |       0 |     379 |     339 |  1.27 |     1.32 |    -0.09 |     0.7  |      0.39 |
+|    0 |      19 |      393 |        6 |        0 |       0 |     375 |     347 |  1.34 |     1.27 |    -1.51 |     0.72 |      0.39 |
+|    0 |      20 |      388 |       18 |        0 |       0 |     388 |     348 |  1.31 |     1.27 |     0.53 |     0.7  |      0.4  |
+|    0 |      21 |      378 |       27 |        0 |       0 |     384 |     350 |  1.38 |     1.25 |     1.14 |     0.7  |      0.4  |
+|    0 |      22 |      385 |       22 |        0 |       0 |     386 |     347 |  1.3  |     1.23 |     1.4  |     0.71 |      0.42 |
+|    0 |      23 |      384 |       28 |        0 |       0 |     392 |     345 |  1.55 |     1.08 |     0.99 |     0.75 |      0.4  |
+|    0 |      24 |      387 |       20 |        0 |       0 |     378 |     344 |  1.5  |     1.17 |     0.75 |     0.75 |      0.38 |
+|    0 |      25 |      384 |       31 |        0 |       0 |     380 |     341 |  1.38 |     1.08 |     1.03 |     0.74 |      0.4  |
+|    0 |      26 |      384 |       47 |        0 |       0 |     401 |     356 |  1.55 |     1.59 |     2.03 |     0.72 |      0.42 |
+|    0 |      27 |      384 |       39 |        0 |       0 |     396 |     350 |  1.58 |     2.04 |     2.3  |     0.7  |      0.42 |
+|    0 |      28 |      362 |       40 |        0 |       0 |     379 |     350 |  1.22 |     1.3  |     0.84 |     0.71 |      0.41 |
+|    0 |      29 |      380 |       20 |        0 |       0 |     389 |     343 |  1.38 |     1.17 |    -1.13 |     0.72 |      0.39 |
+|    0 |      30 |      385 |       31 |        0 |       0 |     386 |     354 |  1.3  |     1.37 |    -0.03 |     0.7  |      0.41 |
+|    0 |      31 |      391 |       39 |        0 |       0 |     396 |     355 |  1.32 |     1.43 |     0.86 |     0.71 |      0.37 |
+|    0 |      32 |      386 |       25 |        0 |       0 |     376 |     352 |  1.34 |     0.99 |     1.23 |     0.71 |      0.39 |
+|    0 |      33 |      389 |       22 |        0 |       0 |     384 |     345 |  1.47 |     1.08 |     0.78 |     0.75 |      0.38 |
+|    0 |      34 |      385 |       15 |        0 |       0 |     369 |     343 |  1.47 |     1.26 |     0.82 |     0.76 |      0.38 |
+|    0 |      35 |      382 |       30 |        0 |       0 |     382 |     342 |  1.53 |     1.06 |     0.62 |     0.76 |      0.39 |
+|    0 |      36 |      397 |       17 |        0 |       0 |     392 |     353 |  1.48 |     1.34 |     1.51 |     0.72 |      0.39 |
+|    0 |      37 |      388 |       20 |        0 |       0 |     381 |     346 |  1.24 |     1.25 |     1.28 |     0.7  |      0.38 |
+|    0 |      38 |      379 |       24 |        0 |       0 |     390 |     354 |  1.38 |     1.29 |     0.05 |     0.72 |      0.38 |
+|    0 |      39 |      382 |       50 |        0 |       0 |     397 |     351 |  1.29 |     1.33 |    -1.15 |     0.72 |      0.38 |
+|    0 |      40 |      396 |       31 |        0 |       0 |     397 |     357 |  1.59 |     1.44 |    -0.02 |     0.71 |      0.4  |
+|    0 |      41 |      393 |       31 |        0 |       0 |     405 |     358 |  1.35 |     1.12 |     1.15 |     0.71 |      0.39 |
+|    0 |      42 |      372 |        9 |        0 |       0 |     364 |     331 |  1.42 |     1.1  |     1.18 |     0.71 |      0.4  |
+|    0 |      43 |      391 |       45 |        0 |       0 |     410 |     362 |  1.75 |     1.54 |     1.17 |     0.75 |      0.39 |
+|    0 |      44 |      372 |       54 |        0 |       0 |     406 |     358 |  1.53 |     1.1  |     1.11 |     0.75 |      0.41 |
+|    0 |      45 |      369 |       64 |        0 |       0 |     399 |     357 |  1.6  |     1.01 |     0.61 |     0.75 |      0.44 |
+|    0 |      46 |      388 |       72 |        0 |       0 |     433 |     372 |  1.59 |     0.93 |     1.27 |     0.71 |      0.4  |
+|    0 |      47 |      385 |       54 |        0 |       0 |     400 |     357 |  1.32 |     0.99 |     0.63 |     0.69 |      0.44 |
+|    0 |      48 |      386 |       21 |        0 |       0 |     384 |     345 |  1.51 |     1.24 |     0.13 |     0.69 |      0.43 |
+|    0 |      49 |      382 |       40 |        0 |       0 |     392 |     353 |  1.57 |     1.1  |    -1.16 |     0.72 |      0.47 |
+|    0 |      50 |      385 |       38 |        0 |       0 |     397 |     354 |  1.5  |     1.12 |     0.45 |     0.7  |      0.45 |
+|    0 |      51 |      392 |       47 |        0 |       0 |     411 |     364 |  1.6  |     1.48 |     2.65 |     0.7  |      0.44 |
+|    0 |      52 |      376 |       15 |        0 |       0 |     373 |     343 |  1.58 |     0.87 |     1.25 |     0.69 |      0.45 |
+|    0 |      53 |      407 |       31 |        0 |       0 |     394 |     351 |  1.74 |     1.02 |     1.04 |     0.74 |      0.45 |
+|    0 |      54 |      378 |       25 |        0 |       0 |     373 |     339 |  1.64 |     1.02 |     0.71 |     0.74 |      0.45 |
+|    0 |      55 |      397 |       20 |        0 |       0 |     384 |     345 |  1.64 |     1.22 |     1.1  |     0.73 |      0.43 |
+|    0 |      56 |      392 |       19 |        0 |       0 |     386 |     347 |  1.51 |     1.25 |     1.35 |     0.71 |      0.42 |
+|    0 |      57 |      380 |       31 |        0 |       0 |     397 |     357 |  1.56 |     1.2  |     1.03 |     0.7  |      0.43 |
+|    0 |      58 |      391 |       43 |        0 |       0 |     392 |     352 |  1.49 |     1.1  |    -0.23 |     0.71 |      0.41 |
+|    0 |      59 |      380 |       50 |        0 |       0 |     388 |     345 |  1.5  |     0.84 |    -0.56 |     0.71 |      0.42 |
+|    0 |      60 |      389 |       54 |        0 |       0 |     411 |     371 |  1.64 |     1.41 |     0.39 |     0.72 |      0.39 |
+|    0 |      61 |      377 |       52 |        0 |       0 |     399 |     348 |  1.35 |     1.23 |     0.86 |     0.7  |      0.43 |
+|    0 |      62 |      378 |       28 |        0 |       0 |     390 |     352 |  1.83 |     2.03 |     3.07 |     0.72 |      0.41 |
+|    0 |      63 |      362 |       51 |        0 |       0 |     389 |     337 |  1.6  |     0.75 |     0.61 |     0.75 |      0.41 |
+|    0 |      64 |      412 |       76 |        0 |       0 |     460 |     411 |  1.57 |     1.49 |     1.3  |     0.76 |      0.4  |
+|    0 |      65 |      360 |       41 |        0 |       0 |     378 |     334 |  1.63 |     0.94 |     1.11 |     0.76 |      0.4  |
+|    0 |      66 |      395 |       59 |        0 |       0 |     430 |     372 |  1.43 |     1.33 |     1.29 |     0.73 |      0.39 |
+|    0 |      67 |      373 |       33 |        0 |       0 |     376 |     338 |  1.5  |     1.12 |     0.87 |     0.71 |      0.41 |
+|    0 |      68 |      391 |       48 |        0 |       0 |     396 |     359 |  1.63 |     1.07 |    -0.2  |     0.71 |      0.4  |
+|    0 |      69 |      398 |       42 |        0 |       0 |     413 |     369 |  1.48 |     1    |    -0.45 |     0.72 |      0.41 |
+|    0 |      70 |      382 |       18 |        0 |       0 |     368 |     339 |  1.53 |     1.11 |    -0.09 |     0.71 |      0.41 |
+|    0 |      71 |      395 |       19 |        0 |       0 |     384 |     348 |  1.63 |     1.21 |     0.75 |     0.71 |      0.42 |
+|    0 |      72 |      385 |       37 |        0 |       0 |     391 |     347 |  1.47 |     1.27 |     1.36 |     0.71 |      0.41 |
+|    0 |      73 |      376 |       26 |        0 |       0 |     382 |     335 |  1.79 |     1.14 |     0.82 |     0.74 |      0.44 |
+|    0 |      74 |      392 |       23 |        0 |       0 |     393 |     355 |  1.61 |     1.1  |     0.88 |     0.75 |      0.44 |
+|    0 |      75 |      403 |       30 |        0 |       0 |     411 |     365 |  1.71 |     0.85 |     0.9  |     0.76 |      0.43 |
+|    0 |      76 |      380 |       50 |        0 |       0 |     411 |     355 |  1.54 |     1.2  |     1.21 |     0.71 |      0.42 |
+|    0 |      77 |      375 |       53 |        0 |       0 |     393 |     352 |  1.51 |     0.83 |     0.82 |     0.7  |      0.43 |
+|    0 |      78 |      379 |       48 |        0 |       0 |     406 |     363 |  1.58 |     0.98 |    -0.17 |     0.7  |      0.46 |
+|    0 |      79 |      380 |       56 |        0 |       0 |     415 |     364 |  1.75 |     0.83 |    -0.39 |     0.7  |      0.44 |
+|    0 |      80 |      396 |       80 |        0 |       0 |     450 |     384 |  1.65 |     0.96 |     0.4  |     0.71 |      0.47 |
+|    0 |      81 |      361 |       75 |        0 |       0 |     408 |     351 |  1.54 |     0.95 |     1    |     0.7  |      0.44 |
+|    0 |      82 |      380 |       65 |        0 |       0 |     414 |     361 |  1.65 |     0.99 |     1.55 |     0.71 |      0.47 |
+|    0 |      83 |      383 |       73 |        0 |       0 |     434 |     369 |  1.8  |     0.93 |     1.58 |     0.75 |      0.46 |
+|    0 |      84 |      367 |       25 |        0 |       0 |     375 |     338 |  2.15 |     1.73 |     3.2  |     0.75 |      0.5  |
+|    0 |      85 |      407 |       35 |        0 |       0 |     421 |     375 |  2.17 |     1.36 |     2.11 |     0.75 |      0.44 |
+|    0 |      86 |      371 |       32 |        0 |       0 |     376 |     338 |  1.87 |     1.74 |     2.48 |     0.71 |      0.46 |
+|    0 |      87 |      387 |       36 |        0 |       0 |     402 |     350 |  1.77 |     1.54 |     1.66 |     0.7  |      0.44 |
+|    0 |      88 |      407 |       41 |        0 |       0 |     421 |     377 |  1.69 |     0.95 |     0.66 |     0.71 |      0.45 |
+|    0 |      89 |      376 |       19 |        0 |       0 |     366 |     328 |  1.61 |     1    |    -1.39 |     0.72 |      0.43 |
+|    0 |      90 |      392 |       41 |        0 |       0 |     417 |     374 |  1.71 |     1.14 |     0.53 |     0.71 |      0.43 |
+|    0 |      91 |      381 |       33 |        0 |       0 |     389 |     343 |  1.59 |     0.91 |     0.92 |     0.7  |      0.44 |
+|    0 |      92 |      398 |       33 |        0 |       0 |     401 |     357 |  1.64 |     0.94 |     1.3  |     0.71 |      0.42 |
+|    0 |      93 |      385 |       44 |        0 |       0 |     403 |     361 |  1.83 |     0.97 |     1.19 |     0.75 |      0.44 |
+|    0 |      94 |      383 |       30 |        0 |       0 |     393 |     353 |  1.84 |     0.92 |     1.15 |     0.75 |      0.44 |
+|    0 |      95 |      390 |       63 |        0 |       0 |     427 |     379 |  1.84 |     1.1  |     1.79 |     0.76 |      0.45 |
+|    0 |      96 |      380 |       61 |        0 |       0 |     405 |     354 |  1.74 |     0.78 |     1.54 |     0.73 |      0.43 |
+|    0 |      97 |      356 |       54 |        0 |       0 |     391 |     353 |  1.67 |     0.93 |     1.78 |     0.72 |      0.44 |
+|    0 |      98 |      367 |       86 |        0 |       0 |     432 |     378 |  1.78 |     1.02 |     1.17 |     0.72 |      0.43 |
+|    0 |      99 |      385 |       66 |        0 |       0 |     432 |     378 |  1.52 |     1.09 |    -0.41 |     0.72 |      0.43 |
+|    0 |     100 |      374 |       74 |        0 |       0 |     418 |     352 |  1.66 |     1.27 |     0.74 |     0.73 |      0.42 |
+|    0 |     101 |      360 |       64 |        0 |       0 |     392 |     351 |  1.69 |     1.02 |     0.85 |     0.72 |      0.41 |
+|    0 |     102 |      393 |       23 |        0 |       0 |     401 |     363 |  1.89 |     1.12 |     1.39 |     0.73 |      0.4  |
+|    0 |     103 |      435 |       12 |        0 |       0 |     418 |     371 |  1.97 |     1.13 |     1.15 |     0.77 |      0.4  |
+|    0 |     104 |      429 |        6 |        0 |       0 |     412 |     375 |  1.9  |     0.84 |     0.68 |     0.77 |      0.41 |
+|    0 |     105 |      398 |        6 |        0 |       0 |     371 |     318 |  2.05 |     0.94 |     1.24 |     0.77 |      0.44 |
+|    0 |     106 |      339 |       22 |        0 |       0 |     348 |     328 |  1.99 |     1.25 |     1.51 |     0.73 |      0.37 |
+|    0 |     107 |      398 |       14 |        0 |       0 |     400 |     364 |  1.58 |     1.28 |     1.38 |     0.69 |      0.39 |
+|    0 |     108 |      394 |       14 |        0 |       0 |     364 |     326 |  3    |     6.18 |     4.74 |     0.73 |      0.4  |
+|    0 |     109 |      347 |        3 |        0 |       0 |     336 |     317 |  2.12 |     1.05 |    -1.15 |     0.74 |      0.42 |
+|    0 |     110 |      384 |       19 |        0 |       0 |     378 |     350 |  2.25 |     1.1  |     0.23 |     0.71 |      0.41 |
+|    0 |     111 |      433 |       13 |        0 |       0 |     418 |     357 |  2.22 |     1.31 |     1.49 |     0.73 |      0.39 |
+|    0 |     112 |      352 |       19 |        0 |       0 |     359 |     331 |  2.15 |     1.16 |     1.34 |     0.76 |      0.34 |
+|    0 |     113 |      343 |       13 |        0 |       0 |     347 |     326 |  2.61 |     1.51 |     1.19 |     0.76 |      0.4  |
+|    0 |     114 |      307 |       16 |        0 |       0 |     306 |     270 |  2.11 |     1.28 |     0.92 |     0.76 |      0.42 |
+|    0 |     115 |      373 |       21 |        0 |       0 |     363 |     310 |  1.99 |     0.95 |     1.04 |     0.8  |      0.39 |
+|    0 |     116 |      499 |       41 |        0 |       0 |     508 |     448 |  1.55 |     1.4  |     1.27 |     0.74 |      0.37 |
+|    0 |     117 |      429 |       45 |        0 |       0 |     445 |     392 |  1.57 |     1.08 |     0.99 |     0.72 |      0.37 |
+|    0 |     118 |      325 |       62 |        0 |       0 |     358 |     305 |  1.77 |     1.12 |     0.61 |     0.78 |      0.35 |
+|    0 |     119 |      365 |       54 |        0 |       0 |     367 |     318 |  1.89 |     1.06 |    -1.53 |     0.77 |      0.39 |
+|    0 |     120 |      429 |       30 |        0 |       0 |     444 |     394 |  1.92 |     2.08 |     0.37 |     0.7  |      0.39 |
+|    0 |     121 |      377 |       36 |        0 |       0 |     394 |     360 |  1.91 |     1.28 |     1.34 |     0.75 |      0.37 |
+|    0 |     122 |      377 |       40 |        0 |       0 |     388 |     341 |  1.88 |     1.23 |     1.59 |     0.77 |      0.38 |
+|    0 |     123 |      403 |       24 |        0 |       0 |     407 |     361 |  1.79 |     0.87 |     0.83 |     0.76 |      0.4  |
+|    0 |     124 |      369 |       27 |        0 |       0 |     378 |     339 |  1.86 |     1.03 |     0.79 |     0.78 |      0.36 |
+|    0 |     125 |      393 |       23 |        0 |       0 |     391 |     351 |  1.95 |     0.87 |     0.81 |     0.79 |      0.41 |
+|    0 |     126 |      398 |       20 |        0 |       0 |     395 |     357 |  1.87 |     1.12 |     1.39 |     0.73 |      0.42 |
+|    0 |     127 |      378 |       15 |        0 |       0 |     374 |     342 |  1.79 |     1.01 |     0.93 |     0.73 |      0.38 |
+|    0 |     128 |      386 |       31 |        0 |       0 |     394 |     349 |  1.77 |     1.11 |     0.03 |     0.73 |      0.4  |
+|    0 |     129 |      394 |       34 |        0 |       0 |     410 |     367 |  1.77 |     0.95 |    -1.51 |     0.74 |      0.42 |
+|    0 |     130 |      366 |       72 |        0 |       0 |     416 |     367 |  1.72 |     1.09 |     0.09 |     0.75 |      0.39 |
+|    0 |     131 |      386 |       32 |        0 |       0 |     385 |     350 |  1.93 |     1.37 |     1.77 |     0.73 |      0.4  |
+|    0 |     132 |      394 |       42 |        0 |       0 |     412 |     373 |  1.87 |     1.14 |     1.46 |     0.74 |      0.4  |
+|    0 |     133 |      372 |       60 |        0 |       0 |     401 |     352 |  2.23 |     1.63 |     1.84 |     0.78 |      0.4  |
+|    0 |     134 |      383 |       72 |        0 |       0 |     429 |     372 |  1.95 |     1.03 |     1.39 |     0.78 |      0.39 |
+|    0 |     135 |      365 |       47 |        0 |       0 |     389 |     343 |  2.21 |     0.76 |     0.15 |     0.77 |      0.4  |
+|    0 |     136 |      386 |       50 |        0 |       0 |     406 |     364 |  1.9  |     1.01 |     1.53 |     0.75 |      0.38 |
+|    0 |     137 |      378 |       41 |        0 |       0 |     401 |     355 |  1.87 |     1.02 |     1.37 |     0.73 |      0.4  |
+|    0 |     138 |      380 |       49 |        0 |       0 |     406 |     366 |  1.86 |     0.97 |     0.99 |     0.74 |      0.39 |
+|    0 |     139 |      386 |       18 |        0 |       0 |     380 |     348 |  1.94 |     0.93 |    -1.41 |     0.75 |      0.39 |
+|    0 |     140 |      387 |       33 |        0 |       0 |     389 |     347 |  1.84 |     0.99 |    -0.2  |     0.74 |      0.39 |
+|    0 |     141 |      385 |       38 |        0 |       0 |     399 |     354 |  1.83 |     1.32 |     1.29 |     0.73 |      0.38 |
+|    0 |     142 |      390 |        9 |        0 |       0 |     381 |     345 |  1.8  |     0.89 |     0.97 |     0.74 |      0.4  |
+|    0 |     143 |      396 |       12 |        0 |       0 |     385 |     353 |  2.17 |     1.15 |     0.88 |     0.78 |      0.38 |
+|    0 |     144 |      389 |       24 |        0 |       0 |     391 |     345 |  2.06 |     0.93 |     0.73 |     0.79 |      0.42 |
+|    0 |     145 |      393 |       17 |        0 |       0 |     387 |     351 |  1.96 |     0.88 |     0.95 |     0.78 |      0.39 |
+|    0 |     146 |      363 |       25 |        0 |       0 |     360 |     321 |  1.76 |     1.16 |     1.28 |     0.74 |      0.38 |
+|    0 |     147 |      390 |       18 |        0 |       0 |     383 |     349 |  2.04 |     0.99 |     1.3  |     0.73 |      0.39 |
+|    0 |     148 |      390 |       30 |        0 |       0 |     387 |     353 |  2.22 |     1.06 |     0.56 |     0.74 |      0.4  |
+|    0 |     149 |      371 |       16 |        0 |       0 |     370 |     334 |  1.78 |     1.3  |    -1.26 |     0.73 |      0.38 |
+|    0 |     150 |      380 |       26 |        0 |       0 |     383 |     347 |  2.14 |     0.85 |    -0.45 |     0.74 |      0.38 |
+|    0 |     151 |      385 |       13 |        0 |       0 |     376 |     341 |  2.06 |     1.05 |     0.91 |     0.73 |      0.37 |
+|    0 |     152 |      362 |       25 |        0 |       0 |     368 |     335 |  2.45 |     0.81 |     1.61 |     0.75 |      0.37 |
+|    0 |     153 |      374 |       43 |        0 |       0 |     388 |     348 |  2.44 |     1.16 |     1.38 |     0.78 |      0.4  |
+|    0 |     154 |      350 |       38 |        0 |       0 |     369 |     335 |  2.53 |     1.16 |     1.51 |     0.8  |      0.38 |
+|    0 |     155 |      363 |       66 |        0 |       0 |     396 |     358 |  2.24 |     1.19 |     1.52 |     0.77 |      0.37 |
+|    0 |     156 |      328 |       67 |        0 |       0 |     368 |     335 |  1.94 |     1.24 |     2.21 |     0.71 |      0.38 |
+|    0 |     157 |      273 |       98 |        0 |       0 |     354 |     318 |  1.58 |     1.61 |     2.05 |     0.67 |      0.38 |
+|    0 |     158 |       96 |      321 |        0 |       0 |     392 |     356 |  1.77 |     1.87 |     0.73 |     0.66 |      0.4  |
+|    0 |     159 |        0 |      414 |        0 |       0 |     378 |     348 |  1.76 |     2.11 |    -1.68 |     0.66 |      0.44 |
+|    0 |     160 |        0 |      385 |        0 |       0 |     371 |     336 |  1.34 |     1.91 |    -2.62 |     0.62 |      0.49 |
++------+---------+----------+----------+----------+---------+---------+---------+-------+----------+----------+----------+-----------+
 
  Summary vs resolution
- ---------------------------------------------------------------------------------------------------------
- ID | d min | # full | # part | # over | # ice | # sum | # prf | Ibg  | I/sigI | I/sigI | CC prf | RMSD XY
-    |       |        |        |        |       |       |       |      |  (sum) |  (prf) |        |
- ---------------------------------------------------------------------------------------------------------
- 0  | 0.55  | 56     | 4      | 0      | 0     | 4     | 0     | 0.02 | -0.98  | 0.00   | 0.00   | 2.60
- 0  | 0.56  | 133    | 10     | 0      | 0     | 63    | 0     | 0.02 | -0.99  | 0.00   | 0.00   | 1.60
- 0  | 0.57  | 220    | 17     | 0      | 0     | 153   | 14    | 0.03 | -0.54  | 0.16   | 0.23   | 1.54
- 0  | 0.58  | 320    | 22     | 0      | 0     | 253   | 90    | 0.04 | 0.19   | 0.22   | 0.24   | 1.18
- 0  | 0.59  | 424    | 31     | 0      | 0     | 361   | 190   | 0.06 | 0.53   | 0.22   | 0.26   | 1.05
- 0  | 0.60  | 541    | 45     | 0      | 0     | 487   | 310   | 0.07 | 0.52   | 0.19   | 0.29   | 0.98
- 0  | 0.62  | 699    | 102    | 0      | 0     | 645   | 435   | 0.09 | 0.52   | 0.13   | 0.30   | 0.91
- 0  | 0.63  | 860    | 173    | 0      | 0     | 862   | 585   | 0.12 | 0.70   | 0.10   | 0.33   | 0.80
- 0  | 0.65  | 1083   | 264    | 0      | 0     | 1146  | 789   | 0.15 | 0.91   | 0.70   | 0.38   | 0.69
- 0  | 0.67  | 1352   | 320    | 0      | 0     | 1438  | 1055  | 0.18 | 1.05   | 0.46   | 0.42   | 0.63
- 0  | 0.69  | 1747   | 417    | 0      | 0     | 1879  | 1414  | 0.22 | 1.25   | 0.44   | 0.47   | 0.53
- 0  | 0.71  | 2375   | 528    | 0      | 0     | 2442  | 1833  | 0.27 | 1.37   | 0.65   | 0.51   | 0.49
- 0  | 0.74  | 3653   | 691    | 0      | 0     | 3592  | 2558  | 0.35 | 1.62   | 0.76   | 0.56   | 0.45
- 0  | 0.78  | 4809   | 870    | 0      | 0     | 5339  | 4349  | 0.44 | 1.72   | 0.73   | 0.62   | 0.41
- 0  | 0.82  | 5048   | 998    | 0      | 0     | 5803  | 5139  | 0.56 | 1.77   | 0.81   | 0.65   | 0.41
- 0  | 0.87  | 5786   | 1100   | 0      | 0     | 6558  | 5805  | 0.73 | 1.74   | 0.81   | 0.70   | 0.39
- 0  | 0.93  | 7131   | 1215   | 0      | 0     | 7816  | 6736  | 1.00 | 1.58   | 0.83   | 0.74   | 0.39
- 0  | 1.03  | 8407   | 1301   | 0      | 0     | 9566  | 8879  | 1.47 | 1.59   | 0.63   | 0.79   | 0.38
- 0  | 1.18  | 8355   | 1329   | 0      | 0     | 9608  | 9089  | 2.23 | 0.79   | 0.54   | 0.84   | 0.36
- 0  | 1.48  | 8339   | 1318   | 0      | 0     | 9629  | 9107  | 5.63 | 0.67   | 1.99   | 0.88   | 0.43
- ---------------------------------------------------------------------------------------------------------
++------+---------+----------+----------+----------+---------+---------+---------+-------+----------+----------+----------+-----------+
+|   ID |   d min |   # full |   # part |   # over |   # ice |   # sum |   # prf |   Ibg |   I/sigI |   I/sigI |   CC prf |   RMSD XY |
+|      |         |          |          |          |         |         |         |       |    (sum) |    (prf) |          |           |
+|------+---------+----------+----------+----------+---------+---------+---------+-------+----------+----------+----------+-----------|
+|    0 |    0.55 |       53 |        3 |        0 |       0 |       3 |       0 |  0.02 |    -0.69 |     0    |     0    |      3.12 |
+|    0 |    0.56 |      129 |       10 |        0 |       0 |      60 |       0 |  0.02 |    -0.93 |     0    |     0    |      1.54 |
+|    0 |    0.57 |      212 |       17 |        0 |       0 |     150 |      15 |  0.03 |    -0.55 |     0.14 |     0.22 |      1.47 |
+|    0 |    0.58 |      309 |       20 |        0 |       0 |     245 |      90 |  0.04 |     0.21 |     0.21 |     0.24 |      1.16 |
+|    0 |    0.59 |      410 |       29 |        0 |       0 |     348 |     183 |  0.06 |     0.49 |     0.21 |     0.26 |      1.05 |
+|    0 |    0.6  |      520 |       46 |        0 |       0 |     470 |     301 |  0.07 |     0.51 |     0.17 |     0.29 |      0.98 |
+|    0 |    0.62 |      674 |      105 |        0 |       0 |     625 |     421 |  0.09 |     0.48 |     0.17 |     0.3  |      0.91 |
+|    0 |    0.63 |      834 |      153 |        0 |       0 |     827 |     563 |  0.12 |     0.67 |     0.13 |     0.33 |      0.79 |
+|    0 |    0.65 |     1045 |      260 |        0 |       0 |    1111 |     768 |  0.15 |     0.91 |     0.66 |     0.38 |      0.72 |
+|    0 |    0.67 |     1300 |      325 |        0 |       0 |    1409 |    1025 |  0.18 |     1    |     0.57 |     0.42 |      0.64 |
+|    0 |    0.69 |     1673 |      440 |        0 |       0 |    1834 |    1380 |  0.22 |     1.2  |     0.66 |     0.47 |      0.55 |
+|    0 |    0.71 |     2295 |      514 |        0 |       0 |    2365 |    1779 |  0.27 |     1.32 |     0.57 |     0.51 |      0.5  |
+|    0 |    0.74 |     3518 |      668 |        0 |       0 |    3480 |    2478 |  0.36 |     1.58 |     0.87 |     0.57 |      0.45 |
+|    0 |    0.78 |     4663 |      780 |        0 |       0 |    5124 |    4207 |  0.46 |     1.67 |     0.79 |     0.62 |      0.41 |
+|    0 |    0.82 |     4898 |      877 |        0 |       0 |    5548 |    4959 |  0.57 |     1.71 |     0.75 |     0.65 |      0.41 |
+|    0 |    0.87 |     5600 |     1037 |        0 |       0 |    6320 |    5602 |  0.75 |     1.66 |     0.79 |     0.7  |      0.39 |
+|    0 |    0.93 |     6902 |     1127 |        0 |       0 |    7524 |    6493 |  1.04 |     1.49 |     0.78 |     0.75 |      0.37 |
+|    0 |    1.03 |     8101 |     1271 |        0 |       0 |    9240 |    8569 |  1.52 |     1.46 |     0.67 |     0.8  |      0.37 |
+|    0 |    1.18 |     8079 |     1245 |        0 |       0 |    9250 |    8768 |  2.31 |     0.62 |     0.38 |     0.85 |      0.34 |
+|    0 |    1.48 |     8058 |     1226 |        0 |       0 |    9261 |    8777 |  5.86 |     0.36 |     1.74 |     0.89 |      0.42 |
++------+---------+----------+----------+----------+---------+---------+---------+-------+----------+----------+----------+-----------+
 
  Summary for experiment 0
- ---------------------------------------------------------------
- Item                                  | Overall | Low   | High
- ---------------------------------------------------------------
- dmin                                  | 0.55    | 1.48  | 0.55
- dmax                                  | 29.08   | 29.08 | 0.56
- number fully recorded                 | 61338   | 8339  | 56
- number partially recorded             | 10755   | 1318  | 4
- number with invalid background pixels | 9693    | 0     | 60
- number with invalid foreground pixels | 3843    | 0     | 56
- number with overloaded pixels         | 0       | 0     | 0
- number in powder rings                | 0       | 0     | 0
- number processed with summation       | 67644   | 9629  | 4
- number processed with profile fitting | 58377   | 9107  | 0
- number failed in background modelling | 0       | 0     | 0
- number failed in summation            | 3843    | 0     | 56
- number failed in profile fitting      | 13110   | 522   | 60
- ibg                                   | 1.64    | 5.63  | 0.02
- i/sigi (summation)                    | 1.30    | 0.67  | -0.98
- i/sigi (profile fitting)              | 0.88    | 1.99  | 0.00
- cc prf                                | 0.72    | 0.88  | 0.00
- cc_pearson sum/prf                    | 0.56    | 0.72  | 0.00
- cc_spearman sum/prf                   | 0.39    | 0.35  | 0.00
- ---------------------------------------------------------------
++---------------------------------------+-----------+---------+--------+
+| Item                                  |   Overall |     Low |   High |
+|---------------------------------------+-----------+---------+--------|
+| dmin                                  |      0.55 |    1.48 |   0.55 |
+| dmax                                  |     29.08 |   29.08 |   0.56 |
+| number fully recorded                 |  59273    | 8058    |  53    |
+| number partially recorded             |  10153    | 1226    |   3    |
+| number with invalid background pixels |   9268    |    0    |  56    |
+| number with invalid foreground pixels |   3678    |    0    |  53    |
+| number with overloaded pixels         |      0    |    0    |   0    |
+| number in powder rings                |      0    |    0    |   0    |
+| number processed with summation       |  65194    | 9261    |   3    |
+| number processed with profile fitting |  56378    | 8777    |   0    |
+| number failed in background modelling |      0    |    0    |   0    |
+| number failed in summation            |   3678    |    0    |  53    |
+| number failed in profile fitting      |  12494    |  484    |  56    |
+| ibg                                   |      1.7  |    5.86 |   0.02 |
+| i/sigi (summation)                    |      1.18 |    0.36 |  -0.69 |
+| i/sigi (profile fitting)              |      0.82 |    1.74 |   0    |
+| cc prf                                |      0.73 |    0.89 |   0    |
+| cc_pearson sum/prf                    |      0.78 |    0.79 |   0    |
+| cc_spearman sum/prf                   |      0.39 |    0.34 |   0    |
++---------------------------------------+-----------+---------+--------+
 
 Timing information for integration
- ----------------------------------
-         Read time |   3.14 seconds
-      Extract time |   4.50 seconds
-  Pre-process time |   0.09 seconds
-      Process time | 106.14 seconds
- Post-process time |   0.00 seconds
-        Total time | 120.02 seconds
- ----------------------------------
++-------------------+----------------+
+| Read time         | 2.77 seconds   |
+| Extract time      | 4.14 seconds   |
+| Pre-process time  | 0.08 seconds   |
+| Process time      | 99.45 seconds  |
+| Post-process time | 0.00 seconds   |
+| Total time        | 108.83 seconds |
++-------------------+----------------+
 
-Saving 72093 reflections to integrated.refl
- time taken: 0.138221
+Saving 69426 reflections to integrated.refl
+ time taken: 0.131506
 Saving the experiments to integrated.expt
- time taken: 0.00542212
+ time taken: 0.0265715
 
-Total time taken: 21.544391
+Total time taken: 19.008524

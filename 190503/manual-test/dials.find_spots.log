@@ -1,5 +1,5 @@
 DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
-DIALS 2.0
+DIALS 2.1.1-gcdd629a7b-release
 The following parameters have been modified:
 
 spotfinder {
@@ -420,4 +420,4 @@ Histogram of per-image spot count for imageset 0:
 
 --------------------------------------------------------------------------------
 Saved 626 reflections to strong.refl
-Time Taken: 2.617579
+Time Taken: 2.011213
