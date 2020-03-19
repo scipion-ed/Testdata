@@ -1,0 +1,295 @@
+{
+  "__id__": "ExperimentList",
+  "experiment": [
+    {
+      "__id__": "Experiment",
+      "identifier": "",
+      "beam": 0,
+      "detector": 0,
+      "goniometer": 0,
+      "scan": 0,
+      "crystal": 0,
+      "imageset": 0
+    }
+  ],
+  "imageset": [
+    {
+      "__id__": "ImageSequence",
+      "template": "/mnt/e/Projects/Processing/Lysozyme_data_for_Viktor/Lyso_Gd_191211/experiment_24/SMV/data/#####.img",
+      "mask": "",
+      "gain": "",
+      "pedestal": "",
+      "dx": "",
+      "dy": "",
+      "params": {
+        "dynamic_shadowing": "Auto",
+        "multi_panel": false
+      }
+    }
+  ],
+  "beam": [
+    {
+      "direction": [
+        0.04681178590588482,
+        0.059178729345560066,
+        0.997149203827264
+      ],
+      "wavelength": 0.0251,
+      "divergence": 0.0,
+      "sigma_divergence": 0.0,
+      "polarization_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "polarization_fraction": 0.5,
+      "flux": 0.0,
+      "transmission": 1.0
+    }
+  ],
+  "detector": [
+    {
+      "panels": [
+        {
+          "name": "Panel",
+          "type": "SENSOR_PAD",
+          "fast_axis": [
+            0.9936660475998587,
+            0.10182566504508038,
+            0.04753230254682079
+          ],
+          "slow_axis": [
+            0.09727091906907431,
+            -0.99118848251931,
+            0.08990973487072991
+          ],
+          "origin": [
+            -133.5429746040188,
+            -141.03390953860313,
+            -2552.5653377117883
+          ],
+          "raw_image_offset": [
+            0,
+            0
+          ],
+          "image_size": [
+            516,
+            516
+          ],
+          "pixel_size": [
+            0.055,
+            0.055
+          ],
+          "trusted_range": [
+            -1.0,
+            65535.0
+          ],
+          "thickness": 0.3,
+          "material": "Si",
+          "mu": 0.0,
+          "identifier": "",
+          "mask": [],
+          "gain": 1.0,
+          "pedestal": 0.0,
+          "px_mm_strategy": {
+            "type": "SimplePxMmStrategy"
+          }
+        }
+      ],
+      "hierarchy": {
+        "name": "",
+        "type": "",
+        "fast_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "slow_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_image_offset": [
+          0,
+          0
+        ],
+        "image_size": [
+          0,
+          0
+        ],
+        "pixel_size": [
+          0.0,
+          0.0
+        ],
+        "trusted_range": [
+          0.0,
+          0.0
+        ],
+        "thickness": 0.0,
+        "material": "",
+        "mu": 0.0,
+        "identifier": "",
+        "mask": [],
+        "gain": 1.0,
+        "pedestal": 0.0,
+        "px_mm_strategy": {
+          "type": "SimplePxMmStrategy"
+        },
+        "children": [
+          {
+            "panel": 0
+          }
+        ]
+      }
+    }
+  ],
+  "goniometer": [
+    {
+      "rotation_axis": [
+        -0.6203929740893525,
+        -0.7842911179533836,
+        0.0
+      ],
+      "fixed_rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "setting_rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "scan": [
+    {
+      "image_range": [
+        1,
+        36
+      ],
+      "batch_offset": 0,
+      "oscillation": [
+        29.650000000000002,
+        0.6892
+      ],
+      "exposure_time": [
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5
+      ],
+      "epochs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "valid_image_ranges": {}
+    }
+  ],
+  "crystal": [
+    {
+      "__id__": "crystal",
+      "real_space_a": [
+        50.75633352102451,
+        -119.2163257586853,
+        -7.860720422125811
+      ],
+      "real_space_b": [
+        108.59616961544243,
+        49.158448362754996,
+        -44.34023486161626
+      ],
+      "real_space_c": [
+        16.67812158088494,
+        4.207952677743968,
+        45.51253620520374
+      ],
+      "space_group_hall_symbol": " C 2y"
+    }
+  ],
+  "profile": [],
+  "scaling_model": []
+}

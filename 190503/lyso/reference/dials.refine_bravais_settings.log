@@ -1,0 +1,41 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.1.1-gcdd629a7b-release
+The following parameters have been modified:
+
+input {
+  experiments = indexed.expt
+  reflections = indexed.refl
+}
+
+Chiral space groups corresponding to each Bravais lattice:
+aP: P1
+mP: P2 P21
+mC: C2
+oP: P222 P2221 P21212 P212121
+oC: C2221 C222
+tP: P4 P41 P42 P43 P422 P4212 P4122 P41212 P4222 P42212 P4322 P43212
++------------+--------------+--------+--------------+----------+-----------+-------------------------------------------+----------+------------+
+|   Solution |   Metric fit |   rmsd | min/max cc   |   #spots | lattice   | unit_cell                                 |   volume | cb_op      |
+|------------+--------------+--------+--------------+----------+-----------+-------------------------------------------+----------+------------|
+|   *      9 |       4.0682 |  0.028 | 0.343/0.947  |      667 | tP        | 92.67  92.67  49.41  90.00  90.00  90.00  |   424283 | b,c,a      |
+|   *      8 |       4.0682 |  0.027 | 0.348/0.947  |      671 | oP        | 51.85  96.84 100.22  90.00  90.00  90.00  |   503206 | a,b,c      |
+|   *      7 |       4.0682 |  0.027 | 0.348/0.348  |      671 | mP        | 51.19  98.99  95.80  90.00  90.28  90.00  |   485430 | -a,-c,-b   |
+|   *      6 |       3.895  |  0.028 | 0.734/0.947  |      672 | oC        | 134.38 137.13  51.54  90.00  90.00  90.00 |   949693 | b+c,-b+c,a |
+|   *      5 |       3.895  |  0.029 | 0.734/0.734  |      676 | mC        | 129.81 127.18  48.65  90.00  90.12  90.00 |   803268 | b-c,b+c,a  |
+|   *      4 |       3.5931 |  0.027 | 0.947/0.947  |      674 | mP        | 93.70  50.62  96.20  90.00  91.50  90.00  |   456143 | -b,-a,-c   |
+|   *      3 |       2.9306 |  0.027 | 0.945/0.945  |      670 | mP        | 49.54  92.51  95.93  90.00  89.84  90.00  |   439603 | a,b,c      |
+|   *      2 |       2.2394 |  0.027 | 0.940/0.940  |      671 | mC        | 139.42 142.71  53.31  90.00  90.99  90.00 |  1060467 | b+c,-b+c,a |
+|   *      1 |       0      |  0.026 | -/-          |      669 | aP        | 49.26  91.54  93.23  92.06  90.18  90.70  |   420128 | a,b,c      |
++------------+--------------+--------+--------------+----------+-----------+-------------------------------------------+----------+------------+
+* = recommended solution
+
+Saving summary as bravais_summary.json
+Saving solution 9 as bravais_setting_9.expt
+Saving solution 8 as bravais_setting_8.expt
+Saving solution 7 as bravais_setting_7.expt
+Saving solution 6 as bravais_setting_6.expt
+Saving solution 5 as bravais_setting_5.expt
+Saving solution 4 as bravais_setting_4.expt
+Saving solution 3 as bravais_setting_3.expt
+Saving solution 2 as bravais_setting_2.expt
+Saving solution 1 as bravais_setting_1.expt
