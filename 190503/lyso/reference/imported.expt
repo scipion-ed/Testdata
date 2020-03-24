@@ -14,7 +14,7 @@
   "imageset": [
     {
       "__id__": "ImageSequence",
-      "template": "/mnt/e/Projects/Processing/Lysozyme_data_for_Viktor/Lyso_Gd_191211/experiment_24/SMV/data/#####.img",
+      "template": "/mnt/e/Programming/scipion/scipion-ed/Testdata/190503/lyso/experiment_24/SMV/data/#####.img",
       "mask": "",
       "gain": "",
       "pedestal": "",
@@ -63,9 +63,9 @@
             0.0
           ],
           "origin": [
-            -12.734425,
-            11.787325,
-            -2562.0
+            -13.42385,
+            13.350975,
+            -1481.7449
           ],
           "raw_image_offset": [
             0,
@@ -182,14 +182,24 @@
     {
       "image_range": [
         1,
-        36
+        46
       ],
       "batch_offset": 0,
       "oscillation": [
-        29.650000000000002,
-        0.6892
+        -17.220000000000002,
+        0.6907000000000001
       ],
       "exposure_time": [
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
         1.5,
         1.5,
         1.5,
@@ -228,6 +238,16 @@
         1.5
       ],
       "epochs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         0.0,
         0.0,
         0.0,

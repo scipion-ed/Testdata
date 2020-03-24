@@ -1,6 +1,6 @@
 @echo off
 
-set scan_range=scan_range=1,36
+set scan_range=scan_range=1,46
 set exclude_images=exclude_images=
 set rotation_axis=geometry.goniometer.axes=-0.6204,-0.7843,0.0000
 

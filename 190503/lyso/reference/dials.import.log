@@ -6,9 +6,6 @@ input {
   experiments = <image files>
 }
 geometry {
-  detector {
-    distance = 2562
-  }
   goniometer {
     axes = -0.6204 -0.7843 0
   }
@@ -20,7 +17,7 @@ Applying input geometry in the following order:
 
 --------------------------------------------------------------------------------
   format: <class 'dxtbx.format.FormatSMVTimePix_SU.FormatSMVTimePix_SU_516x516'>
-  num images: 36
+  num images: 46
   sequences:
     still:    0
     sweep:    1

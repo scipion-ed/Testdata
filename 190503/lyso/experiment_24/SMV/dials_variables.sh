@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-scan_range='scan_range=1,36'
+scan_range='scan_range=1,46'
 exclude_images='exclude_images='
 rotation_axis='geometry.goniometer.axes=-0.6204,-0.7843,0.0000'
 #
