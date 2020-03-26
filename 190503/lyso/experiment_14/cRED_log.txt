@@ -1,0 +1,18 @@
+Data Collection Time: 2019-06-03 18:45:00
+Time Period Start: 1203.947265440749
+Time Period End: 1278.046001479078
+Starting angle: -18.28 degrees
+Ending angle: 15.40 degrees
+Rotation range: 33.68 degrees
+Exposure Time: 1.500 s
+Acquisition time: 1.512 s
+Total time: 74.099 s
+Spot Size: 3
+Camera length: 800 mm
+Rotation axis: -2.24 radians
+Oscillation angle: 0.6873 degrees
+Number of frames: 49
+Stage start: X -18535 | Y -232832 | Z 118030 | A -18.54 | B  0.00
+Stage end:   X -19042 | Y -231057 | Z 118030 | A 15.40 | B  0.00
+Image interval: every 1000 frames an image with defocus 19988 (t=0.01 s).
+Number of images: 0

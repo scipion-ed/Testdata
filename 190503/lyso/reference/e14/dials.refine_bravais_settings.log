@@ -1,0 +1,51 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.1.1-gcdd629a7b-release
+The following parameters have been modified:
+
+refinement {
+  parameterisation {
+    beam {
+      fix = *all in_spindle_plane out_spindle_plane wavelength
+    }
+    detector {
+      fix = *all position orientation distance
+    }
+  }
+}
+input {
+  experiments = indexed.expt
+  reflections = indexed.refl
+}
+
+Chiral space groups corresponding to each Bravais lattice:
+aP: P1
+mP: P2 P21
+mC: C2
+oP: P222 P2221 P21212 P212121
+oC: C2221 C222
+tP: P4 P41 P42 P43 P422 P4212 P4122 P41212 P4222 P42212 P4322 P43212
++------------+--------------+--------+--------------+----------+-----------+-------------------------------------------+----------+------------+
+|   Solution |   Metric fit |   rmsd | min/max cc   |   #spots | lattice   | unit_cell                                 |   volume | cb_op      |
+|------------+--------------+--------+--------------+----------+-----------+-------------------------------------------+----------+------------|
+|          9 |       1.2844 |  0.094 | 0.392/0.853  |     1199 | tP        | 77.77  77.77  40.70  90.00  90.00  90.00  |   246162 | b,c,a      |
+|          8 |       1.2844 |  0.084 | 0.344/0.853  |     1194 | oC        | 109.35 110.98  39.77  90.00  90.00  90.00 |   482716 | b-c,b+c,a  |
+|   *      7 |       1.2844 |  0.059 | 0.344/0.344  |     1158 | mC        | 108.94 111.58  38.57  90.00  92.32  90.00 |   468403 | b-c,b+c,a  |
+|   *      6 |       1.1128 |  0.071 | 0.307/0.853  |     1180 | oP        | 39.75  77.31  78.70  90.00  90.00  90.00  |   241839 | a,b,c      |
+|   *      5 |       1.107  |  0.078 | 0.716/0.716  |     1177 | mC        | 109.83 109.45  38.58  90.00  87.47  90.00 |   463298 | b+c,-b+c,a |
+|   *      4 |       1.1128 |  0.052 | 0.606/0.606  |     1135 | mP        | 38.59  79.02  77.01  90.00  87.93  90.00  |   234675 | -a,-c,-b   |
+|   *      3 |       0.9818 |  0.07  | 0.307/0.307  |     1169 | mP        | 38.77  77.37  78.02  90.00  87.97  90.00  |   233893 | a,b,c      |
+|   *      2 |       0.7109 |  0.036 | 0.853/0.853  |     1122 | mP        | 77.40  38.44  79.06  90.00  88.91  90.00  |   235176 | -b,-a,-c   |
+|   *      1 |       0      |  0.036 | -/-          |     1114 | aP        | 38.17  77.34  78.83  89.08  89.37  89.66  |   232642 | a,b,c      |
++------------+--------------+--------+--------------+----------+-----------+-------------------------------------------+----------+------------+
+* = recommended solution
+
+Saving summary as bravais_summary.json
+Saving solution 9 as bravais_setting_9.expt
+Saving solution 8 as bravais_setting_8.expt
+Saving solution 7 as bravais_setting_7.expt
+Saving solution 6 as bravais_setting_6.expt
+Saving solution 5 as bravais_setting_5.expt
+Saving solution 4 as bravais_setting_4.expt
+Saving solution 3 as bravais_setting_3.expt
+Saving solution 2 as bravais_setting_2.expt
+Saving solution 1 as bravais_setting_1.expt

@@ -1,0 +1,321 @@
+{
+  "__id__": "ExperimentList",
+  "experiment": [
+    {
+      "__id__": "Experiment",
+      "identifier": "",
+      "beam": 0,
+      "detector": 0,
+      "goniometer": 0,
+      "scan": 0,
+      "crystal": 0,
+      "imageset": 0
+    }
+  ],
+  "imageset": [
+    {
+      "__id__": "ImageSequence",
+      "template": "/mnt/e/Programming/scipion/scipion-ed/Testdata/190503/lyso/experiment_14/SMV/data/#####.img",
+      "mask": "",
+      "gain": "",
+      "pedestal": "",
+      "dx": "",
+      "dy": "",
+      "params": {
+        "dynamic_shadowing": "Auto",
+        "multi_panel": false
+      }
+    }
+  ],
+  "beam": [
+    {
+      "direction": [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "wavelength": 0.0251,
+      "divergence": 0.0,
+      "sigma_divergence": 0.0,
+      "polarization_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "polarization_fraction": 0.5,
+      "flux": 0.0,
+      "transmission": 1.0
+    }
+  ],
+  "detector": [
+    {
+      "panels": [
+        {
+          "name": "Panel",
+          "type": "SENSOR_PAD",
+          "fast_axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "slow_axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            -13.4145,
+            12.52515,
+            -1480.56
+          ],
+          "raw_image_offset": [
+            0,
+            0
+          ],
+          "image_size": [
+            516,
+            516
+          ],
+          "pixel_size": [
+            0.055,
+            0.055
+          ],
+          "trusted_range": [
+            -1.0,
+            65535.0
+          ],
+          "thickness": 0.3,
+          "material": "Si",
+          "mu": 0.0,
+          "identifier": "",
+          "mask": [],
+          "gain": 1.0,
+          "pedestal": 0.0,
+          "px_mm_strategy": {
+            "type": "SimplePxMmStrategy"
+          }
+        }
+      ],
+      "hierarchy": {
+        "name": "",
+        "type": "",
+        "fast_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "slow_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_image_offset": [
+          0,
+          0
+        ],
+        "image_size": [
+          0,
+          0
+        ],
+        "pixel_size": [
+          0.0,
+          0.0
+        ],
+        "trusted_range": [
+          0.0,
+          0.0
+        ],
+        "thickness": 0.0,
+        "material": "",
+        "mu": 0.0,
+        "identifier": "",
+        "mask": [],
+        "gain": 1.0,
+        "pedestal": 0.0,
+        "px_mm_strategy": {
+          "type": "SimplePxMmStrategy"
+        },
+        "children": [
+          {
+            "panel": 0
+          }
+        ]
+      }
+    }
+  ],
+  "goniometer": [
+    {
+      "rotation_axis": [
+        -0.6203929740893525,
+        -0.7842911179533836,
+        0.0
+      ],
+      "fixed_rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "setting_rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "scan": [
+    {
+      "image_range": [
+        1,
+        49
+      ],
+      "batch_offset": 0,
+      "oscillation": [
+        -18.28,
+        0.6873
+      ],
+      "exposure_time": [
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5
+      ],
+      "epochs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "valid_image_ranges": {}
+    }
+  ],
+  "crystal": [
+    {
+      "__id__": "crystal",
+      "real_space_a": [
+        -85.37832587777706,
+        -66.2184344584134,
+        -13.921302685405992
+      ],
+      "real_space_b": [
+        -68.84176585475797,
+        82.35687075056607,
+        30.46063150378239
+      ],
+      "real_space_c": [
+        -1.5337173556811703,
+        12.233543522038355,
+        -36.54225532438163
+      ],
+      "space_group_hall_symbol": " C 2y"
+    }
+  ],
+  "profile": [],
+  "scaling_model": []
+}
