@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+
+
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+
+  <!-- Definitions for compatibility with the ccp4i2 browser -->
+  <script>
+    if (!Function.prototype.bind) {
+      Function.prototype.bind = function(oThis) {
+        if (typeof this !== 'function') {
+          // closest thing possible to the ECMAScript 5
+          // internal IsCallable function
+          throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
+        }
+
+        var aArgs   = Array.prototype.slice.call(arguments, 1),
+        fToBind = this,
+        fNOP    = function() {},
+        fBound  = function() {
+          return fToBind.apply(this instanceof fNOP
+                               ? this
+                               : oThis,
+                               aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+        if (this.prototype) {
+          // Function.prototype doesn't have a prototype property
+          fNOP.prototype = this.prototype;
+        }
+        fBound.prototype = new fNOP();
+
+        return fBound;
+      }
+    }
+  if (typeof Float64Array === 'undefined') Float64Array = Float32Array;
+  </script>
+
+  
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"/>
+  
+
+  
+  <style type="text/css">
+    body {
+      /*font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;*/
+      margin: 8px;
+      min-width: 240px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .plot {
+      float: left;
+      width: 600px;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+
+    .square-plot {
+      float: left;
+      width: 800px;
+      height: 800px;
+      margin-bottom: 20px;
+    }
+
+    .dendrogram-plot {
+      float: left;
+      width: 1000px;
+      height: 1000px;
+      margin-bottom: 20px;
+    }
+
+    .katex-display {
+      text-align: left;
+    }
+  </style>
+  
+</head>
+
+
+
+<body>
+  
+<div class="page-header">
+    <h1>DIALS systematic absences report</h1>
+</div>
+
+<div>
+    <div class="panel-group">
+
+        <div class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse" data-target="#collapse_screw_axes">
+        <h4 class="panel-title">
+            <a>Screw axes analysis</a>
+        </h4>
+    </div>
+    <div id="collapse_screw_axes" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="container-fluid">
+                
+    
+        <div class="plot_wrapper">
+
+        
+        <div class="col-xs-6 col-sm-6 col-md-4 plot" id="plot_21b">
+        
+
+        </div>
+
+        
+
+    </div>
+    <script>
+        var graphs_plot_21b = {"data": [{"marker": {"color": [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0], "colorscale": "Viridis"}, "mode": "markers", "name": "21b", "type": "scatter", "x": [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0], "xaxis": "x", "y": [337.82672444854626, 59.7652672221659, 13.216175012725449, 17.467247737362957, 5.915993374820883, 4.616111039944422, 1.2141938101101055, 5.016137043089841, -0.30830678768176867, 5.242754380194337, 0.13899156100086946, 4.413645108701721, -1.0300399911995708, 0.34616188268127235, -0.5640710031007633, 1.1168385470810474, -0.4544223312460625, 16.241311367323387, 0.022116350841583237, 5.7780136996625435, 0.5599609905606169, 1.5928067079731638, -0.010211937869629222, 0.27935585513190686, -1.088565467706626, 0.10518584160888379, -0.2843549305713993], "yaxis": "y"}], "layout": {"title": "I (merged) / \u03c3 (merged) along axis 21b", "xaxis": {"anchor": "y", "domain": [0, 1], "title": "index along axis"}, "yaxis": {"anchor": "x", "domain": [0, 1], "title": "I/\u03c3(I)"}}};
+        Plotly.newPlot(plot_21b, graphs_plot_21b.data, graphs_plot_21b.layout);
+    </script>
+    
+
+    
+        <div class="plot_wrapper">
+
+        
+        <div class="col-xs-6 col-sm-6 col-md-4 plot" id="intensities_plot_21b">
+        
+
+        </div>
+
+        
+
+    </div>
+    <script>
+        var graphs_intensities_plot_21b = {"data": [{"marker": {"color": [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0], "colorscale": "Viridis"}, "mode": "markers", "name": "intensity", "type": "scatter", "x": [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0], "xaxis": "x", "y": [68.16652202252165, 15.069506460724325, 3.7444967711633264, 5.356000418313609, 1.8935676952533105, 1.5498027726876045, 0.4056504715511404, 1.7239062503935814, -0.10928154177240432, 1.918471386767203, 0.05197901690533667, 1.7081589898028835, -0.4040649784953976, 0.13813751823837822, -0.23217690181469308, 0.47482680062340177, -0.2000225792301167, 7.383003069722038, 0.010104882547493433, 2.7952259397892822, 0.284190661654937, 0.8396516003704505, -0.0053018342825640885, 0.14571720625003107, -0.5807450623783466, 0.056534971274312215, -0.22255700653238894], "yaxis": "y"}, {"mode": "markers", "name": "sigma", "type": "scatter", "x": [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0], "xaxis": "x", "y": [0.20177954285231203, 0.25214488550191416, 0.28332681487327954, 0.3066310445037639, 0.3200760337752477, 0.3357377583157671, 0.33409038011349707, 0.34367207984646475, 0.3544571385992438, 0.365928145330373, 0.3739724666090448, 0.387017747855432, 0.3922808647699483, 0.3990546768708442, 0.41160935509606045, 0.4251525897493439, 0.44016890341114784, 0.4545817085051536, 0.4568964663236486, 0.48376935138671157, 0.5075186779893605, 0.5271522251679249, 0.519180037153574, 0.5216185863769564, 0.5334957608033, 0.5374770065017703, 0.7826732811883022], "yaxis": "y"}], "layout": {"title": "I, \u03c3 (merged) along axis 21b", "xaxis": {"anchor": "y", "domain": [0, 1], "title": "index along axis"}, "yaxis": {"anchor": "x", "domain": [0, 1], "title": "I, \u03c3"}}};
+        Plotly.newPlot(intensities_plot_21b, graphs_intensities_plot_21b.data, graphs_intensities_plot_21b.layout);
+    </script>
+    
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+  <script>
+    renderMathInElement(document.body);
+  </script>
+</body>

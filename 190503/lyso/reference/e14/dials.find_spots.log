@@ -5,12 +5,6 @@ The following parameters have been modified:
 spotfinder {
   filter {
     d_min = 2.5
-    untrusted {
-      rectangle = 0 516 255 261
-    }
-    untrusted {
-      rectangle = 255 261 0 516
-    }
   }
 }
 input {
@@ -23,18 +17,6 @@ Configuring spot finder from input parameters
 Finding strong spots in imageset 0
 --------------------------------------------------------------------------------
 
-Generating rectangle mask:
- panel = 0
- x0 = 0
- y0 = 255
- x1 = 516
- y1 = 261
-Generating rectangle mask:
- panel = 0
- x0 = 255
- y0 = 0
- x1 = 261
- y1 = 516
 Generating high resolution mask:
  d_min = 2.500000
 
@@ -43,77 +25,77 @@ Setting chunksize=49
 Extracting strong pixels from images
  Using multiprocessing with 1 parallel job(s)
 
-Found 2531 strong pixels on image 1
-Found 2547 strong pixels on image 2
-Found 2649 strong pixels on image 3
-Found 2848 strong pixels on image 4
-Found 2477 strong pixels on image 5
-Found 2713 strong pixels on image 6
-Found 2548 strong pixels on image 7
-Found 2773 strong pixels on image 8
-Found 2563 strong pixels on image 9
-Found 2678 strong pixels on image 10
-Found 2699 strong pixels on image 11
-Found 2569 strong pixels on image 12
-Found 2633 strong pixels on image 13
-Found 2779 strong pixels on image 14
-Found 2515 strong pixels on image 15
-Found 2874 strong pixels on image 16
-Found 2657 strong pixels on image 17
-Found 2644 strong pixels on image 18
-Found 2652 strong pixels on image 19
-Found 2636 strong pixels on image 20
-Found 2672 strong pixels on image 21
-Found 2580 strong pixels on image 22
-Found 2666 strong pixels on image 23
-Found 2585 strong pixels on image 24
-Found 2445 strong pixels on image 25
-Found 2416 strong pixels on image 26
-Found 2502 strong pixels on image 27
-Found 2500 strong pixels on image 28
-Found 2516 strong pixels on image 29
-Found 2559 strong pixels on image 30
-Found 2574 strong pixels on image 31
-Found 2529 strong pixels on image 32
-Found 2492 strong pixels on image 33
-Found 2587 strong pixels on image 34
-Found 2578 strong pixels on image 35
-Found 2566 strong pixels on image 36
-Found 2683 strong pixels on image 37
-Found 2564 strong pixels on image 38
-Found 2607 strong pixels on image 39
-Found 2629 strong pixels on image 40
-Found 2546 strong pixels on image 41
-Found 2532 strong pixels on image 42
-Found 2599 strong pixels on image 43
-Found 2644 strong pixels on image 44
-Found 2533 strong pixels on image 45
-Found 2690 strong pixels on image 46
-Found 2752 strong pixels on image 47
-Found 2749 strong pixels on image 48
-Found 2811 strong pixels on image 49
+Found 3546 strong pixels on image 1
+Found 3533 strong pixels on image 2
+Found 3625 strong pixels on image 3
+Found 3823 strong pixels on image 4
+Found 3529 strong pixels on image 5
+Found 3750 strong pixels on image 6
+Found 3536 strong pixels on image 7
+Found 3702 strong pixels on image 8
+Found 3586 strong pixels on image 9
+Found 3693 strong pixels on image 10
+Found 3776 strong pixels on image 11
+Found 3546 strong pixels on image 12
+Found 3594 strong pixels on image 13
+Found 3761 strong pixels on image 14
+Found 3527 strong pixels on image 15
+Found 3862 strong pixels on image 16
+Found 3665 strong pixels on image 17
+Found 3703 strong pixels on image 18
+Found 3655 strong pixels on image 19
+Found 3620 strong pixels on image 20
+Found 3670 strong pixels on image 21
+Found 3584 strong pixels on image 22
+Found 3756 strong pixels on image 23
+Found 3663 strong pixels on image 24
+Found 3477 strong pixels on image 25
+Found 3455 strong pixels on image 26
+Found 3498 strong pixels on image 27
+Found 3486 strong pixels on image 28
+Found 3521 strong pixels on image 29
+Found 3566 strong pixels on image 30
+Found 3454 strong pixels on image 31
+Found 3503 strong pixels on image 32
+Found 3544 strong pixels on image 33
+Found 3512 strong pixels on image 34
+Found 3531 strong pixels on image 35
+Found 3565 strong pixels on image 36
+Found 3791 strong pixels on image 37
+Found 3613 strong pixels on image 38
+Found 3731 strong pixels on image 39
+Found 3676 strong pixels on image 40
+Found 3610 strong pixels on image 41
+Found 3630 strong pixels on image 42
+Found 3661 strong pixels on image 43
+Found 3984 strong pixels on image 44
+Found 3842 strong pixels on image 45
+Found 3869 strong pixels on image 46
+Found 4030 strong pixels on image 47
+Found 4132 strong pixels on image 48
+Found 4172 strong pixels on image 49
 
-Extracted 2464 spots
-Removed 1137 spots with size < 3 pixels
-Removed 2 spots with size > 1000 pixels
-Calculated 1325 spot centroids
-Calculated 1325 spot intensities
-Filtered 1322 of 1325 spots by peak-centroid distance
+Extracted 2543 spots
+Removed 1155 spots with size < 3 pixels
+Removed 1 spots with size > 1000 pixels
+Calculated 1387 spot centroids
+Calculated 1387 spot intensities
+Filtered 1382 of 1387 spots by peak-centroid distance
 
 Histogram of per-image spot count for imageset 0:
-1322 spots found on 48 images (max 58 / bin)
+1382 spots found on 48 images (max 58 / bin)
 *                                               
 *                                               
-*                                               
-*       *     **  *                             
-****** **** ***** ** **   *                     
-***********************  **  *     ** *         
+*              *                                
+*  *  * **    **  *                             
+**************** ******   *         * *         
+**************** ******* **  ***   ****         
 ****************************************        
-*******************************************     
+***************************************** *     
 ********************************************    
-********************************************* **
+************************************************
 1                    image                    48
 
 --------------------------------------------------------------------------------
-Saved 1322 reflections to strong.refl
-Time Taken: 0.862784
+Saved 1382 reflections to strong.refl
+Time Taken: 0.961775

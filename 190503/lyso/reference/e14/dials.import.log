@@ -8,6 +8,7 @@ input {
 geometry {
   detector {
     distance = 1480.56
+    slow_fast_beam_centre = 229 245
   }
   goniometer {
     axes = -0.6204 -0.7843 0

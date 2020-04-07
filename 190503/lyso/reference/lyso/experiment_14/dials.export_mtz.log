@@ -1,0 +1,63 @@
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 2.1.1-gcdd629a7b-release
+The following parameters have been modified:
+
+output {
+  log = "dials.export_mtz.log"
+}
+input {
+  experiments = integrated.expt
+  reflections = integrated.refl
+}
+
+Data appears to be unscaled, setting intensity = profile+sum
+Data appears to be unscaled, setting mtz.hklout = 'integrated.mtz'
+Read 11499 predicted reflections
+Selected 10276 reflections integrated by profile and summation methods
+Combined 138 partial reflections with other partial reflections
+Removed 1054 reflections below partiality threshold
+Removed 32 intensity.sum.value reflections with I/Sig(I) < -5.0
+Removed 11 intensity.prf.value reflections with I/Sig(I) < -5.0
+Saving 9041 integrated reflections to integrated.mtz
+
+Title: From dials.export
+Space group symbol from file: P4
+Space group number from file: 75
+Space group from matrices: P 4 (No. 75)
+Point group symbol from file: 4
+Number of batches: 47
+Number of crystals: 1
+Number of Miller indices: 9041
+Resolution range: 77.7583 2.48126
+History:
+  From DIALS 2.1.1-gcdd629a7b-release, run on 2020-04-02 at 15:26:40 CEST  (2020-0
+Crystal 1:
+  Name: XTAL
+  Project: DIALS
+  Id: 1
+  Unit cell: (77.7583, 77.7583, 40.5148, 90, 90, 90)
+  Number of datasets: 1
+  Dataset 1:
+    Name: FROMDIALS
+    Id: 1
+    Wavelength: 0.0251
+    Number of columns: 17
+    label        #valid  %valid     min       max type
+    H              9041 100.00%    0.00     30.00 H: index h,k,l
+    K              9041 100.00%    1.00     30.00 H: index h,k,l
+    L              9041 100.00%    0.00      8.00 H: index h,k,l
+    M_ISYM         9041 100.00%    1.00      8.00 Y: M/ISYM, packed partial/reject flag and symmetry number
+    BATCH          9041 100.00%    2.00     46.00 B: BATCH number
+    IPR            9041 100.00%   -1.93     74.38 J: intensity
+    SIGIPR         9041 100.00%    0.09      0.97 Q: standard deviation
+    I              9041 100.00%  -16.54    275.77 J: intensity
+    SIGI           9041 100.00%    0.23      9.28 Q: standard deviation
+    BG             9041 100.00% 6129.19 884325.06 R: real
+    SIGBG          9041 100.00%   84.11   1049.83 R: real
+    FRACTIONCALC   9041 100.00%    0.99      1.00 R: real
+    XDET           9041 100.00%   11.40    505.53 R: real
+    YDET           9041 100.00%   10.94    497.29 R: real
+    ROT            9041 100.00%  -17.27     13.03 R: real
+    LP             9041 100.00%    0.00      0.01 R: real
+    QE             9041 100.00%    1.00      1.00 R: real
+
