@@ -1,0 +1,466 @@
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.078: POINTLESS        version 1.11.21 : 10/05/19##
+ ###############################################################
+ User: unknown  Run date:  9/ 4/2020 Run time: 10:44:57 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+==== Input command lines ====
+
+hklin integrated.mtz
+hklout sorted.mtz
+
+====     End of input    ====
+
+Release Date: 10th May 2019
+
+
+        ******************************************************
+        *                                                    *
+        *                     POINTLESS                      *
+        *                      1.11.21                       *
+        *                                                    *
+        *   Determine Laue group from unmerged intensities   *
+        *     Phil Evans MRC LMB, Cambridge                  *
+        * Uses cctbx routines by Ralf Grosse-Kunstleve et al.*
+        *                                                    *
+        ******************************************************
+
+
+Reflection list generated from file: integrated.mtz
+
+Title: From dials.export
+
+   Space group from HKLIN file : I 2 3
+   Cell:    12.03   12.03   12.03   90.00   90.00   90.00
+   Resolution range in file:      8.51        0.50
+
+Time for reading file(s):    0.172 secs
+
+===============================================================
+
+>*> Summary of test data read in:
+   Resolution range accepted:     8.51        0.50
+
+   Number of reflections      =          1336
+   Number of observations     =         10532
+   Number of parts            =         10532
+   Number of batches in file  =           566
+   Number of datasets         =             1
+ 
+      Project: DIALS Crystal: XTAL Dataset: FROMDIALS
+      Run number:   1 consists of batches 1 - 566
+         Resolution range for run:     8.52        0.50
+         Phi range:   -29.75 to    38.17   Time range:   -29.75 to    38.17
+         Closest reciprocal axis to spindle: c* (angle   47.6 degrees)
+   Unit cell for dataset:    12.04   12.04   12.04   90.00   90.00   90.00
+         Wavelength:  0.02510
+
+===============================================================
+
+Number of reflections  =              1336
+Number of observations =             10532
+Average multiplicity =                 7.9
+
+Resolution range in list:       8.51 ->   0.50
+   
+Intensity normalisation: B-factor =   -0.8  +  -0.0023 * time  (final B  -1.0)
+
+Estimation of useful resolution for point group determination:
+--------------------------------------------------------------
+Point group correlation statistics are not reliable for very weak data,
+so a high resolution cutoff (for this purpose only) is estimated either
+ from CC(1/2) using P1 (Friedel) symmetry (limit  0.60), or
+ from Mean(I/sigma(I)) (limit   6.00), if there are sufficient data
+
+High-resolution estimate from CC(1/2):      0.50
+High-resolution estimate from <I/sig(I)>:   0.50
+
+Complete resolution range kept, data are strong to the edge
+
+
+$TABLE: Mn(I/sigI) and CC(1/2) [in P1] vs. resolution:
+$GRAPHS:Resolution estimate 0.50A:0.0138215|4.00825x0|1:2,4,6,7,9:
+ $$
+  N  1/d^2    Dmid CC(1/2)   N_CC   CCfit  Mn(I/sigI)      N (I/sigI)/10   $$ $$
+  1  0.3467   1.70   0.980    214   0.926      121.72    439      12.172
+  2  1.0124   0.99   0.901    475   0.891       53.50    979       5.350
+  3  1.6782   0.77   0.870    641   0.844       32.76   1340       3.276
+  4  2.3439   0.65   0.692    781   0.780       18.21   1627       1.821
+  5  3.0096   0.58   0.676    889   0.700       12.93   1795       1.293
+  6  3.6754   0.52   0.661   1003   0.606        8.44   1818       0.844
+$$
+
+Checking for possible twinning
+L-test for twinning (acentrics only) to maximum resolution    0.499
+ Neighbouring reflections for test are +- 2 on h,k,l
+
+$TABLE: L-test for twinning, twin fraction 0.043:
+$GRAPHS:Cumulative distribution of |L|, estimated fraction 0.043:N:1,2,3,4:
+ $$
+      |L|       N(|L|)  Untwinned    Twinned   $$ $$
+     0.0000     0.0000     0.0000     0.0000
+     0.0500     0.0544     0.0500     0.0749
+     0.1000     0.1106     0.1000     0.1495
+     0.1500     0.1659     0.1500     0.2233
+     0.2000     0.2213     0.2000     0.2960
+     0.2500     0.2763     0.2500     0.3672
+     0.3000     0.3301     0.3000     0.4365
+     0.3500     0.3832     0.3500     0.5036
+     0.4000     0.4367     0.4000     0.5680
+     0.4500     0.4905     0.4500     0.6294
+     0.5000     0.5434     0.5000     0.6875
+     0.5500     0.5952     0.5500     0.7418
+     0.6000     0.6467     0.6000     0.7920
+     0.6500     0.6967     0.6500     0.8377
+     0.7000     0.7465     0.7000     0.8785
+     0.7500     0.7958     0.7500     0.9141
+     0.8000     0.8437     0.8000     0.9440
+     0.8500     0.8904     0.8500     0.9679
+     0.9000     0.9336     0.9000     0.9855
+     0.9500     0.9721     0.9500     0.9963
+     1.0000     1.0000     1.0000     1.0000
+$$
+      Estimated twin fraction alpha from cumulative N(|L|) plot 0.048 (+/-0.006)
+   < |L| >:    0.468 (0.5 untwinned, 0.375 perfect twin)
+      Estimated twin fraction alpha from < |L| >    0.043
+   < L^2 >:    0.297 (0.333 untwinned, 0.2 perfect twin)
+      Estimated twin fraction alpha from < L^2 >    0.040
+
+The L-test suggests that the data are not twinned
+Note that the estimate of the twin fraction from the L-test is not very accurate,
+  particularly for high twin fractions. Better estimates from other tests need knowledge of
+  the point group and the twin operator, which are not available here
+Also these statistics come from possibly unscaled (and unmerged) data,
+ so may be inaccurate for that reason
+
+Time for twinning test    0.062 secs
+
+======================================================================
+
+Model for expectation(CC) = E(m) if symmetry is absent P(m;!S) = (1-m^k)^(1/k) with k =  2.5
+
+
+Unit cell (from HKLIN file) used to derive lattice symmetry with tolerance   2.0 degrees
+  12.04  12.04  12.04  90.00  90.00  90.00
+
+Tolerance (and delta) is the maximum deviation from the
+ expected angle between two-fold axes in the lattice group
+
+Lattice point group: I 4 3 2
+Reindexing or changing symmetry
+Reindex operator from input cell to lattice cell: [h,k,l]
+
+   h'   = ( h k l ) (       1       0       0 )
+                    (       0       1       0 )
+                    (       0       0       1 )
+
+
+Lattice unit cell after reindexing: deviation 0.00 degrees
+  12.04  12.04  12.04  90.00  90.00  90.00
+
+
+      10 pairs rejected for E^2 too large
+   
+Overall CC for  5238 unrelated pairs:   0.178  N= 5238, high resolution limit   0.50
+
+    Estimated expectation value of true correlation coefficient E(CC) =  0.988
+
+    Estimated sd(CC) = 1.306 / Sqrt(N)
+
+  Number of reflections omitted from ice rings:        2
+   
+Estimated E(CC) of true correlation coefficient from identity =  0.785
+
+
+*******************************************
+
+Analysing rotational symmetry in lattice group I m -3 m
+----------------------------------------------
+
+<!--SUMMARY_BEGIN-->
+
+Scores for each symmetry element
+
+Nelmt  Lklhd  Z-cc    CC        N  Rmeas    Symmetry & operator (in Lattice Cell)
+
+  1   0.813   7.25   0.73    3627  0.295     identity
+  2   0.658   6.70   0.67    2057  0.396 *   2-fold l ( 0 0 1) {-h,-k,l}
+  3   0.623   6.59   0.66    4458  0.396 *   2-fold k ( 0 1 0) {-h,k,-l}
+  4   0.898   7.84   0.78    1048  0.326 **  2-fold h ( 1 0 0) {h,-k,-l}
+  5   0.719   6.90   0.69    4749  0.392 **  2-fold   ( 1-1 0) {-k,-h,-l}
+  6   0.669   6.74   0.67    2762  0.408 *   2-fold   ( 0 1-1) {-h,-l,-k}
+  7   0.618   6.57   0.66    3737  0.385 *   2-fold   ( 1 0-1) {-l,-k,-h}
+  8   0.688   6.80   0.68    2056  0.353 *   2-fold   ( 1 1 0) {k,h,-l}
+  9   0.662   6.71   0.67    5031  0.376 *   2-fold   ( 0 1 1) {-h,l,k}
+ 10   0.707   6.86   0.69    4688  0.337 **  2-fold   ( 1 0 1) {l,-k,h}
+ 11   0.722   6.91   0.69    3385  0.413 **  3-fold   ( 1-1-1) {-k,l,-h}{-l,-h,k}
+ 12   0.578   6.44   0.64    4249  0.391 *   3-fold   ( 1-1 1) {l,-h,-k}{-k,-l,h}
+ 13   0.636   6.63   0.66    8159  0.387 *   3-fold   ( 1 1-1) {-l,h,-k}{k,-l,-h}
+ 14   0.720   6.91   0.69    5179  0.401 **  3-fold   ( 1 1 1) {k,l,h}{l,h,k}
+ 15   0.681   6.77   0.68    4177  0.411 *   4-fold l ( 0 0 1) {-k,h,l}{k,-h,l}
+ 16   0.723   6.91   0.69    1598  0.407 **  4-fold k ( 0 1 0) {l,k,-h}{-l,k,h}
+ 17   0.601   6.52   0.65    6468  0.410 *   4-fold h ( 1 0 0) {h,l,-k}{h,-l,k}
+
+<!--SUMMARY_END-->
+
+Time to determine pointgroup:    1.016 secs
+
+Acceptable Laue groups have scores above  0.20
+
+
+Scores for all possible Laue groups which are sub-groups of lattice group
+-------------------------------------------------------------------------
+
+Note that correlation coefficients are from intensities approximately normalised
+by resolution, so will be worse than the usual values
+Rmeas is the multiplicity weighted R-factor
+
+Lklhd is a likelihood measure, a probability used in the ranking of space groups
+
+Z-scores are from combined scores for all symmetry elements
+in the sub-group (Z+) or not in sub-group (Z-)
+
+    NetZ = Z+ - Z-
+
+Net Z-scores are calculated for correlation coefficients (cc)
+The point-group Z-scores Zc are calculated  
+    as the Zcc-scores recalculated for all symmetry elements for or against,
+
+CC- and R- are the correlation coefficients and R-factors for symmetry elements not in the group
+
+Delta is maximum angular difference (degrees) between original cell
+and cell with symmetry constraints imposed
+
+The reindex operator converts original index scheme into the conventional
+scheme for sub-group
+
+Accepted Laue groups are marked '>'
+The HKLIN Laue group is marked '=' if accepted, '-' if rejected
+
+<!--SUMMARY_BEGIN-->
+
+
+   Laue Group        Lklhd   NetZc  Zc+   Zc-    CC    CC-  Rmeas   R-  Delta ReindexOperator
+
+> 1   I m -3 m  ***  0.996   6.77  6.77  0.00   0.68  0.00   0.38  0.00   0.0 [h,k,l]
+- 2     I m -3       0.001   0.12  6.83  6.72   0.68  0.67   0.37  0.39   0.0 [h,k,l]
+  3  I 4/m m m       0.001   0.26  6.93  6.68   0.69  0.67   0.36  0.39   0.0 [h,k,l]
+  4  I 4/m m m       0.001   0.21  6.90  6.69   0.69  0.67   0.35  0.40   0.0 [l,h,k]
+  5  I 4/m m m       0.001   0.09  6.82  6.73   0.68  0.67   0.37  0.39   0.0 [k,l,h]
+  6    F m m m       0.000   0.33  7.02  6.69   0.70  0.67   0.34  0.39   0.0 [h,k+l,-k+l]
+  7    I m m m       0.000   0.30  7.01  6.70   0.70  0.67   0.34  0.39   0.0 [h,k,l]
+  8     H -3 m       0.000   0.29  6.97  6.68   0.70  0.67   0.35  0.39   0.0 [h+l,k-l,-1/2h+1/2k+1/2l]
+  9     H -3 m       0.000   0.20  6.91  6.70   0.69  0.67   0.36  0.39   0.0 [-k+l,h-l,1/2h+1/2k+1/2l]
+ 10     H -3 m       0.000   0.20  6.89  6.69   0.69  0.67   0.35  0.40   0.0 [k+l,h-k,1/2h+1/2k-1/2l]
+ 11      I 4/m       0.000   0.27  6.98  6.72   0.70  0.67   0.34  0.39   0.0 [k,l,h]
+ 12    F m m m       0.000   0.33  7.03  6.70   0.70  0.67   0.34  0.39   0.0 [l,h+k,-h+k]
+ 13     H -3 m       0.000   0.07  6.82  6.75   0.68  0.67   0.35  0.39   0.0 [h+k,-h+l,1/2h-1/2k+1/2l]
+ 14  I 1 2/m 1       0.000   0.64  7.33  6.69   0.73  0.67   0.30  0.39   0.0 [k,-h,l]
+ 15    F m m m       0.000   0.15  6.87  6.72   0.69  0.67   0.34  0.39   0.0 [k,-h+l,h+l]
+ 16      I 4/m       0.000   0.24  6.96  6.72   0.70  0.67   0.34  0.39   0.0 [l,h,k]
+ 17      I 4/m       0.000   0.32  7.03  6.71   0.70  0.67   0.35  0.39   0.0 [h,k,l]
+ 18       H -3       0.000   0.44  7.14  6.70   0.71  0.67   0.33  0.39   0.0 [h+l,k-l,-1/2h+1/2k+1/2l]
+ 19       H -3       0.000   0.41  7.11  6.71   0.71  0.67   0.33  0.39   0.0 [-k+l,h-l,1/2h+1/2k+1/2l]
+ 20  I 1 2/m 1       0.000   0.41  7.12  6.70   0.71  0.67   0.33  0.39   0.0 [-1/2h-1/2k+1/2l,h-k,1/2h+1/2k+1/2l]
+ 21  I 1 2/m 1       0.000   0.39  7.09  6.70   0.71  0.67   0.31  0.39   0.0 [1/2h+1/2k-1/2l,-h-l,-1/2h+1/2k+1/2l]
+ 22  I 1 2/m 1       0.000   0.45  7.16  6.71   0.72  0.67   0.31  0.39   0.0 [-1/2h+1/2k+1/2l,-h-k,1/2h-1/2k+1/2l]
+ 23  I 1 2/m 1       0.000   0.36  7.08  6.71   0.71  0.67   0.33  0.39   0.0 [1/2h-1/2k-1/2l,k-l,1/2h+1/2k+1/2l]
+ 24  I 1 2/m 1       0.000   0.32  7.03  6.71   0.70  0.67   0.33  0.39   0.0 [1/2h-1/2k+1/2l,-k-l,1/2h+1/2k-1/2l]
+ 25  I 1 2/m 1       0.000   0.43  7.15  6.71   0.71  0.67   0.32  0.39   0.0 [h,-l,k]
+ 26       H -3       0.000   0.24  6.97  6.72   0.70  0.67   0.34  0.39   0.0 [k+l,h-k,1/2h+1/2k-1/2l]
+ 27  I 1 2/m 1       0.000   0.25  6.98  6.73   0.70  0.67   0.33  0.39   0.0 [l,-k,h]
+ 28  I 1 2/m 1       0.000   0.28  7.00  6.72   0.70  0.67   0.33  0.39   0.0 [-1/2h+1/2k-1/2l,-h+l,1/2h+1/2k+1/2l]
+ 29       H -3       0.000   0.23  6.96  6.73   0.70  0.67   0.33  0.39   0.0 [h+k,-h+l,1/2h-1/2k+1/2l]
+ 30       P -1       0.000   0.54  7.25  6.71   0.73  0.67   0.30  0.39   0.0 [1/2h+1/2k+1/2l,1/2h-1/2k-1/2l,-1/2h+1/2k-1/2l]
+
+
+<!--SUMMARY_END-->
+
+********************************************************
+
+Testing Lauegroups for systematic absences
+------------------------------------------
+
+I' is intensity adjusted by subtraction of a small fraction (0.02, NEIGHBOUR)
+ of the neighbouring intensities, to allow for possible overlap
+
+
+$TABLE: Axial reflections, axis b (lattice frame) screw axis 4(1):
+$GRAPHS:I/sigI vs. index, axis b, screw axis 4(1):N:1,4,5:
+:I vs. index, axis b, screw axis 4(1):N:1,2:
+ $$
+   Index          I       sigI    I/sigI   I'/sigI   $$ $$
+       2        599          3    184.43    184.43
+       4       4305          5    792.34    792.34
+       6        157          4     41.25     41.25
+       8       2367          6    415.02    415.02
+      10         73          4     18.91     18.91
+      12        308          4     75.03     75.03
+      14         13          3      3.63      3.63
+      16        593          5    126.68    126.68
+      18         14          4      3.99      5.25
+      20        748          5    143.12    143.12
+      22          2          3      0.72      1.27
+      24        347          4     79.53     79.53
+$$
+
+
+Each 'zone' (axis or plane) in which some reflections may be systematically absent
+are scored by Fourier analysis of I'/sigma(I). 'PeakHeight' is the value
+in Fourier space at the relevent point (eg at 1/2 for a 2(1) axis)
+relative to the origin. This has an ideal value of 1.0 if the corresponding
+symmetry element is present. Zone directions (a,b,c) shown here are in the
+lattice group frame
+
+'Probability' is an estimate of how likely the element is to be  present
+
+<!--SUMMARY_BEGIN-->
+
+         Zone                Number PeakHeight  SD  Probability  ReflectionCondition
+
+Zones for Laue group I m -3 m
+ 1 screw axis 4(1) [b]           24   0.730   0.383     * 0.704   0k0: k=4n
+
+<!--SUMMARY_END-->
+
+Time for systematic absence tests:    0.109 secs
+
+
+Possible spacegroups:
+--------------------
+Indistinguishable space groups are grouped together on successive lines
+
+'Reindex' is the operator to convert from the input hklin frame to the standard spacegroup frame.
+
+'TotProb' is a total probability estimate (unnormalised)
+
+'SysAbsProb' is an estimate of the probability of the space group based on
+the observed systematic absences.
+
+'Conditions' are the reflection conditions (absences)
+
+
+   Spacegroup         TotProb SysAbsProb     Reindex         Conditions
+
+      I 41 3 2 (214)    0.701  0.704                         0k0: k=4n (zone 1)
+    ..........
+       I 4 3 2 (211)    0.294  0.296                         
+
+
+---------------------------------------------------------------
+
+
+Space group confidence (= Sqrt(Score * (Score - NextBestScore))) =     0.53
+
+Laue group confidence  (= Sqrt(Score * (Score - NextBestScore))) =     0.99
+
+Selecting space group I 41 3 2 as there is a single space group with the highest score
+
+<!--SUMMARY_BEGIN--> $TEXT:Result: $$ $$
+Best Solution:    space group I 41 3 2
+
+   Reindex operator:                   [h,k,l]                 
+   Laue group probability:             0.996
+   Systematic absence probability:     0.704
+   Total probability:                  0.701
+   Space group confidence:             0.534
+   Laue group confidence               0.995
+
+   Unit cell:    12.04   12.04   12.04      90.00   90.00   90.00
+
+    8.51 to   0.50   - Resolution range used for Laue group search
+
+    8.51 to   0.50   - Resolution range in file, used for systematic absence check
+
+   Number of batches in file:    566
+
+The data do not appear to be twinned, from the L-test
+
+$$ <!--SUMMARY_END-->
+
+
+HKLIN spacegroup: I 2 3  body-centred cubic
+integrated.mtz
+Filename: integrated.mtz
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Writing unmerged data to file sorted.mtz  in space group I 41 3 2
+
+   Reindexing operator         [h,k,l]
+
+   Real space transformation   (x,y,z)
+
+ * Title:
+
+ From dials.export
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 DIALS
+          XTAL
+          FROMDIALS
+             12.0433   12.0433   12.0433   90.0000   90.0000   90.0000
+             0.02510
+
+ * Number of Columns = 14
+
+ * Number of Reflections = 10532
+
+ * Missing value set to NaN in input mtz file
+
+ * Number of Batches = 566
+
+ * Column Labels :
+
+ H K L M/ISYM BATCH I SIGI IPR SIGIPR FRACTIONCALC XDET YDET ROT LP
+
+ * Column Types :
+
+ H H H Y B J Q J Q R R R R R
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   12.0433   12.0433   12.0433   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.01379    3.99887     (      8.516 -      0.500 A )
+
+ * Sort Order :
+
+      1     2     3     4     5
+
+ * Space group = 'I 41 3 2' (number     214)
+
+  (spacegroup is known)
+
+
+$TEXT:Reference: $$ Please cite $$
+P.R.Evans, 'Scaling and assessment  of data quality' Acta Cryst. D62, 72-82  (2006).
+<a href="http://journals.iucr.org/d/issues/2006/01/00/ba5084/index.html">
+<b>PDF</b></a>
+P.R.Evans, 'An introduction to data reduction: space-group determination, scaling and intensity statistics' Acta Cryst. D67, 282-292 (2011)
+<a href="http://journals.iucr.org/d/issues/2011/04/00/ba5158/index.html">
+<b>PDF</b></a>
+$$

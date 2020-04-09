@@ -1,0 +1,12 @@
+integration {
+  mp {
+    nproc = 8
+  }
+}
+prediction {
+  d_min = 0.5
+}
+input {
+  experiments = refined.expt
+  reflections = refined.refl
+}
