@@ -1,0 +1,4 @@
+input {
+  experiments = scaled.expt
+  reflections = scaled.refl
+}
