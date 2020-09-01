@@ -1,9 +1,0 @@
-integration {
-  mp {
-    nproc = 8
-  }
-}
-input {
-  experiments = sv_refined.expt
-  reflections = sv_refined.refl
-}

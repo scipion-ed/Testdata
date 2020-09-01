@@ -1,4 +1,0 @@
-input {
-  experiments = bravais_setting_12.expt
-  reflections = reindexed.refl
-}
