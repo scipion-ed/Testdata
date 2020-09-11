@@ -1,0 +1,23 @@
+2020-09-01 12:01:52,631 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:01:52,634 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:01:52,634 INFO:  PID: 1062
+2020-09-01 12:01:52,634 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:01:52,634 INFO:  plugin: dials
+2020-09-01 12:01:52,635 INFO:  plugin v: 0.0.0
+2020-09-01 12:01:52,635 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:01:52,635 INFO:  workingDir: Runs/000430_DialsProtExport
+2020-09-01 12:01:52,635 INFO:  runMode: Continue
+2020-09-01 12:01:52,635 INFO:            MPI: 1
+2020-09-01 12:01:52,635 INFO:        threads: 1
+2020-09-01 12:01:52,635 INFO:   Starting at step: 1
+2020-09-01 12:01:52,715 INFO:   Running steps 
+2020-09-01 12:01:52,735 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:01:52.734803
+2020-09-01 12:01:52,742 INFO:  Number of spots: 0
+2020-09-01 12:01:52,772 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:01:52.743994
+2020-09-01 12:01:52,773 INFO:  [35mSTARTED[0m: exportStep, step 2, time 2020-09-01 12:01:52.773279
+2020-09-01 12:01:52,781 INFO:  [32mdials.export Runs/000353_DialsProtScaling/extra/scaled.expt Runs/000353_DialsProtScaling/extra/scaled.refl format=mtz mtz.hklout=Runs/000430_DialsProtExport/extra/integrated_430.mtz output.log=Runs/000430_DialsProtExport/logs/dials.export.log mtz.combine_partials=True mtz.partiality_threshold=0.99 mtz.min_isigi=-5.0 mtz.crystal_name=XTAL[0m
+2020-09-01 12:01:54,397 INFO:  [35mFINISHED[0m: exportStep, step 2, time 2020-09-01 12:01:54.389637
+2020-09-01 12:01:54,397 INFO:  [35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:01:54.397874
+2020-09-01 12:01:54,519 INFO:  [35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:01:54.495889
+2020-09-01 12:01:54,531 INFO:  Cleaning temp folder....
+2020-09-01 12:01:54,532 INFO:  [32m------------------- PROTOCOL FINISHED[0m

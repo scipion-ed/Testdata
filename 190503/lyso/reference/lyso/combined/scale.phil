@@ -1,9 +1,0 @@
-input {
-  experiments = /mnt/e/Programming/scipion/scipion-ed/Testdata/190503/lyso/reference/lyso/experiment_14/integrated.expt
-  reflections = /mnt/e/Programming/scipion/scipion-ed/Testdata/190503/lyso/reference/lyso/experiment_14/integrated.refl
-  experiments = /mnt/e/Programming/scipion/scipion-ed/Testdata/190503/lyso/reference/lyso/experiment_24/integrated.expt
-  reflections = /mnt/e/Programming/scipion/scipion-ed/Testdata/190503/lyso/reference/lyso/experiment_24/integrated.refl
-}
-cut_data {
-  d_min = None
-}

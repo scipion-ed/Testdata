@@ -1,0 +1,24 @@
+2020-09-01 12:02:18,604 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:02:18,608 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:02:18,608 INFO:  PID: 1270
+2020-09-01 12:02:18,608 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:02:18,608 INFO:  plugin: dials
+2020-09-01 12:02:18,608 INFO:  plugin v: 0.0.0
+2020-09-01 12:02:18,608 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:02:18,608 INFO:  workingDir: Runs/000803_DialsProtIntegrateSpots
+2020-09-01 12:02:18,608 INFO:  runMode: Continue
+2020-09-01 12:02:18,608 INFO:            MPI: 1
+2020-09-01 12:02:18,608 INFO:        threads: 1
+2020-09-01 12:02:18,609 INFO:   Starting at step: 1
+2020-09-01 12:02:18,681 INFO:   Running steps 
+2020-09-01 12:02:18,701 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:02:18.701261
+2020-09-01 12:02:18,723 INFO:  Number of images: 1322
+2020-09-01 12:02:18,723 INFO:  Number of spots: 0
+2020-09-01 12:02:18,750 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:02:18.724856
+2020-09-01 12:02:18,759 INFO:  [35mSTARTED[0m: integrateStep, step 2, time 2020-09-01 12:02:18.751033
+2020-09-01 12:02:18,765 INFO:  [32mdials.integrate Runs/000743_DialsProtRefineSpots/extra/refined.expt Runs/000743_DialsProtRefineSpots/extra/refined.refl output.log=Runs/000803_DialsProtIntegrateSpots/logs/dials.integrate.log output.experiments=Runs/000803_DialsProtIntegrateSpots/extra/integrated_model.expt output.reflections=Runs/000803_DialsProtIntegrateSpots/extra/integrated_reflections.refl nproc=8 prediction.d_min=2.5[0m
+2020-09-01 12:02:26,478 INFO:  [35mFINISHED[0m: integrateStep, step 2, time 2020-09-01 12:02:26.470091
+2020-09-01 12:02:26,478 INFO:  [35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:02:26.478580
+2020-09-01 12:02:26,994 INFO:  [35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:02:26.979628
+2020-09-01 12:02:27,012 INFO:  Cleaning temp folder....
+2020-09-01 12:02:27,014 INFO:  [32m------------------- PROTOCOL FINISHED[0m

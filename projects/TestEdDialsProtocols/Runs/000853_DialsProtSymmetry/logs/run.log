@@ -1,0 +1,24 @@
+2020-09-01 12:02:27,635 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:02:27,639 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:02:27,639 INFO:  PID: 1307
+2020-09-01 12:02:27,639 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:02:27,639 INFO:  plugin: dials
+2020-09-01 12:02:27,639 INFO:  plugin v: 0.0.0
+2020-09-01 12:02:27,639 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:02:27,639 INFO:  workingDir: Runs/000853_DialsProtSymmetry
+2020-09-01 12:02:27,639 INFO:  runMode: Continue
+2020-09-01 12:02:27,639 INFO:            MPI: 1
+2020-09-01 12:02:27,640 INFO:        threads: 1
+2020-09-01 12:02:27,640 INFO:   Starting at step: 1
+2020-09-01 12:02:27,743 INFO:   Running steps 
+2020-09-01 12:02:27,769 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:02:27.769493
+2020-09-01 12:02:27,786 INFO:  Number of images: 11499
+2020-09-01 12:02:27,786 INFO:  Number of spots: 0
+2020-09-01 12:02:27,828 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:02:27.787764
+2020-09-01 12:02:27,828 INFO:  [35mSTARTED[0m: symmetryStep, step 2, time 2020-09-01 12:02:27.828450
+2020-09-01 12:02:27,835 INFO:  [32mdials.symmetry Runs/000803_DialsProtIntegrateSpots/extra/integrated_model.expt Runs/000803_DialsProtIntegrateSpots/extra/integrated_reflections.refl output.log=Runs/000853_DialsProtSymmetry/logs/dials.symmetry.log output.experiments=Runs/000853_DialsProtSymmetry/extra/symmetrized.expt output.reflections=Runs/000853_DialsProtSymmetry/extra/symmetrized.refl[0m
+2020-09-01 12:02:32,790 INFO:  [35mFINISHED[0m: symmetryStep, step 2, time 2020-09-01 12:02:32.762403
+2020-09-01 12:02:32,791 INFO:  [35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:02:32.790944
+2020-09-01 12:02:32,869 INFO:  [35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:02:32.815113
+2020-09-01 12:02:32,876 INFO:  Cleaning temp folder....
+2020-09-01 12:02:32,876 INFO:  [32m------------------- PROTOCOL FINISHED[0m

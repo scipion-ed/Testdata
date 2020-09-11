@@ -1,0 +1,56 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: MMKVBENGTSSON.win.su.se
+PID: 777
+pyworkflow: 3.0.1
+plugin: dials
+plugin v: 0.0.0
+currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+workingDir: Runs/000002_DialsProtImportDiffractionImages
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:00:19.111472
+Using glob pattern: '/mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/garnet/experiment_1/Garnet_Cont_*.img'
+Using regex pattern: '/mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/garnet/experiment_1/Garnet_Cont_(?P<TI>\d+).img'
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:00:19.150207
+[35mSTARTED[0m: importStep, step 2, time 2020-09-01 12:00:19.171914
+Rotation axis is [-0.755, -0.656, 0.0]
+[32mdials.import template=/mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/garnet/experiment_1/Garnet_Cont_0###.img output.log=Runs/000002_DialsProtImportDiffractionImages/logs/dials.import.log output.experiments=Runs/000002_DialsProtImportDiffractionImages/extra/imported.expt goniometer.axes=-0.755,-0.656,0.0[0m
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 3.0.4-g47491215a-release
+The following parameters have been modified:
+
+output {
+  experiments = "Runs/000002_DialsProtImportDiffractionImages/extra/imported.expt"
+  log = "Runs/000002_DialsProtImportDiffractionImages/logs/dials.import.log"
+}
+input {
+  template = "/mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/garnet/experiment_1/Garnet_Cont_0###.img"
+}
+geometry {
+  goniometer {
+    axes = -0.755 -0.656 0
+  }
+}
+
+
+Applying input geometry in the following order:
+  1. Manual geometry
+
+--------------------------------------------------------------------------------
+  format: <class 'dxtbx.format.FormatSMVADSCSN926.FormatSMVADSCSN926'>
+  num images: 566
+  sequences:
+    still:    0
+    sweep:    1
+  num stills: 0
+--------------------------------------------------------------------------------
+Writing experiments to Runs/000002_DialsProtImportDiffractionImages/extra/imported.expt
+[35mFINISHED[0m: importStep, step 2, time 2020-09-01 12:00:31.153388
+[35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:00:31.161983
+[35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:00:33.409742
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

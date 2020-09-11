@@ -1,0 +1,25 @@
+2020-09-01 12:01:55,075 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:01:55,079 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:01:55,079 INFO:  PID: 1089
+2020-09-01 12:01:55,079 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:01:55,079 INFO:  plugin: dials
+2020-09-01 12:01:55,079 INFO:  plugin v: 0.0.0
+2020-09-01 12:01:55,079 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:01:55,079 INFO:  workingDir: Runs/000487_DialsProtImportDiffractionImages
+2020-09-01 12:01:55,079 INFO:  runMode: Continue
+2020-09-01 12:01:55,079 INFO:            MPI: 1
+2020-09-01 12:01:55,079 INFO:        threads: 1
+2020-09-01 12:01:55,080 INFO:   Starting at step: 1
+2020-09-01 12:01:55,164 INFO:   Running steps 
+2020-09-01 12:01:55,181 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:01:55.181063
+2020-09-01 12:01:55,199 INFO:  Using glob pattern: '/mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/lysozyme/experiment_14/SMV/data/00*.img'
+2020-09-01 12:01:55,200 INFO:  Using regex pattern: '/mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/lysozyme/experiment_14/SMV/data/00(?P<TI>\d+).img'
+2020-09-01 12:01:55,238 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:01:55.200204
+2020-09-01 12:01:55,238 INFO:  [35mSTARTED[0m: importStep, step 2, time 2020-09-01 12:01:55.238831
+2020-09-01 12:01:55,264 INFO:  Rotation axis is [-0.6204, -0.7843, 0.0]
+2020-09-01 12:01:55,270 INFO:  [32mdials.import /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/lysozyme/experiment_14/SMV/data output.log=Runs/000487_DialsProtImportDiffractionImages/logs/dials.import.log output.experiments=Runs/000487_DialsProtImportDiffractionImages/extra/imported.expt goniometer.axes=-0.6204,-0.7843,0.0 distance=1480.56[0m
+2020-09-01 12:01:56,719 INFO:  [35mFINISHED[0m: importStep, step 2, time 2020-09-01 12:01:56.705704
+2020-09-01 12:01:56,719 INFO:  [35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:01:56.719518
+2020-09-01 12:01:56,915 INFO:  [35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:01:56.887191
+2020-09-01 12:01:56,939 INFO:  Cleaning temp folder....
+2020-09-01 12:01:56,941 INFO:  [32m------------------- PROTOCOL FINISHED[0m

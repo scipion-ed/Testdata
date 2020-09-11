@@ -1,0 +1,161 @@
+[32mRUNNING PROTOCOL -----------------[0m
+Hostname: MMKVBENGTSSON.win.su.se
+PID: 1307
+pyworkflow: 3.0.1
+plugin: dials
+plugin v: 0.0.0
+currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+workingDir: Runs/000853_DialsProtSymmetry
+runMode: Continue
+          MPI: 1
+      threads: 1
+ Starting at step: 1
+ Running steps 
+[35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:02:27.769493
+Number of images: 11499
+Number of spots: 0
+[35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:02:27.787764
+[35mSTARTED[0m: symmetryStep, step 2, time 2020-09-01 12:02:27.828450
+[32mdials.symmetry Runs/000803_DialsProtIntegrateSpots/extra/integrated_model.expt Runs/000803_DialsProtIntegrateSpots/extra/integrated_reflections.refl output.log=Runs/000853_DialsProtSymmetry/logs/dials.symmetry.log output.experiments=Runs/000853_DialsProtSymmetry/extra/symmetrized.expt output.reflections=Runs/000853_DialsProtSymmetry/extra/symmetrized.refl[0m
+DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+DIALS 3.0.4-g47491215a-release
+The following parameters have been modified:
+
+output {
+  log = "Runs/000853_DialsProtSymmetry/logs/dials.symmetry.log"
+  experiments = "Runs/000853_DialsProtSymmetry/extra/symmetrized.expt"
+  reflections = "Runs/000853_DialsProtSymmetry/extra/symmetrized.refl"
+}
+input {
+  experiments = Runs/000803_DialsProtIntegrateSpots/extra/integrated_model.expt
+  reflections = Runs/000803_DialsProtIntegrateSpots/extra/integrated_reflections.refl
+}
+
+================================================================================
+
+Performing Laue group analysis
+
+Filtering reflections for dataset 0
+Read 11499 predicted reflections
+Selected 10276 reflections integrated by profile and summation methods
+Combined 138 partial reflections with other partial reflections
+Removed 1054 reflections below partiality threshold
+Removed 32 intensity.sum.value reflections with I/Sig(I) < -5
+Removed 11 intensity.prf.value reflections with I/Sig(I) < -5
+A round of outlier rejection has been performed, 
+9 outliers have been identified. 
+
+Patterson group: P 4/m m m (c,a,b)
+
+--------------------------------------------------------------------------------
+
+Normalising intensities for dataset 1
+
+ML estimate of overall B_cart value:
+  112.22, -43.92, -20.73
+         27.63,  5.29
+                10.70
+ML estimate of  -log of scale factor:
+  -5.34
+
+--------------------------------------------------------------------------------
+
+Estimation of resolution for Laue group analysis
+
+Resolution estimate from <I>/<σ(I)> > 4.0 : 6.38
+Resolution estimate from CC½ > 0.60: 2.80
+High resolution limit set to: 2.80
+Selecting 5781 reflections with d > 2.80
+
+Input crystal symmetry:
+Unit cell: (40.5148, 77.7583, 77.7583, 90, 90, 90)
+Space group: P 1 (No. 1)
+Change of basis op to minimum cell: -a,-c,-b
+Crystal symmetry in minimum cell:
+Unit cell: (40.5148, 77.7583, 77.7583, 90, 90, 90)
+Space group: P 1 (No. 1)
+Lattice point group: P 4/m m m (c,a,b)
+
+Overall CC for 2880 unrelated pairs: 0.052
+Estimated expectation value of true correlation coefficient E(CC) = 0.483
+Estimated sd(CC) = 1.073 / sqrt(N)
+Estimated E(CC) of true correlation coefficient from identity = 0.757
+
+--------------------------------------------------------------------------------
+
+Scoring individual symmetry elements
+
++--------------+--------+------+------+----+---------------+
+|   likelihood |   Z-CC |   CC |    N |    | Operator      |
+|--------------+--------+------+------+----+---------------|
+|        0.706 |   8.77 | 0.88 | 5394 | ** | 1 |(0, 0, 0)  |
+|        0.674 |   6.59 | 0.66 | 1872 | *  | 4 |(1, 0, 0)  |
+|        0.259 |   4.56 | 0.46 |  732 |    | 2 |(1, 0, 0)  |
+|        0.82  |   7.69 | 0.77 | 1146 | ** | 2 |(0, 1, 0)  |
+|        0.551 |   6.11 | 0.61 | 2156 | *  | 2 |(0, 0, 1)  |
+|        0.171 |   0.96 | 0.17 |   38 |    | 2 |(0, 1, 1)  |
+|        0.743 |   8.51 | 0.85 | 3638 | ** | 2 |(0, -1, 1) |
++--------------+--------+------+------+----+---------------+
+
+--------------------------------------------------------------------------------
+
+Scoring all possible sub-groups
+
++-------------------+----+--------------+----------+--------+--------+------+-------+---------+--------------------+
+| Patterson group   |    |   Likelihood |   NetZcc |   Zcc+ |   Zcc- |   CC |   CC- |   delta | Reindex operator   |
+|-------------------+----+--------------+----------+--------+--------+------+-------+---------+--------------------|
+| P 1 2/m 1         |    |        0.293 |     2.33 |   8.24 |   5.91 | 0.86 |  0.73 |       0 | -a,-c,-b           |
+| C 1 2/m 1         |    |        0.186 |     2.95 |   8.64 |   5.69 | 0.87 |  0.64 |       0 | -b-c,-b+c,-a       |
+| P 4/m m m         |    |        0.155 |     6.66 |   6.66 |   0    | 0.79 |  0    |       0 | -c,-b,-a           |
+| P m m m           |    |        0.126 |     0.73 |   6.96 |   6.24 | 0.79 |  0.79 |       0 | a,b,c              |
+| P 1 2/m 1         |    |        0.079 |     1.28 |   7.55 |   6.27 | 0.81 |  0.76 |       0 | a,b,c              |
+| P -1              |    |        0.064 |     2.52 |   8.77 |   6.24 | 0.88 |  0.73 |       0 | a,b,c              |
+| P 4/m             |    |        0.046 |     0.35 |   6.86 |   6.51 | 0.8  |  0.77 |       0 | -c,-b,-a           |
+| P 1 2/m 1         |    |        0.023 |     0.46 |   6.99 |   6.53 | 0.84 |  0.75 |       0 | c,a,b              |
+| C m m m           |    |        0.013 |    -0.29 |   6.54 |   6.83 | 0.84 |  0.66 |       0 | -b-c,-b+c,-a       |
+| C 1 2/m 1         |    |        0.013 |    -0.59 |   6.24 |   6.83 | 0.87 |  0.73 |       0 | b-c,-b-c,-a        |
++-------------------+----+--------------+----------+--------+--------+------+-------+---------+--------------------+
+
+Best solution: P 1 2/m 1
+Unit cell: (40.5148, 77.7583, 77.7583, 90, 90, 90)
+Reindex operator: -a,-c,-b
+Laue group probability: 0.293
+Laue group confidence: 0.177
+
++-------------------+--------------------------+
+| Patterson group   | Corresponding MX group   |
+|-------------------+--------------------------|
+| P 1 2/m 1         | P 1 2 1                  |
++-------------------+--------------------------+
+================================================================================
+
+Analysing systematic absences
+
+Laue group: P 1 2/m 1
+Performing systematic absence checks on unscaled profile-integrated data
+Read 11499 predicted reflections
+Selected 10276 profile integrated reflections
+Removed 2214 reflections with d <= 2.80
+Combined 103 partial reflections with other partial reflections
+Removed 806 reflections below partiality threshold
+Laue group: P 1 2/m 1
++--------------+---------+---------------+--------------+---------------+--------------+-------------------+------------------+
+| Screw axis   |   Score |   No. present |   No. absent |   <I> present |   <I> absent |   <I/sig> present |   <I/sig> absent |
+|--------------+---------+---------------+--------------+---------------+--------------+-------------------+------------------|
+| 21b          |       0 |            13 |           14 |         3.012 |          5.2 |             9.383 |           25.368 |
++--------------+---------+---------------+--------------+---------------+--------------+-------------------+------------------+
++---------------+---------+
+| Space group   |   score |
+|---------------+---------|
+| P 2           |       1 |
+| P 21          |       0 |
++---------------+---------+
+Recommended space group: P 2
+Saving reindexed experiments to Runs/000853_DialsProtSymmetry/extra/symmetrized.expt in space group P 1 2 1
+Saving 11499 reindexed reflections to Runs/000853_DialsProtSymmetry/extra/symmetrized.refl
+[35mFINISHED[0m: symmetryStep, step 2, time 2020-09-01 12:02:32.762403
+[35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:02:32.790944
+[35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:02:32.815113
+*** Last status is finished 
+Cleaning temp folder....
+[32m------------------- PROTOCOL FINISHED[0m

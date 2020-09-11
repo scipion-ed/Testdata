@@ -1,4 +1,0 @@
-input {
-  experiments = indexed.expt
-  reflections = indexed.refl
-}

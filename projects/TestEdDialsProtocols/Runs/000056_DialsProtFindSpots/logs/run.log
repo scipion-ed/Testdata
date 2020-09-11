@@ -1,0 +1,23 @@
+2020-09-01 12:00:34,036 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:00:34,039 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:00:34,039 INFO:  PID: 812
+2020-09-01 12:00:34,039 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:00:34,039 INFO:  plugin: dials
+2020-09-01 12:00:34,040 INFO:  plugin v: 0.0.0
+2020-09-01 12:00:34,040 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:00:34,040 INFO:  workingDir: Runs/000056_DialsProtFindSpots
+2020-09-01 12:00:34,040 INFO:  runMode: Continue
+2020-09-01 12:00:34,040 INFO:            MPI: 1
+2020-09-01 12:00:34,040 INFO:        threads: 1
+2020-09-01 12:00:34,041 INFO:   Starting at step: 1
+2020-09-01 12:00:34,153 INFO:   Running steps 
+2020-09-01 12:00:34,169 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:00:34.168977
+2020-09-01 12:00:34,175 INFO:  Number of images: 566
+2020-09-01 12:00:34,200 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:00:34.178668
+2020-09-01 12:00:34,201 INFO:  [35mSTARTED[0m: findSpotsStep, step 2, time 2020-09-01 12:00:34.201258
+2020-09-01 12:00:34,253 INFO:  [32mdials.find_spots Runs/000056_DialsProtFindSpots/extra/imported.expt output.log=Runs/000056_DialsProtFindSpots/logs/dials.find_spots.log output.reflections=Runs/000056_DialsProtFindSpots/extra/strong.refl spotfinder.scan_range=1,566 spotfinder.filter.d_min=0.5 spotfinder.filter.d_max=3.0 spotfinder.filter.min_spot_size=10 spotfinder.filter.max_spot_size=1500000 spotfinder.filter.max_strong_pixel_fraction=0.25 spotfinder.filter.max_separation=7.5 spotfinder.threshold.algorithm=dispersion spotfinder.threshold.dispersion.sigma_background=1.0 spotfinder.threshold.dispersion.sigma_strong=3.0 spotfinder.threshold.dispersion.kernel_size=3,3[0m
+2020-09-01 12:00:43,310 INFO:  [35mFINISHED[0m: findSpotsStep, step 2, time 2020-09-01 12:00:43.302441
+2020-09-01 12:00:43,310 INFO:  [35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:00:43.310849
+2020-09-01 12:00:43,753 INFO:  [35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:00:43.730518
+2020-09-01 12:00:43,778 INFO:  Cleaning temp folder....
+2020-09-01 12:00:43,778 INFO:  [32m------------------- PROTOCOL FINISHED[0m

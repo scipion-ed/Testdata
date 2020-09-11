@@ -1,0 +1,17 @@
+output {
+  experiments = "Runs/001291_DialsProtIntegrateSpots/extra/integrated_model.expt"
+  reflections = "Runs/001291_DialsProtIntegrateSpots/extra/integrated_reflections.refl"
+  log = "Runs/001291_DialsProtIntegrateSpots/logs/dials.integrate.log"
+}
+integration {
+  mp {
+    nproc = 8
+  }
+}
+prediction {
+  d_min = 3.5
+}
+input {
+  experiments = Runs/001231_DialsProtRefineSpots/extra/refined.expt
+  reflections = Runs/001231_DialsProtRefineSpots/extra/refined.refl
+}

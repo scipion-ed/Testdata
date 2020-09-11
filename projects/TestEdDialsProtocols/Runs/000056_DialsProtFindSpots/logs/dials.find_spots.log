@@ -1,0 +1,633 @@
+   0.0: DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+        DIALS 3.0.4-g47491215a-release
+        The following parameters have been modified:
+        
+        output {
+          reflections = "Runs/000056_DialsProtFindSpots/extra/strong.refl"
+          log = "Runs/000056_DialsProtFindSpots/logs/dials.find_spots.log"
+        }
+        spotfinder {
+          scan_range = 1 566
+          filter {
+            min_spot_size = 10
+            max_spot_size = 1500000
+            max_separation = 7.5
+            d_min = 0.5
+            d_max = 3
+          }
+          threshold {
+            algorithm = *dispersion dispersion_extended
+            dispersion {
+              sigma_background = 1
+            }
+          }
+        }
+        input {
+          experiments = Runs/000056_DialsProtFindSpots/extra/imported.expt
+        }
+        
+   0.1: Configuring spot finder from input parameters
+        --------------------------------------------------------------------------------
+        Finding strong spots in imageset 0
+        --------------------------------------------------------------------------------
+        
+   0.2: Generating high resolution mask:
+         d_min = 0.500000
+        Generating low resolution mask:
+         d_max = 3.000000
+        
+        Finding spots in image 1 to 566...
+   0.7: Setting chunksize=283
+        Extracting strong pixels from images
+         Using multiprocessing with 1 parallel job(s)
+        
+        Found 584 strong pixels on image 1
+   0.8: Found 522 strong pixels on image 2
+        Found 539 strong pixels on image 3
+        Found 543 strong pixels on image 4
+        Found 633 strong pixels on image 5
+   0.9: Found 632 strong pixels on image 6
+        Found 563 strong pixels on image 7
+        Found 532 strong pixels on image 8
+        Found 559 strong pixels on image 9
+        Found 605 strong pixels on image 10
+        Found 567 strong pixels on image 11
+        Found 535 strong pixels on image 12
+        Found 561 strong pixels on image 13
+        Found 607 strong pixels on image 14
+   1.0: Found 620 strong pixels on image 15
+        Found 636 strong pixels on image 16
+        Found 637 strong pixels on image 17
+        Found 584 strong pixels on image 18
+        Found 643 strong pixels on image 19
+        Found 683 strong pixels on image 20
+        Found 648 strong pixels on image 21
+        Found 673 strong pixels on image 22
+        Found 673 strong pixels on image 23
+        Found 700 strong pixels on image 24
+   1.1: Found 670 strong pixels on image 25
+        Found 712 strong pixels on image 26
+        Found 780 strong pixels on image 27
+        Found 853 strong pixels on image 28
+        Found 773 strong pixels on image 29
+        Found 768 strong pixels on image 30
+        Found 790 strong pixels on image 31
+        Found 739 strong pixels on image 32
+        Found 726 strong pixels on image 33
+        Found 802 strong pixels on image 34
+        Found 779 strong pixels on image 35
+        Found 806 strong pixels on image 36
+   1.2: Found 826 strong pixels on image 37
+        Found 826 strong pixels on image 38
+        Found 797 strong pixels on image 39
+        Found 785 strong pixels on image 40
+        Found 780 strong pixels on image 41
+        Found 728 strong pixels on image 42
+        Found 722 strong pixels on image 43
+        Found 745 strong pixels on image 44
+        Found 713 strong pixels on image 45
+        Found 669 strong pixels on image 46
+        Found 693 strong pixels on image 47
+        Found 653 strong pixels on image 48
+   1.3: Found 669 strong pixels on image 49
+        Found 606 strong pixels on image 50
+        Found 639 strong pixels on image 51
+        Found 603 strong pixels on image 52
+        Found 621 strong pixels on image 53
+        Found 593 strong pixels on image 54
+        Found 603 strong pixels on image 55
+        Found 591 strong pixels on image 56
+        Found 663 strong pixels on image 57
+        Found 631 strong pixels on image 58
+   1.4: Found 617 strong pixels on image 59
+        Found 600 strong pixels on image 60
+        Found 581 strong pixels on image 61
+        Found 634 strong pixels on image 62
+        Found 613 strong pixels on image 63
+        Found 594 strong pixels on image 64
+        Found 603 strong pixels on image 65
+        Found 651 strong pixels on image 66
+   1.5: Found 639 strong pixels on image 67
+        Found 678 strong pixels on image 68
+        Found 689 strong pixels on image 69
+        Found 757 strong pixels on image 70
+        Found 684 strong pixels on image 71
+        Found 681 strong pixels on image 72
+        Found 710 strong pixels on image 73
+        Found 704 strong pixels on image 74
+   1.6: Found 677 strong pixels on image 75
+        Found 680 strong pixels on image 76
+        Found 695 strong pixels on image 77
+        Found 681 strong pixels on image 78
+        Found 729 strong pixels on image 79
+        Found 736 strong pixels on image 80
+        Found 779 strong pixels on image 81
+        Found 803 strong pixels on image 82
+        Found 810 strong pixels on image 83
+        Found 825 strong pixels on image 84
+   1.7: Found 806 strong pixels on image 85
+        Found 861 strong pixels on image 86
+        Found 854 strong pixels on image 87
+        Found 759 strong pixels on image 88
+        Found 777 strong pixels on image 89
+        Found 796 strong pixels on image 90
+        Found 796 strong pixels on image 91
+        Found 818 strong pixels on image 92
+        Found 792 strong pixels on image 93
+        Found 799 strong pixels on image 94
+        Found 774 strong pixels on image 95
+        Found 709 strong pixels on image 96
+   1.8: Found 721 strong pixels on image 97
+        Found 724 strong pixels on image 98
+        Found 718 strong pixels on image 99
+        Found 740 strong pixels on image 100
+        Found 779 strong pixels on image 101
+        Found 861 strong pixels on image 102
+        Found 829 strong pixels on image 103
+        Found 852 strong pixels on image 104
+        Found 901 strong pixels on image 105
+        Found 913 strong pixels on image 106
+        Found 829 strong pixels on image 107
+        Found 815 strong pixels on image 108
+        Found 774 strong pixels on image 109
+   1.9: Found 732 strong pixels on image 110
+        Found 745 strong pixels on image 111
+        Found 683 strong pixels on image 112
+        Found 757 strong pixels on image 113
+        Found 813 strong pixels on image 114
+        Found 832 strong pixels on image 115
+        Found 757 strong pixels on image 116
+        Found 709 strong pixels on image 117
+        Found 702 strong pixels on image 118
+        Found 691 strong pixels on image 119
+        Found 714 strong pixels on image 120
+        Found 703 strong pixels on image 121
+        Found 765 strong pixels on image 122
+   2.0: Found 725 strong pixels on image 123
+        Found 679 strong pixels on image 124
+        Found 704 strong pixels on image 125
+        Found 659 strong pixels on image 126
+        Found 658 strong pixels on image 127
+        Found 684 strong pixels on image 128
+        Found 744 strong pixels on image 129
+        Found 764 strong pixels on image 130
+        Found 669 strong pixels on image 131
+        Found 680 strong pixels on image 132
+   2.1: Found 694 strong pixels on image 133
+        Found 747 strong pixels on image 134
+        Found 755 strong pixels on image 135
+        Found 673 strong pixels on image 136
+        Found 633 strong pixels on image 137
+        Found 596 strong pixels on image 138
+        Found 603 strong pixels on image 139
+        Found 716 strong pixels on image 140
+        Found 703 strong pixels on image 141
+        Found 683 strong pixels on image 142
+        Found 670 strong pixels on image 143
+        Found 700 strong pixels on image 144
+        Found 673 strong pixels on image 145
+   2.2: Found 665 strong pixels on image 146
+        Found 696 strong pixels on image 147
+        Found 633 strong pixels on image 148
+        Found 582 strong pixels on image 149
+        Found 658 strong pixels on image 150
+        Found 640 strong pixels on image 151
+        Found 629 strong pixels on image 152
+        Found 584 strong pixels on image 153
+        Found 582 strong pixels on image 154
+        Found 609 strong pixels on image 155
+        Found 647 strong pixels on image 156
+        Found 675 strong pixels on image 157
+        Found 734 strong pixels on image 158
+   2.3: Found 647 strong pixels on image 159
+        Found 651 strong pixels on image 160
+        Found 733 strong pixels on image 161
+        Found 750 strong pixels on image 162
+        Found 756 strong pixels on image 163
+        Found 713 strong pixels on image 164
+        Found 672 strong pixels on image 165
+        Found 673 strong pixels on image 166
+        Found 680 strong pixels on image 167
+   2.4: Found 621 strong pixels on image 168
+        Found 579 strong pixels on image 169
+        Found 573 strong pixels on image 170
+        Found 605 strong pixels on image 171
+        Found 642 strong pixels on image 172
+        Found 734 strong pixels on image 173
+        Found 692 strong pixels on image 174
+        Found 693 strong pixels on image 175
+        Found 675 strong pixels on image 176
+        Found 676 strong pixels on image 177
+        Found 663 strong pixels on image 178
+        Found 644 strong pixels on image 179
+        Found 722 strong pixels on image 180
+   2.5: Found 669 strong pixels on image 181
+        Found 579 strong pixels on image 182
+        Found 560 strong pixels on image 183
+        Found 633 strong pixels on image 184
+        Found 720 strong pixels on image 185
+        Found 697 strong pixels on image 186
+        Found 729 strong pixels on image 187
+        Found 688 strong pixels on image 188
+        Found 728 strong pixels on image 189
+        Found 709 strong pixels on image 190
+        Found 676 strong pixels on image 191
+   2.6: Found 666 strong pixels on image 192
+        Found 659 strong pixels on image 193
+        Found 600 strong pixels on image 194
+        Found 660 strong pixels on image 195
+        Found 637 strong pixels on image 196
+        Found 617 strong pixels on image 197
+        Found 702 strong pixels on image 198
+        Found 649 strong pixels on image 199
+        Found 602 strong pixels on image 200
+        Found 571 strong pixels on image 201
+   2.7: Found 626 strong pixels on image 202
+        Found 634 strong pixels on image 203
+        Found 622 strong pixels on image 204
+        Found 625 strong pixels on image 205
+        Found 618 strong pixels on image 206
+        Found 692 strong pixels on image 207
+        Found 676 strong pixels on image 208
+        Found 669 strong pixels on image 209
+        Found 721 strong pixels on image 210
+        Found 695 strong pixels on image 211
+        Found 645 strong pixels on image 212
+   2.8: Found 687 strong pixels on image 213
+        Found 744 strong pixels on image 214
+        Found 653 strong pixels on image 215
+        Found 642 strong pixels on image 216
+        Found 602 strong pixels on image 217
+        Found 628 strong pixels on image 218
+        Found 577 strong pixels on image 219
+        Found 572 strong pixels on image 220
+        Found 559 strong pixels on image 221
+        Found 576 strong pixels on image 222
+        Found 523 strong pixels on image 223
+        Found 582 strong pixels on image 224
+   2.9: Found 569 strong pixels on image 225
+        Found 578 strong pixels on image 226
+        Found 578 strong pixels on image 227
+        Found 566 strong pixels on image 228
+        Found 598 strong pixels on image 229
+        Found 617 strong pixels on image 230
+        Found 615 strong pixels on image 231
+        Found 627 strong pixels on image 232
+        Found 633 strong pixels on image 233
+        Found 611 strong pixels on image 234
+        Found 566 strong pixels on image 235
+        Found 570 strong pixels on image 236
+   3.0: Found 668 strong pixels on image 237
+        Found 630 strong pixels on image 238
+        Found 567 strong pixels on image 239
+        Found 597 strong pixels on image 240
+        Found 647 strong pixels on image 241
+        Found 647 strong pixels on image 242
+        Found 609 strong pixels on image 243
+        Found 602 strong pixels on image 244
+   3.1: Found 567 strong pixels on image 245
+        Found 597 strong pixels on image 246
+        Found 561 strong pixels on image 247
+        Found 573 strong pixels on image 248
+        Found 534 strong pixels on image 249
+        Found 538 strong pixels on image 250
+        Found 468 strong pixels on image 251
+        Found 505 strong pixels on image 252
+        Found 585 strong pixels on image 253
+        Found 552 strong pixels on image 254
+        Found 522 strong pixels on image 255
+        Found 542 strong pixels on image 256
+        Found 529 strong pixels on image 257
+   3.2: Found 523 strong pixels on image 258
+        Found 545 strong pixels on image 259
+        Found 555 strong pixels on image 260
+        Found 548 strong pixels on image 261
+        Found 534 strong pixels on image 262
+        Found 653 strong pixels on image 263
+        Found 632 strong pixels on image 264
+        Found 668 strong pixels on image 265
+        Found 678 strong pixels on image 266
+        Found 669 strong pixels on image 267
+        Found 662 strong pixels on image 268
+        Found 607 strong pixels on image 269
+        Found 588 strong pixels on image 270
+   3.3: Found 633 strong pixels on image 271
+        Found 675 strong pixels on image 272
+        Found 683 strong pixels on image 273
+        Found 627 strong pixels on image 274
+        Found 610 strong pixels on image 275
+        Found 635 strong pixels on image 276
+        Found 630 strong pixels on image 277
+        Found 607 strong pixels on image 278
+        Found 644 strong pixels on image 279
+        Found 636 strong pixels on image 280
+        Found 658 strong pixels on image 281
+        Found 640 strong pixels on image 282
+        Found 607 strong pixels on image 283
+   3.4: Found 585 strong pixels on image 284
+        Found 546 strong pixels on image 285
+        Found 630 strong pixels on image 286
+        Found 588 strong pixels on image 287
+        Found 571 strong pixels on image 288
+        Found 560 strong pixels on image 289
+        Found 571 strong pixels on image 290
+        Found 545 strong pixels on image 291
+        Found 531 strong pixels on image 292
+        Found 528 strong pixels on image 293
+        Found 573 strong pixels on image 294
+        Found 608 strong pixels on image 295
+        Found 584 strong pixels on image 296
+   3.5: Found 643 strong pixels on image 297
+        Found 597 strong pixels on image 298
+        Found 606 strong pixels on image 299
+        Found 559 strong pixels on image 300
+        Found 507 strong pixels on image 301
+        Found 482 strong pixels on image 302
+        Found 449 strong pixels on image 303
+        Found 585 strong pixels on image 304
+        Found 529 strong pixels on image 305
+        Found 542 strong pixels on image 306
+        Found 569 strong pixels on image 307
+        Found 619 strong pixels on image 308
+        Found 574 strong pixels on image 309
+   3.6: Found 500 strong pixels on image 310
+        Found 529 strong pixels on image 311
+        Found 595 strong pixels on image 312
+        Found 565 strong pixels on image 313
+        Found 584 strong pixels on image 314
+        Found 599 strong pixels on image 315
+        Found 621 strong pixels on image 316
+        Found 586 strong pixels on image 317
+        Found 598 strong pixels on image 318
+        Found 634 strong pixels on image 319
+        Found 611 strong pixels on image 320
+        Found 665 strong pixels on image 321
+        Found 669 strong pixels on image 322
+   3.7: Found 601 strong pixels on image 323
+        Found 566 strong pixels on image 324
+        Found 655 strong pixels on image 325
+        Found 655 strong pixels on image 326
+        Found 661 strong pixels on image 327
+        Found 667 strong pixels on image 328
+        Found 656 strong pixels on image 329
+        Found 638 strong pixels on image 330
+        Found 645 strong pixels on image 331
+        Found 638 strong pixels on image 332
+        Found 617 strong pixels on image 333
+        Found 590 strong pixels on image 334
+        Found 633 strong pixels on image 335
+   3.8: Found 612 strong pixels on image 336
+        Found 581 strong pixels on image 337
+        Found 581 strong pixels on image 338
+        Found 525 strong pixels on image 339
+        Found 510 strong pixels on image 340
+        Found 508 strong pixels on image 341
+        Found 576 strong pixels on image 342
+        Found 646 strong pixels on image 343
+        Found 582 strong pixels on image 344
+        Found 634 strong pixels on image 345
+        Found 664 strong pixels on image 346
+        Found 612 strong pixels on image 347
+        Found 611 strong pixels on image 348
+   3.9: Found 619 strong pixels on image 349
+        Found 622 strong pixels on image 350
+        Found 636 strong pixels on image 351
+        Found 574 strong pixels on image 352
+        Found 593 strong pixels on image 353
+        Found 598 strong pixels on image 354
+        Found 575 strong pixels on image 355
+        Found 598 strong pixels on image 356
+        Found 665 strong pixels on image 357
+   4.0: Found 646 strong pixels on image 358
+        Found 635 strong pixels on image 359
+        Found 565 strong pixels on image 360
+        Found 611 strong pixels on image 361
+        Found 614 strong pixels on image 362
+        Found 600 strong pixels on image 363
+        Found 607 strong pixels on image 364
+        Found 607 strong pixels on image 365
+        Found 624 strong pixels on image 366
+        Found 664 strong pixels on image 367
+        Found 540 strong pixels on image 368
+   4.1: Found 478 strong pixels on image 369
+        Found 510 strong pixels on image 370
+        Found 569 strong pixels on image 371
+        Found 555 strong pixels on image 372
+        Found 549 strong pixels on image 373
+        Found 571 strong pixels on image 374
+        Found 571 strong pixels on image 375
+        Found 530 strong pixels on image 376
+        Found 507 strong pixels on image 377
+        Found 545 strong pixels on image 378
+   4.2: Found 599 strong pixels on image 379
+        Found 623 strong pixels on image 380
+        Found 614 strong pixels on image 381
+        Found 556 strong pixels on image 382
+        Found 576 strong pixels on image 383
+        Found 666 strong pixels on image 384
+        Found 626 strong pixels on image 385
+        Found 592 strong pixels on image 386
+        Found 561 strong pixels on image 387
+        Found 533 strong pixels on image 388
+        Found 556 strong pixels on image 389
+   4.3: Found 551 strong pixels on image 390
+        Found 523 strong pixels on image 391
+        Found 530 strong pixels on image 392
+        Found 581 strong pixels on image 393
+        Found 628 strong pixels on image 394
+        Found 601 strong pixels on image 395
+        Found 525 strong pixels on image 396
+        Found 596 strong pixels on image 397
+        Found 638 strong pixels on image 398
+   4.4: Found 638 strong pixels on image 399
+        Found 605 strong pixels on image 400
+        Found 565 strong pixels on image 401
+        Found 551 strong pixels on image 402
+        Found 671 strong pixels on image 403
+        Found 710 strong pixels on image 404
+        Found 763 strong pixels on image 405
+        Found 787 strong pixels on image 406
+        Found 808 strong pixels on image 407
+        Found 816 strong pixels on image 408
+        Found 760 strong pixels on image 409
+        Found 692 strong pixels on image 410
+   4.5: Found 678 strong pixels on image 411
+        Found 688 strong pixels on image 412
+        Found 711 strong pixels on image 413
+        Found 691 strong pixels on image 414
+        Found 690 strong pixels on image 415
+        Found 670 strong pixels on image 416
+        Found 712 strong pixels on image 417
+        Found 681 strong pixels on image 418
+        Found 670 strong pixels on image 419
+        Found 728 strong pixels on image 420
+        Found 707 strong pixels on image 421
+        Found 740 strong pixels on image 422
+   4.6: Found 705 strong pixels on image 423
+        Found 663 strong pixels on image 424
+        Found 630 strong pixels on image 425
+        Found 624 strong pixels on image 426
+        Found 604 strong pixels on image 427
+        Found 643 strong pixels on image 428
+   4.7: Found 591 strong pixels on image 429
+        Found 564 strong pixels on image 430
+        Found 535 strong pixels on image 431
+        Found 526 strong pixels on image 432
+        Found 514 strong pixels on image 433
+        Found 519 strong pixels on image 434
+        Found 575 strong pixels on image 435
+        Found 617 strong pixels on image 436
+        Found 578 strong pixels on image 437
+        Found 639 strong pixels on image 438
+        Found 588 strong pixels on image 439
+        Found 580 strong pixels on image 440
+   4.8: Found 519 strong pixels on image 441
+        Found 554 strong pixels on image 442
+        Found 522 strong pixels on image 443
+        Found 489 strong pixels on image 444
+        Found 491 strong pixels on image 445
+        Found 518 strong pixels on image 446
+        Found 524 strong pixels on image 447
+        Found 528 strong pixels on image 448
+        Found 569 strong pixels on image 449
+   4.9: Found 562 strong pixels on image 450
+        Found 504 strong pixels on image 451
+        Found 464 strong pixels on image 452
+        Found 475 strong pixels on image 453
+        Found 495 strong pixels on image 454
+        Found 505 strong pixels on image 455
+        Found 485 strong pixels on image 456
+        Found 463 strong pixels on image 457
+        Found 473 strong pixels on image 458
+        Found 502 strong pixels on image 459
+        Found 498 strong pixels on image 460
+   5.0: Found 493 strong pixels on image 461
+        Found 460 strong pixels on image 462
+        Found 494 strong pixels on image 463
+        Found 571 strong pixels on image 464
+        Found 501 strong pixels on image 465
+        Found 435 strong pixels on image 466
+        Found 458 strong pixels on image 467
+        Found 481 strong pixels on image 468
+        Found 568 strong pixels on image 469
+        Found 598 strong pixels on image 470
+        Found 538 strong pixels on image 471
+        Found 626 strong pixels on image 472
+   5.1: Found 612 strong pixels on image 473
+        Found 548 strong pixels on image 474
+        Found 532 strong pixels on image 475
+        Found 610 strong pixels on image 476
+        Found 605 strong pixels on image 477
+        Found 623 strong pixels on image 478
+        Found 595 strong pixels on image 479
+        Found 626 strong pixels on image 480
+        Found 602 strong pixels on image 481
+        Found 646 strong pixels on image 482
+        Found 637 strong pixels on image 483
+        Found 660 strong pixels on image 484
+        Found 611 strong pixels on image 485
+   5.2: Found 588 strong pixels on image 486
+        Found 637 strong pixels on image 487
+        Found 577 strong pixels on image 488
+        Found 517 strong pixels on image 489
+        Found 523 strong pixels on image 490
+        Found 429 strong pixels on image 491
+        Found 444 strong pixels on image 492
+        Found 491 strong pixels on image 493
+        Found 497 strong pixels on image 494
+        Found 451 strong pixels on image 495
+        Found 464 strong pixels on image 496
+        Found 430 strong pixels on image 497
+        Found 359 strong pixels on image 498
+   5.3: Found 356 strong pixels on image 499
+        Found 395 strong pixels on image 500
+        Found 423 strong pixels on image 501
+        Found 451 strong pixels on image 502
+        Found 452 strong pixels on image 503
+        Found 443 strong pixels on image 504
+        Found 445 strong pixels on image 505
+        Found 464 strong pixels on image 506
+        Found 503 strong pixels on image 507
+        Found 483 strong pixels on image 508
+        Found 474 strong pixels on image 509
+        Found 517 strong pixels on image 510
+        Found 451 strong pixels on image 511
+   5.4: Found 413 strong pixels on image 512
+        Found 444 strong pixels on image 513
+        Found 415 strong pixels on image 514
+        Found 448 strong pixels on image 515
+        Found 435 strong pixels on image 516
+        Found 498 strong pixels on image 517
+        Found 475 strong pixels on image 518
+        Found 460 strong pixels on image 519
+        Found 479 strong pixels on image 520
+        Found 495 strong pixels on image 521
+        Found 470 strong pixels on image 522
+   5.5: Found 461 strong pixels on image 523
+        Found 460 strong pixels on image 524
+        Found 432 strong pixels on image 525
+        Found 436 strong pixels on image 526
+        Found 457 strong pixels on image 527
+        Found 435 strong pixels on image 528
+        Found 471 strong pixels on image 529
+        Found 473 strong pixels on image 530
+        Found 492 strong pixels on image 531
+        Found 507 strong pixels on image 532
+        Found 569 strong pixels on image 533
+        Found 503 strong pixels on image 534
+        Found 483 strong pixels on image 535
+   5.6: Found 492 strong pixels on image 536
+        Found 469 strong pixels on image 537
+        Found 452 strong pixels on image 538
+        Found 414 strong pixels on image 539
+        Found 387 strong pixels on image 540
+        Found 399 strong pixels on image 541
+        Found 492 strong pixels on image 542
+        Found 557 strong pixels on image 543
+        Found 489 strong pixels on image 544
+        Found 394 strong pixels on image 545
+        Found 359 strong pixels on image 546
+        Found 441 strong pixels on image 547
+        Found 407 strong pixels on image 548
+   5.7: Found 500 strong pixels on image 549
+        Found 517 strong pixels on image 550
+        Found 521 strong pixels on image 551
+        Found 457 strong pixels on image 552
+        Found 469 strong pixels on image 553
+        Found 476 strong pixels on image 554
+        Found 477 strong pixels on image 555
+        Found 504 strong pixels on image 556
+        Found 486 strong pixels on image 557
+        Found 429 strong pixels on image 558
+        Found 480 strong pixels on image 559
+        Found 472 strong pixels on image 560
+        Found 509 strong pixels on image 561
+   5.8: Found 417 strong pixels on image 562
+        Found 405 strong pixels on image 563
+        Found 415 strong pixels on image 564
+        Found 493 strong pixels on image 565
+        Found 533 strong pixels on image 566
+   6.1: 
+        Extracted 16142 spots
+        Removed 9902 spots with size < 10 pixels
+        Removed 0 spots with size > 1500000 pixels
+   6.2: Calculated 6240 spot centroids
+        Calculated 6240 spot intensities
+        Filtered 6223 of 6240 spots by peak-centroid distance
+   6.3: 
+        Histogram of per-image spot count for imageset 0:
+        6223 spots found on 566 images (max 129 / bin)
+                    *                              **               
+        * ***   ** **         *           *****   *** *             
+        * ************** *** ********* * ****** *******  ***    * **
+        *************************************** ******* **** * *****
+        ************************************************************
+        ************************************************************
+        ************************************************************
+        ************************************************************
+        ************************************************************
+        ************************************************************
+        1                         image                          566
+        
+        --------------------------------------------------------------------------------
+   6.5: Saved 6223 reflections to Runs/000056_DialsProtFindSpots/extra/strong.refl

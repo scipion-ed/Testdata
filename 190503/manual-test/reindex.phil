@@ -1,4 +1,0 @@
-change_of_basis_op = "-c,b,a"
-input {
-  reflections = indexed.refl
-}

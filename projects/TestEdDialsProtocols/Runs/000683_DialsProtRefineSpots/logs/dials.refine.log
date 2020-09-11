@@ -1,0 +1,164 @@
+   0.0: DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+        DIALS 3.0.4-g47491215a-release
+        The following parameters have been modified:
+        
+        output {
+          experiments = "Runs/000683_DialsProtRefineSpots/extra/refined.expt"
+          reflections = "Runs/000683_DialsProtRefineSpots/extra/refined.refl"
+          log = "Runs/000683_DialsProtRefineSpots/logs/dials.refine.log"
+        }
+        refinement {
+          parameterisation {
+            detector {
+              fix = *all position orientation distance
+            }
+          }
+        }
+        input {
+          experiments = Runs/000605_DialsProtIndexSpots/extra/indexed.expt
+          reflections = Runs/000605_DialsProtIndexSpots/extra/indexed.refl
+        }
+        
+        Configuring refiner
+        
+        Summary statistics for 1214 observations matched to predictions:
+        +-------------------+---------+----------+-----------+---------+--------+
+        |                   |     Min |       Q1 |       Med |      Q3 |    Max |
+        |-------------------+---------+----------+-----------+---------+--------|
+        | Xc - Xo (mm)      | -0.1712 | -0.04172 | -0.001304 | 0.04771 | 0.1818 |
+        | Yc - Yo (mm)      | -0.1937 | -0.02285 |   0.02259 | 0.06872 | 0.2068 |
+        | Phic - Phio (deg) |  -19.49 |  -0.4162 |     0.059 |  0.4133 |  4.906 |
+        | X weights         |    3718 |     3897 |      3916 |    3932 |   3967 |
+        | Y weights         |    3750 |     3896 |      3915 |    3932 |   3967 |
+        | Phi weights       |   25.11 |     25.4 |      25.4 |    25.4 |   25.4 |
+        +-------------------+---------+----------+-----------+---------+--------+
+        
+        Detecting centroid outliers using the MCD algorithm
+   0.5: 119 reflections have been flagged as outliers
+        1095 reflections remain in the manager
+        
+        Summary statistics for 1095 observations matched to predictions:
+        +-------------------+---------+----------+-----------+---------+--------+
+        |                   |     Min |       Q1 |       Med |      Q3 |    Max |
+        |-------------------+---------+----------+-----------+---------+--------|
+        | Xc - Xo (mm)      | -0.1541 | -0.04212 | -0.002534 | 0.04772 | 0.1796 |
+        | Yc - Yo (mm)      | -0.1937 | -0.02419 |    0.0178 | 0.06106 | 0.2068 |
+        | Phic - Phio (deg) |  -1.182 |  -0.4482 |   0.05922 |  0.4381 |  1.305 |
+        | X weights         |    3718 |     3898 |      3917 |    3933 |   3967 |
+        | Y weights         |    3750 |     3898 |      3916 |    3932 |   3967 |
+        | Phi weights       |   25.11 |     25.4 |      25.4 |    25.4 |   25.4 |
+        +-------------------+---------+----------+-----------+---------+--------+
+        
+        There are 6 parameters to refine against 1095 reflections in 3 dimensions
+        Performing refinement of a single Experiment...
+   0.6: 
+        Refinement steps:
+        +--------+--------+----------+----------+------------+
+        |   Step |   Nref |   RMSD_X |   RMSD_Y |   RMSD_Phi |
+        |        |        |     (mm) |     (mm) |      (deg) |
+        |--------+--------+----------+----------+------------|
+        |      0 |   1095 | 0.061392 | 0.068734 |    0.53515 |
+        |      1 |   1095 | 0.060018 | 0.069117 |    0.53664 |
+        |      2 |   1095 | 0.059834 | 0.069368 |    0.53419 |
+        |      3 |   1095 | 0.059709 | 0.069579 |    0.53151 |
+        |      4 |   1095 | 0.05966  | 0.069736 |    0.52845 |
+        |      5 |   1095 | 0.059795 | 0.06982  |    0.52358 |
+        |      6 |   1095 | 0.06014  | 0.069824 |    0.51657 |
+        |      7 |   1095 | 0.060478 | 0.069808 |    0.51046 |
+        |      8 |   1095 | 0.060608 | 0.069801 |    0.50818 |
+        |      9 |   1095 | 0.060624 | 0.069799 |    0.50791 |
+        |     10 |   1095 | 0.060624 | 0.069799 |    0.5079  |
+        +--------+--------+----------+----------+------------+
+        RMSD no longer decreasing
+        
+        RMSDs by experiment:
+        +-------+--------+----------+----------+------------+
+        |   Exp |   Nref |   RMSD_X |   RMSD_Y |     RMSD_Z |
+        |    id |        |     (px) |     (px) |   (images) |
+        |-------+--------+----------+----------+------------|
+        |     0 |   1095 |   1.1023 |   1.2691 |    0.73898 |
+        +-------+--------+----------+----------+------------+
+        Updating predictions for indexed reflections
+        
+        Scan-varying refinement
+        Configuring refiner
+  WARN: The reflections for experiment 0 do not fill the scan range. The scan will be trimmed to images {1,47} to match the range of observed data
+   0.6: 
+        Summary statistics for 1214 observations matched to predictions:
+        +-------------------+---------+----------+---------+---------+--------+
+        |                   |     Min |       Q1 |     Med |      Q3 |    Max |
+        |-------------------+---------+----------+---------+---------+--------|
+        | Xc - Xo (mm)      | -0.1603 | -0.03461 | 0.00479 |  0.0522 | 0.1857 |
+        | Yc - Yo (mm)      |  -0.203 | -0.03378 | 0.01399 | 0.06474 | 0.2069 |
+        | Phic - Phio (deg) |  -19.55 |  -0.3874 | 0.04866 |  0.3964 |  4.918 |
+        | X weights         |    3718 |     3897 |    3916 |    3932 |   3967 |
+        | Y weights         |    3750 |     3896 |    3915 |    3932 |   3967 |
+        | Phi weights       |   25.11 |     25.4 |    25.4 |    25.4 |   25.4 |
+        +-------------------+---------+----------+---------+---------+--------+
+        
+        Detecting centroid outliers using the MCD algorithm
+   1.0: 127 reflections have been flagged as outliers
+        1087 reflections remain in the manager
+        
+        Summary statistics for 1087 observations matched to predictions:
+        +-------------------+---------+----------+----------+---------+--------+
+        |                   |     Min |       Q1 |      Med |      Q3 |    Max |
+        |-------------------+---------+----------+----------+---------+--------|
+        | Xc - Xo (mm)      | -0.1603 | -0.03534 | 0.003767 | 0.05239 | 0.1815 |
+        | Yc - Yo (mm)      |  -0.203 |   -0.036 | 0.007564 | 0.05439 | 0.2069 |
+        | Phic - Phio (deg) |  -1.124 |  -0.4204 |  0.04404 |  0.4119 |  1.262 |
+        | X weights         |    3718 |     3898 |     3917 |    3933 |   3967 |
+        | Y weights         |    3750 |     3897 |     3915 |    3932 |   3967 |
+        | Phi weights       |   25.11 |     25.4 |     25.4 |    25.4 |   25.4 |
+        +-------------------+---------+----------+----------+---------+--------+
+        
+   1.1: There are 11 parameters to refine against 1087 reflections in 3 dimensions
+        Performing refinement of a single Experiment...
+   1.6: 
+        Refinement steps:
+        +--------+--------+----------+----------+------------+
+        |   Step |   Nref |   RMSD_X |   RMSD_Y |   RMSD_Phi |
+        |        |        |     (mm) |     (mm) |      (deg) |
+        |--------+--------+----------+----------+------------|
+        |      0 |   1087 | 0.060636 | 0.069657 |    0.50767 |
+        |      1 |   1087 | 0.058856 | 0.067746 |    0.52822 |
+        |      2 |   1087 | 0.058915 | 0.067227 |    0.52433 |
+        |      3 |   1087 | 0.058909 | 0.066894 |    0.50551 |
+        |      4 |   1087 | 0.058925 | 0.065803 |    0.47698 |
+        |      5 |   1087 | 0.058662 | 0.06341  |    0.43626 |
+        |      6 |   1087 | 0.057397 | 0.059409 |    0.36588 |
+        |      7 |   1087 | 0.054127 | 0.054044 |    0.27636 |
+        |      8 |   1087 | 0.050363 | 0.049254 |    0.23899 |
+        |      9 |   1087 | 0.04867  | 0.047144 |    0.26343 |
+        |     10 |   1087 | 0.04819  | 0.046587 |    0.28308 |
+        |     11 |   1087 | 0.048103 | 0.046487 |    0.28763 |
+        |     12 |   1087 | 0.048096 | 0.046478 |    0.28803 |
+        |     13 |   1087 | 0.048096 | 0.046478 |    0.28805 |
+        +--------+--------+----------+----------+------------+
+        RMSD no longer decreasing
+        
+        RMSDs by experiment:
+        +-------+--------+----------+----------+------------+
+        |   Exp |   Nref |   RMSD_X |   RMSD_Y |     RMSD_Z |
+        |    id |        |     (px) |     (px) |   (images) |
+        |-------+--------+----------+----------+------------|
+        |     0 |   1087 |  0.87447 |  0.84505 |     0.4191 |
+        +-------+--------+----------+----------+------------+
+        Updating predictions for indexed reflections
+        
+        Final refined crystal model:
+        Crystal:
+            Unit cell: 77.758(19), 77.758(19), 40.51(7), 90.0, 90.0, 90.0
+            Space group: P 4
+            U matrix:  {{-0.9932,  0.1111, -0.0343},
+                        { 0.0960,  0.9501,  0.2969},
+                        { 0.0655,  0.2916, -0.9543}}
+            B matrix:  {{ 0.0129,  0.0000,  0.0000},
+                        { 0.0000,  0.0129,  0.0000},
+                        { 0.0000,  0.0000,  0.0247}}
+            A = UB:    {{-0.0128,  0.0014, -0.0008},
+                        { 0.0012,  0.0122,  0.0073},
+                        { 0.0008,  0.0037, -0.0236}}
+            A sampled at 48 scan points
+        Saving refined experiments to Runs/000683_DialsProtRefineSpots/extra/refined.expt
+        Saving reflections with updated predictions to Runs/000683_DialsProtRefineSpots/extra/refined.refl

@@ -1,0 +1,25 @@
+2020-09-01 12:02:33,433 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:02:33,436 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:02:33,436 INFO:  PID: 1366
+2020-09-01 12:02:33,436 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:02:33,436 INFO:  plugin: dials
+2020-09-01 12:02:33,436 INFO:  plugin v: 0.0.0
+2020-09-01 12:02:33,437 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:02:33,437 INFO:  workingDir: Runs/000898_DialsProtScaling
+2020-09-01 12:02:33,437 INFO:  runMode: Continue
+2020-09-01 12:02:33,437 INFO:            MPI: 1
+2020-09-01 12:02:33,437 INFO:        threads: 1
+2020-09-01 12:02:33,439 INFO:   Starting at step: 1
+2020-09-01 12:02:33,500 INFO:   Running steps 
+2020-09-01 12:02:33,517 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:02:33.517580
+2020-09-01 12:02:33,525 INFO:  ObjId: 845
+2020-09-01 12:02:33,525 INFO:  Number of images: 11499
+2020-09-01 12:02:33,525 INFO:  Number of spots: 0
+2020-09-01 12:02:33,545 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:02:33.526251
+2020-09-01 12:02:33,547 INFO:  [35mSTARTED[0m: scaleStep, step 2, time 2020-09-01 12:02:33.545869
+2020-09-01 12:02:33,560 INFO:  [32mdials.scale Runs/000803_DialsProtIntegrateSpots/extra/integrated_model.expt Runs/000803_DialsProtIntegrateSpots/extra/integrated_reflections.refl output.log=Runs/000898_DialsProtScaling/logs/dials.scale.log output.experiments=Runs/000898_DialsProtScaling/extra/scaled.expt output.reflections=Runs/000898_DialsProtScaling/extra/scaled.refl output.html=Runs/000898_DialsProtScaling/extra/dials.scale.html filtering.output.scale_and_filter_results=Runs/000898_DialsProtScaling/extra/scale_and_filter_results.json cut_data.partiality_cutoff=0.4 cut_data.min_isigi=-5.0 outlier_rejection=standard outlier_zmax=6.0 filtering.method=None filtering.deltacchalf.max_cycles=6 filtering.deltacchalf.max_percent_removed=10.0 filtering.deltacchalf.mode=dataset filtering.deltacchalf.group_size=10 filtering.deltacchalf.stdcutoff=4.0[0m
+2020-09-01 12:02:36,200 INFO:  [35mFINISHED[0m: scaleStep, step 2, time 2020-09-01 12:02:36.192472
+2020-09-01 12:02:36,200 INFO:  [35mSTARTED[0m: createOutputStep, step 3, time 2020-09-01 12:02:36.200457
+2020-09-01 12:02:36,236 INFO:  [35mFINISHED[0m: createOutputStep, step 3, time 2020-09-01 12:02:36.213239
+2020-09-01 12:02:36,252 INFO:  Cleaning temp folder....
+2020-09-01 12:02:36,253 INFO:  [32m------------------- PROTOCOL FINISHED[0m

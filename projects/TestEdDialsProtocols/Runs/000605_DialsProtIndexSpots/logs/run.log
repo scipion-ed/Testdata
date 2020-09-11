@@ -1,0 +1,31 @@
+2020-09-01 12:02:00,695 INFO:  [32mRUNNING PROTOCOL -----------------[0m
+2020-09-01 12:02:00,698 INFO:  Hostname: MMKVBENGTSSON.win.su.se
+2020-09-01 12:02:00,698 INFO:  PID: 1143
+2020-09-01 12:02:00,698 INFO:  pyworkflow: 3.0.1
+2020-09-01 12:02:00,698 INFO:  plugin: dials
+2020-09-01 12:02:00,698 INFO:  plugin v: 0.0.0
+2020-09-01 12:02:00,698 INFO:  currentDir: /mnt/e/Programming/scipion/scipion-ed/scipion-ed-testdata/projects/TestEdDialsProtocols
+2020-09-01 12:02:00,698 INFO:  workingDir: Runs/000605_DialsProtIndexSpots
+2020-09-01 12:02:00,698 INFO:  runMode: Continue
+2020-09-01 12:02:00,699 INFO:            MPI: 1
+2020-09-01 12:02:00,699 INFO:        threads: 1
+2020-09-01 12:02:00,700 INFO:   Starting at step: 1
+2020-09-01 12:02:00,765 INFO:   Running steps 
+2020-09-01 12:02:00,784 INFO:  [35mSTARTED[0m: convertInputStep, step 1, time 2020-09-01 12:02:00.784348
+2020-09-01 12:02:00,813 INFO:  Number of images: 49
+2020-09-01 12:02:00,814 INFO:  Number of spots: 1322
+2020-09-01 12:02:00,831 INFO:  [35mFINISHED[0m: convertInputStep, step 1, time 2020-09-01 12:02:00.814713
+2020-09-01 12:02:00,832 INFO:  [35mSTARTED[0m: indexStep, step 2, time 2020-09-01 12:02:00.831973
+2020-09-01 12:02:00,843 INFO:  [32mdials.index Runs/000541_DialsProtFindSpots/extra/imported.expt Runs/000541_DialsProtFindSpots/extra/strong.refl output.log=Runs/000605_DialsProtIndexSpots/logs/dials.index.log output.experiments=Runs/000605_DialsProtIndexSpots/tmp/indexed.expt output.reflections=Runs/000605_DialsProtIndexSpots/tmp/indexed.refl refinement.parameterisation.beam.fix='*all in_spindle_plane out_spindle_plane wavelength' refinement.parameterisation.crystal.fix='all cell orientation' refinement.parameterisation.detector.fix='*all position orientation distance'[0m
+2020-09-01 12:02:07,694 INFO:  [35mFINISHED[0m: indexStep, step 2, time 2020-09-01 12:02:07.665371
+2020-09-01 12:02:07,695 INFO:  [35mSTARTED[0m: refineBravaisStep, step 3, time 2020-09-01 12:02:07.695529
+2020-09-01 12:02:07,700 INFO:  [32mdials.refine_bravais_settings Runs/000605_DialsProtIndexSpots/tmp/indexed.expt Runs/000605_DialsProtIndexSpots/tmp/indexed.refl output.log=Runs/000605_DialsProtIndexSpots/logs/dials.refine_bravais_settings.log output.directory=Runs/000605_DialsProtIndexSpots/tmp beam.fix=all detector.fix=all[0m
+2020-09-01 12:02:09,566 INFO:  [35mFINISHED[0m: refineBravaisStep, step 3, time 2020-09-01 12:02:09.551018
+2020-09-01 12:02:09,566 INFO:  [35mSTARTED[0m: reindexStep, step 4, time 2020-09-01 12:02:09.566754
+2020-09-01 12:02:09,585 INFO:  [32mdials.reindex change_of_basis_op=b,c,a Runs/000605_DialsProtIndexSpots/tmp/indexed.refl output.reflections=Runs/000605_DialsProtIndexSpots/tmp/reindexed.refl[0m
+2020-09-01 12:02:10,631 INFO:  [35mFINISHED[0m: reindexStep, step 4, time 2020-09-01 12:02:10.623840
+2020-09-01 12:02:10,631 INFO:  [35mSTARTED[0m: createOutputStep, step 5, time 2020-09-01 12:02:10.631642
+2020-09-01 12:02:10,646 INFO:  unpack(b) received extra data.
+2020-09-01 12:02:10,690 INFO:  [35mFINISHED[0m: createOutputStep, step 5, time 2020-09-01 12:02:10.647986
+2020-09-01 12:02:10,704 INFO:  Cleaning temp folder....
+2020-09-01 12:02:10,709 INFO:  [32m------------------- PROTOCOL FINISHED[0m

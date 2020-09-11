@@ -1,0 +1,72 @@
+   0.0: DIALS (2018) Acta Cryst. D74, 85-97. https://doi.org/10.1107/S2059798317017235
+        DIALS 3.0.4-g47491215a-release
+   0.1: The following parameters have been modified:
+        
+        output {
+          directory = "Runs/000120_DialsProtIndexSpots/tmp"
+          log = "Runs/000120_DialsProtIndexSpots/logs/dials.refine_bravais_settings.log"
+        }
+        input {
+          experiments = Runs/000120_DialsProtIndexSpots/tmp/indexed.expt
+          reflections = Runs/000120_DialsProtIndexSpots/tmp/indexed.refl
+        }
+        
+   5.1: Chiral space groups corresponding to each Bravais lattice:
+        aP: P1
+        mC: C2
+        oF: F222
+        oI: I222 I212121
+        tI: I4 I41 I422 I4122
+        hR: R3:H R32:H
+        cI: I23 I213 I432 I4132
+        +------------+--------------+--------+--------------+----------+-----------+------------------------------------------+----------+-------------------+
+        |   Solution |   Metric fit |   rmsd | min/max cc   |   #spots | lattice   | unit_cell                                |   volume | cb_op             |
+        |------------+--------------+--------+--------------+----------+-----------+------------------------------------------+----------+-------------------|
+        |   *     22 |       1.4563 |  0.047 | 0.767/0.910  |     5295 | cI        | 12.03  12.03  12.03  90.00  90.00  90.00 |     1739 | b+c,a+c,a+b       |
+        |   *     21 |       1.4563 |  0.048 | 0.798/0.910  |     5268 | tI        | 12.05  12.05  12.16  90.00  90.00  90.00 |     1764 | b+c,a+c,a+b       |
+        |   *     20 |       1.4563 |  0.05  | 0.868/0.904  |     5284 | tI        | 11.91  11.91  12.06  90.00  90.00  90.00 |     1710 | a+b,b+c,a+c       |
+        |   *     19 |       1.4563 |  0.048 | 0.854/0.892  |     5275 | tI        | 12.06  12.06  11.97  90.00  90.00  90.00 |     1741 | a+c,a+b,b+c       |
+        |   *     18 |       1.4563 |  0.048 | 0.854/0.910  |     5277 | oI        | 11.97  12.06  12.06  90.00  90.00  90.00 |     1741 | b+c,a+c,a+b       |
+        |   *     17 |       1.4563 |  0.048 | 0.845/0.893  |     5266 | oF        | 12.04  17.16  17.07  90.00  90.00  90.00 |     3529 | b+c,-b+c,2*a+b+c  |
+        |   *     16 |       1.4563 |  0.048 | 0.854/0.854  |     5264 | mC        | 12.11  12.07  12.13  90.00  89.66  90.00 |     1773 | a+c,b+c,-a-b      |
+        |   *     15 |       1.4342 |  0.049 | 0.891/0.904  |     5287 | oF        | 12.06  17.04  16.96  90.00  90.00  90.00 |     3486 | -a-c,-a+c,a+2*b+c |
+        |   *     14 |       1.4342 |  0.048 | 0.904/0.904  |     5236 | mC        | 12.02  12.07  12.10  90.00  89.86  90.00 |     1756 | -b-c,-a-c,a+b     |
+        |   *     13 |       1.423  |  0.049 | 0.820/0.820  |     5271 | hR        | 16.93  16.93  10.43  90.00  90.00 120.00 |     2587 | a+2*b+c,-b+c,a    |
+        |   *     12 |       1.423  |  0.047 | 0.767/0.767  |     5269 | hR        | 17.09  17.09  10.52  90.00  90.00 120.00 |     2659 | 2*a+b+c,-a+b,c    |
+        |   *     11 |       1.423  |  0.046 | 0.891/0.891  |     5259 | mC        | 10.50  17.34  10.68  90.00 109.71  90.00 |     1830 | -a,a+2*b+c,-c     |
+        |   *     10 |       1.3538 |  0.048 | 0.832/0.834  |     5273 | hR        | 17.05  17.05  10.38  90.00  90.00 120.00 |     2613 | a+b+2*c,a-c,b     |
+        |   *      9 |       1.3538 |  0.047 | 0.845/0.845  |     5228 | mC        | 10.43  17.08  10.46  90.00 109.77  90.00 |     1754 | -b,-2*a-b-c,-c    |
+        |   *      8 |       1.1374 |  0.05  | 0.815/0.815  |     5255 | hR        | 17.16  17.16  10.43  90.00  90.00 120.00 |     2658 | b-c,-a+c,a+b+c    |
+        |   *      7 |       1.1374 |  0.049 | 0.898/0.898  |     5284 | mC        | 10.45  17.08  10.41  90.00 109.21  90.00 |     1755 | b,a-c,-a-b-c      |
+        |   *      6 |       0.9006 |  0.048 | 0.893/0.893  |     5267 | mC        | 10.44  17.16  10.45  90.00 109.61  90.00 |     1764 | a,-b+c,-a-b-c     |
+        |   *      5 |       0.5227 |  0.045 | 0.775/0.910  |     5269 | oF        | 12.18  17.00  17.20  90.00  90.00  90.00 |     3562 | a+b,-a+b,a+b+2*c  |
+        |   *      4 |       0.5227 |  0.044 | 0.837/0.837  |     5300 | mC        | 10.44  17.31  10.50  90.00 108.51  90.00 |     1800 | -a,-a-b-2*c,-b    |
+        |   *      3 |       0.4453 |  0.044 | 0.910/0.910  |     5277 | mC        | 12.10  12.20  12.09  90.00  90.68  90.00 |     1784 | b+c,a+b,-a-c      |
+        |   *      2 |       0.2923 |  0.044 | 0.775/0.775  |     5354 | mC        | 10.55  16.91  10.60  90.00 109.37  90.00 |     1784 | c,-a+b,-a-b-c     |
+        |   *      1 |       0      |  0.044 | -/-          |     5351 | aP        | 10.42  10.43  10.56 109.85 109.41 108.18 |      893 | a,b,c             |
+        +------------+--------------+--------+--------------+----------+-----------+------------------------------------------+----------+-------------------+
+        * = recommended solution
+        
+        Saving summary as bravais_summary.json
+        Saving solution 22 as bravais_setting_22.expt
+        Saving solution 21 as bravais_setting_21.expt
+        Saving solution 20 as bravais_setting_20.expt
+        Saving solution 19 as bravais_setting_19.expt
+        Saving solution 18 as bravais_setting_18.expt
+        Saving solution 17 as bravais_setting_17.expt
+        Saving solution 16 as bravais_setting_16.expt
+        Saving solution 15 as bravais_setting_15.expt
+        Saving solution 14 as bravais_setting_14.expt
+        Saving solution 13 as bravais_setting_13.expt
+        Saving solution 12 as bravais_setting_12.expt
+        Saving solution 11 as bravais_setting_11.expt
+        Saving solution 10 as bravais_setting_10.expt
+   5.2: Saving solution 9 as bravais_setting_9.expt
+        Saving solution 8 as bravais_setting_8.expt
+        Saving solution 7 as bravais_setting_7.expt
+        Saving solution 6 as bravais_setting_6.expt
+        Saving solution 5 as bravais_setting_5.expt
+        Saving solution 4 as bravais_setting_4.expt
+        Saving solution 3 as bravais_setting_3.expt
+        Saving solution 2 as bravais_setting_2.expt
+        Saving solution 1 as bravais_setting_1.expt
