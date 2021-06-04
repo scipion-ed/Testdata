@@ -1,0 +1,19 @@
+refinement
+{
+    parameterisation
+    {
+        crystal
+        {
+            unit_cell
+            {
+                restraints
+                {
+                    tie_to_target
+                    {
+                        values=10.0,20.0,30.0,90.0,90.0,90.0
+                    }
+                }
+            }
+        }
+    }
+}
